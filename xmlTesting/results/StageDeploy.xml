@@ -1,0 +1,40 @@
+<Stage name="Deploy">
+  <workspace dir="whimsy_master-WG7DZOG26OJYGOV64SMUINHMWS7PXOX3RNV6A7KQ72TRWVQL6Z6A">[whimsy_master-WG7DZOG26OJYGOV64SMUINHMWS7PXOX3RNV6A7KQ72TRWVQL6Z6A] Running shell script<command>+ mvn source:jar package -Dmaven.test.skip<log>[INFO] Scanning for projects...
+[INFO] 
+[INFO] ----------------------&lt; com.coolstore:app-store &gt;-----------------------
+[INFO] Building app-store 0.0.1-SNAPSHOT
+[INFO] --------------------------------[ jar ]---------------------------------
+[INFO] 
+[INFO] &gt;&gt;&gt; maven-source-plugin:3.0.1:jar (default-cli) &gt; generate-sources @ app-store &gt;&gt;&gt;
+[INFO] 
+[INFO] &lt;&lt;&lt; maven-source-plugin:3.0.1:jar (default-cli) &lt; generate-sources @ app-store &lt;&lt;&lt;
+[INFO] 
+[INFO] 
+[INFO] --- maven-source-plugin:3.0.1:jar (default-cli) @ app-store ---
+[INFO] Building jar: /var/lib/jenkins/workspace/whimsy_master-WG7DZOG26OJYGOV64SMUINHMWS7PXOX3RNV6A7KQ72TRWVQL6Z6A/target/app-store-0.0.1-SNAPSHOT-sources.jar
+[INFO] 
+[INFO] --- maven-resources-plugin:2.6:resources (default-resources) @ app-store ---
+[WARNING] Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+[INFO] skip non existing resourceDirectory /var/lib/jenkins/workspace/whimsy_master-WG7DZOG26OJYGOV64SMUINHMWS7PXOX3RNV6A7KQ72TRWVQL6Z6A/src/main/resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.1:compile (default-compile) @ app-store ---
+[INFO] Nothing to compile - all classes are up to date
+[INFO] 
+[INFO] --- maven-resources-plugin:2.6:testResources (default-testResources) @ app-store ---
+[INFO] Not copying test resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.1:testCompile (default-testCompile) @ app-store ---
+[INFO] Not compiling test sources
+[INFO] 
+[INFO] --- maven-surefire-plugin:2.12.4:test (default-test) @ app-store ---
+[INFO] Tests are skipped.
+[INFO] 
+[INFO] --- maven-jar-plugin:2.4:jar (default-jar) @ app-store ---
+[INFO] ------------------------------------------------------------------------
+[INFO] BUILD SUCCESS
+[INFO] ------------------------------------------------------------------------
+[INFO] Total time: 3.923 s
+[INFO] Finished at: 2018-07-23T17:03:18Z
+[INFO] ------------------------------------------------------------------------
+</log></command></workspace>
+</Stage>

@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?><?xml-stylesheet type='text/xsl' href='_UpgradeReport_Files/UpgradeReport.xslt'?><UpgradeLog>
+<Properties><Property Name="Solution" Value="XmlGridViewSample">
+</Property><Property Name="Solution File" Value="C:\Users\AdilDSW\Desktop\xmlTesting\readerc#\XmlGridViewSample.sln">
+</Property><Property Name="Date" Value="25 July 2018">
+</Property><Property Name="Time" Value="11:45 AM">
+</Property></Properties><Event ErrorLevel="0" Project="" Source="XmlGridViewSample.sln" Description="File successfully backed up as C:\Users\AdilDSW\Desktop\xmlTesting\readerc#\Backup\XmlGridViewSample.sln">
+</Event><Event ErrorLevel="0" Project="XmlGridViewSample" Source="XmlGridViewSample.csproj" Description="Project file successfully backed up as C:\Users\AdilDSW\Desktop\xmlTesting\readerc#\Backup\XmlGridViewSample.csproj">
+</Event><Event ErrorLevel="0" Project="XmlGridViewSample" Source="App_Code\FileUtilities.cs" Description="File successfully backed up as C:\Users\AdilDSW\Desktop\xmlTesting\readerc#\Backup\App_Code\FileUtilities.cs">
+</Event><Event ErrorLevel="0" Project="XmlGridViewSample" Source="Form1.cs" Description="File successfully backed up as C:\Users\AdilDSW\Desktop\xmlTesting\readerc#\Backup\Form1.cs">
+</Event><Event ErrorLevel="0" Project="XmlGridViewSample" Source="Form1.Designer.cs" Description="File successfully backed up as C:\Users\AdilDSW\Desktop\xmlTesting\readerc#\Backup\Form1.Designer.cs">
+</Event><Event ErrorLevel="0" Project="XmlGridViewSample" Source="Program.cs" Description="File successfully backed up as C:\Users\AdilDSW\Desktop\xmlTesting\readerc#\Backup\Program.cs">
+</Event><Event ErrorLevel="0" Project="XmlGridViewSample" Source="Properties\AssemblyInfo.cs" Description="File successfully backed up as C:\Users\AdilDSW\Desktop\xmlTesting\readerc#\Backup\Properties\AssemblyInfo.cs">
+</Event><Event ErrorLevel="0" Project="XmlGridViewSample" Source="Properties\Resources.Designer.cs" Description="File successfully backed up as C:\Users\AdilDSW\Desktop\xmlTesting\readerc#\Backup\Properties\Resources.Designer.cs">
+</Event><Event ErrorLevel="0" Project="XmlGridViewSample" Source="Properties\Settings.Designer.cs" Description="File successfully backed up as C:\Users\AdilDSW\Desktop\xmlTesting\readerc#\Backup\Properties\Settings.Designer.cs">
+</Event><Event ErrorLevel="0" Project="XmlGridViewSample" Source="XmlGridView.cs" Description="File successfully backed up as C:\Users\AdilDSW\Desktop\xmlTesting\readerc#\Backup\XmlGridView.cs">
+</Event><Event ErrorLevel="0" Project="XmlGridViewSample" Source="XmlGridView.designer.cs" Description="File successfully backed up as C:\Users\AdilDSW\Desktop\xmlTesting\readerc#\Backup\XmlGridView.designer.cs">
+</Event><Event ErrorLevel="0" Project="XmlGridViewSample" Source="Properties\Settings.settings" Description="File successfully backed up as C:\Users\AdilDSW\Desktop\xmlTesting\readerc#\Backup\Properties\Settings.settings">
+</Event><Event ErrorLevel="0" Project="XmlGridViewSample" Source="Form1.resx" Description="File successfully backed up as C:\Users\AdilDSW\Desktop\xmlTesting\readerc#\Backup\Form1.resx">
+</Event><Event ErrorLevel="0" Project="XmlGridViewSample" Source="Properties\Resources.resx" Description="File successfully backed up as C:\Users\AdilDSW\Desktop\xmlTesting\readerc#\Backup\Properties\Resources.resx">
+</Event><Event ErrorLevel="0" Project="XmlGridViewSample" Source="XmlGridView.resx" Description="File successfully backed up as C:\Users\AdilDSW\Desktop\xmlTesting\readerc#\Backup\XmlGridView.resx">
+</Event><Event ErrorLevel="1" Project="XmlGridViewSample" Source="XmlGridViewSample.csproj" Description="Your project is targeting .NET Framework 2.0 or 3.0. If your project uses assemblies requiring a newer .NET Framework, your project will fail to build. You can change the .NET Framework version by clicking Properties on the project menu and then selecting a new version in the '.NET Framework' dropdown box. (In Visual Basic, this is located on the Compile tab by clicking the 'Advanced Compiler Options...' button.)">
+</Event><Event ErrorLevel="0" Project="XmlGridViewSample" Source="XmlGridViewSample.csproj" Description="Project converted successfully">
+</Event><Event ErrorLevel="3" Project="XmlGridViewSample" Source="XmlGridViewSample.csproj" Description="Converted">
+</Event><Event ErrorLevel="0" Project="" Source="XmlGridViewSample.sln" Description="Solution converted successfully">
+</Event><Event ErrorLevel="3" Project="" Source="XmlGridViewSample.sln" Description="Converted">
+</Event><Event ErrorLevel="0" Project="XmlGridViewSample" Source="XmlGridViewSample.csproj" Description="Scan complete: Upgrade not required for project files.">
+</Event></UpgradeLog>

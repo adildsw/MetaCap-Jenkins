@@ -1,0 +1,8 @@
+<Stage name="Init-Trigger">
+  <log>Started by user AdilDSW
+Connecting to https://api.github.com using adildsw/****** (GitHub Access Token)
+Obtained Jenkinsfile from e0cfd0736c01249c16ee195725f0f479a27367cf
+Running in Durability level: MAX_SURVIVABILITY
+Running on Jenkins in /var/lib/jenkins/workspace/whimsy_master-WG7DZOG26OJYGOV64SMUINHMWS7PXOX3RNV6A7KQ72TRWVQL6Z6A
+</log>
+</Stage>

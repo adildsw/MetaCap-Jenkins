@@ -1,0 +1,36 @@
+<Stage name="Declarative: Checkout SCM">
+  <log> &gt; git rev-parse --is-inside-work-tree # timeout=10
+Fetching changes from the remote Git repository
+ &gt; git config remote.origin.url https://github.com/adildsw/whimsy.git # timeout=10
+Cleaning workspace
+ &gt; git rev-parse --verify HEAD # timeout=10
+Resetting working tree
+ &gt; git reset --hard # timeout=10
+ &gt; git clean -fdx # timeout=10
+Fetching without tags
+Fetching upstream changes from https://github.com/adildsw/whimsy.git
+ &gt; git --version # timeout=10
+using GIT_ASKPASS to set credentials GitHub Access Token
+ &gt; git fetch --no-tags --progress https://github.com/adildsw/whimsy.git +refs/heads/master:refs/remotes/origin/master
+Checking out Revision e0cfd0736c01249c16ee195725f0f479a27367cf (master)
+ &gt; git config core.sparsecheckout # timeout=10
+ &gt; git checkout -f e0cfd0736c01249c16ee195725f0f479a27367cf
+ &gt; git branch -a -v --no-abbrev # timeout=10
+ &gt; git branch -D master # timeout=10
+ &gt; git checkout -b master e0cfd0736c01249c16ee195725f0f479a27367cf
+Commit message: "readme.txt added"
+ &gt; git rev-list --no-walk e0cfd0736c01249c16ee195725f0f479a27367cf # timeout=10
+Cleaning workspace
+ &gt; git rev-parse --verify HEAD # timeout=10
+Resetting working tree
+ &gt; git reset --hard # timeout=10
+ &gt; git clean -fdx # timeout=10
+</log>
+  <workspace dir="whimsy_master-WG7DZOG26OJYGOV64SMUINHMWS7PXOX3RNV6A7KQ72TRWVQL6Z6A">[whimsy_master-WG7DZOG26OJYGOV64SMUINHMWS7PXOX3RNV6A7KQ72TRWVQL6Z6A] Running shell script<command>+ docker inspect -f . maven<log>.
+Jenkins does not seem to be running inside a container
+$ docker run -t -d -u 121:127 -w /var/lib/jenkins/workspace/whimsy_master-WG7DZOG26OJYGOV64SMUINHMWS7PXOX3RNV6A7KQ72TRWVQL6Z6A -v /var/lib/jenkins/workspace/whimsy_master-WG7DZOG26OJYGOV64SMUINHMWS7PXOX3RNV6A7KQ72TRWVQL6Z6A:/var/lib/jenkins/workspace/whimsy_master-WG7DZOG26OJYGOV64SMUINHMWS7PXOX3RNV6A7KQ72TRWVQL6Z6A:rw,z -v /var/lib/jenkins/workspace/whimsy_master-WG7DZOG26OJYGOV64SMUINHMWS7PXOX3RNV6A7KQ72TRWVQL6Z6A@tmp:/var/lib/jenkins/workspace/whimsy_master-WG7DZOG26OJYGOV64SMUINHMWS7PXOX3RNV6A7KQ72TRWVQL6Z6A@tmp:rw,z -e ******** -e ******** -e ******** -e ******** -e ******** -e ******** -e ******** -e ******** -e ******** -e ******** -e ******** -e ******** -e ******** -e ******** -e ******** -e ******** -e ******** -e ******** -e ******** -e ******** -e ******** -e ******** -e ******** -e ******** -e ******** -e ******** -e ******** -e ******** -e ******** maven cat
+$ docker top fbfe717570d95ed453891cbbcf20f322b6d00089707b86afd5336964dce2b1ed -eo pid,comm
+ERROR: The container started but didn't run the expected command. Please double check your ENTRYPOINT does execute the command passed as docker run argument, as required by official docker images (see https://github.com/docker-library/official-images#consistency for entrypoint consistency requirements).
+Alternatively you can force image entrypoint to be disabled by adding option `--entrypoint=''`.
+</log></command></workspace>
+</Stage>

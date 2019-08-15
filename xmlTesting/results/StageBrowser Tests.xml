@@ -1,0 +1,54 @@
+<Stage name="Browser Tests">
+  <workspace dir="whimsy_master-WG7DZOG26OJYGOV64SMUINHMWS7PXOX3RNV6A7KQ72TRWVQL6Z6A">[Firefox] [whimsy_master-WG7DZOG26OJYGOV64SMUINHMWS7PXOX3RNV6A7KQ72TRWVQL6Z6A] Running shell script<command>[Firefox] + echo setting up selenium environment<log>[Firefox] setting up selenium environment
+</log></command></workspace>
+  <workspace dir="whimsy_master-WG7DZOG26OJYGOV64SMUINHMWS7PXOX3RNV6A7KQ72TRWVQL6Z6A">[Safari] [whimsy_master-WG7DZOG26OJYGOV64SMUINHMWS7PXOX3RNV6A7KQ72TRWVQL6Z6A] Running shell script</workspace>
+  <workspace dir="whimsy_master-WG7DZOG26OJYGOV64SMUINHMWS7PXOX3RNV6A7KQ72TRWVQL6Z6A">[Chrome] [whimsy_master-WG7DZOG26OJYGOV64SMUINHMWS7PXOX3RNV6A7KQ72TRWVQL6Z6A] Running shell script<command>[Safari] + echo setting up selenium environment<log>[Safari] setting up selenium environment
+</log></command><command>[Chrome] + echo setting up selenium environment<log>[Chrome] setting up selenium environment
+</log></command></workspace>
+  <workspace dir="whimsy_master-WG7DZOG26OJYGOV64SMUINHMWS7PXOX3RNV6A7KQ72TRWVQL6Z6A">[Internet Explorer] [whimsy_master-WG7DZOG26OJYGOV64SMUINHMWS7PXOX3RNV6A7KQ72TRWVQL6Z6A] Running shell script<command>[Internet Explorer] + echo setting up selenium environment<log>[Internet Explorer] setting up selenium environment
+</log></command></workspace>
+  <workspace dir="whimsy_master-WG7DZOG26OJYGOV64SMUINHMWS7PXOX3RNV6A7KQ72TRWVQL6Z6A">[Firefox] [whimsy_master-WG7DZOG26OJYGOV64SMUINHMWS7PXOX3RNV6A7KQ72TRWVQL6Z6A] Running shell script<command>[Firefox] + ping -c 5 localhost<log>[Firefox] PING localhost (127.0.0.1) 56(84) bytes of data.
+[Firefox] 64 bytes from localhost (127.0.0.1): icmp_seq=1 ttl=64 time=0.026 ms
+</log></command></workspace>
+  <workspace dir="whimsy_master-WG7DZOG26OJYGOV64SMUINHMWS7PXOX3RNV6A7KQ72TRWVQL6Z6A">[Safari] [whimsy_master-WG7DZOG26OJYGOV64SMUINHMWS7PXOX3RNV6A7KQ72TRWVQL6Z6A] Running shell script<command>[Safari] + ping -c 8 localhost<log>[Safari] PING localhost (127.0.0.1) 56(84) bytes of data.
+[Safari] 64 bytes from localhost (127.0.0.1): icmp_seq=1 ttl=64 time=0.028 ms
+</log></command></workspace>
+  <workspace dir="whimsy_master-WG7DZOG26OJYGOV64SMUINHMWS7PXOX3RNV6A7KQ72TRWVQL6Z6A">[Chrome] [whimsy_master-WG7DZOG26OJYGOV64SMUINHMWS7PXOX3RNV6A7KQ72TRWVQL6Z6A] Running shell script<command>[Chrome] + ping -c 3 localhost<log>[Chrome] PING localhost (127.0.0.1) 56(84) bytes of data.
+[Chrome] 64 bytes from localhost (127.0.0.1): icmp_seq=1 ttl=64 time=0.022 ms
+[Firefox] 64 bytes from localhost (127.0.0.1): icmp_seq=2 ttl=64 time=0.054 ms
+[Safari] 64 bytes from localhost (127.0.0.1): icmp_seq=2 ttl=64 time=0.056 ms
+</log></command></workspace>
+  <workspace dir="whimsy_master-WG7DZOG26OJYGOV64SMUINHMWS7PXOX3RNV6A7KQ72TRWVQL6Z6A">[Internet Explorer] [whimsy_master-WG7DZOG26OJYGOV64SMUINHMWS7PXOX3RNV6A7KQ72TRWVQL6Z6A] Running shell script<command>[Internet Explorer] + ping -c 4 localhost<log>[Internet Explorer] PING localhost (127.0.0.1) 56(84) bytes of data.
+[Internet Explorer] 64 bytes from localhost (127.0.0.1): icmp_seq=1 ttl=64 time=0.027 ms
+[Firefox] 64 bytes from localhost (127.0.0.1): icmp_seq=3 ttl=64 time=0.045 ms
+[Chrome] 64 bytes from localhost (127.0.0.1): icmp_seq=2 ttl=64 time=0.056 ms
+[Internet Explorer] 64 bytes from localhost (127.0.0.1): icmp_seq=2 ttl=64 time=0.056 ms
+[Safari] 64 bytes from localhost (127.0.0.1): icmp_seq=3 ttl=64 time=0.055 ms
+[Chrome] 64 bytes from localhost (127.0.0.1): icmp_seq=3 ttl=64 time=0.066 ms
+[Chrome] 
+[Chrome] --- localhost ping statistics ---
+[Chrome] 3 packets transmitted, 3 received, 0% packet loss, time 2033ms
+[Chrome] rtt min/avg/max/mdev = 0.022/0.048/0.066/0.018 ms
+[Firefox] 64 bytes from localhost (127.0.0.1): icmp_seq=4 ttl=64 time=0.065 ms
+[Internet Explorer] 64 bytes from localhost (127.0.0.1): icmp_seq=3 ttl=64 time=0.056 ms
+[Safari] 64 bytes from localhost (127.0.0.1): icmp_seq=4 ttl=64 time=0.056 ms
+[Internet Explorer] 64 bytes from localhost (127.0.0.1): icmp_seq=4 ttl=64 time=0.054 ms
+[Internet Explorer] 
+[Internet Explorer] --- localhost ping statistics ---
+[Internet Explorer] 4 packets transmitted, 4 received, 0% packet loss, time 3043ms
+[Internet Explorer] rtt min/avg/max/mdev = 0.027/0.048/0.056/0.013 ms
+[Firefox] 64 bytes from localhost (127.0.0.1): icmp_seq=5 ttl=64 time=0.055 ms
+[Firefox] 
+[Firefox] --- localhost ping statistics ---
+[Firefox] 5 packets transmitted, 5 received, 0% packet loss, time 4073ms
+[Firefox] rtt min/avg/max/mdev = 0.026/0.049/0.065/0.013 ms
+[Safari] 64 bytes from localhost (127.0.0.1): icmp_seq=5 ttl=64 time=0.055 ms
+[Safari] 64 bytes from localhost (127.0.0.1): icmp_seq=6 ttl=64 time=0.054 ms
+[Safari] 64 bytes from localhost (127.0.0.1): icmp_seq=7 ttl=64 time=0.068 ms
+[Safari] 64 bytes from localhost (127.0.0.1): icmp_seq=8 ttl=64 time=0.056 ms
+[Safari] 
+[Safari] --- localhost ping statistics ---
+[Safari] 8 packets transmitted, 8 received, 0% packet loss, time 7126ms
+[Safari] rtt min/avg/max/mdev = 0.028/0.053/0.068/0.012 ms
+</log></command></workspace>
+</Stage>

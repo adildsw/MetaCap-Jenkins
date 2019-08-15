@@ -1,0 +1,9 @@
+<Build>
+  <JOB_NAME>whimsy/master</JOB_NAME>
+  <BUILD_NUMBER>8</BUILD_NUMBER>
+  <BUILD_DISPLAY_NAME>#8</BUILD_DISPLAY_NAME>
+  <BUILD_TAG>jenkins-whimsy-master-8</BUILD_TAG>
+  <BUILD_DURATION>2 min 30 sec</BUILD_DURATION>
+  <BUILD_DATE>Mon Jul 23 13:00:57 EDT 2018</BUILD_DATE>
+  <isPipeline>true</isPipeline>
+</Build>

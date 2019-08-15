@@ -1,0 +1,5 @@
+<Stage name="Declarative: Post Actions">
+  <log>Recording test results
+The archive step is deprecated, please use archiveArtifacts instead."
+</log>
+</Stage>
