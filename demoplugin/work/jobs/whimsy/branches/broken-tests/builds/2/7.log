@@ -1,0 +1,26 @@
+ > git rev-parse --is-inside-work-tree # timeout=10
+Fetching changes from the remote Git repository
+ > git config remote.origin.url https://github.com/adildsw/whimsy.git # timeout=10
+Cleaning workspace
+ > git rev-parse --verify HEAD # timeout=10
+Resetting working tree
+ > git reset --hard # timeout=10
+ > git clean -fdx # timeout=10
+Fetching without tags
+Fetching upstream changes from https://github.com/adildsw/whimsy.git
+ > git --version # timeout=10
+using GIT_ASKPASS to set credentials GitHub Access Token
+ > git fetch --no-tags --progress https://github.com/adildsw/whimsy.git +refs/heads/broken-tests:refs/remotes/origin/broken-tests
+Checking out Revision 1a3c35ed97026270d36547ed5239a68d9889daac (broken-tests)
+ > git config core.sparsecheckout # timeout=10
+ > git checkout -f 1a3c35ed97026270d36547ed5239a68d9889daac
+ > git branch -a -v --no-abbrev # timeout=10
+ > git branch -D broken-tests # timeout=10
+ > git checkout -b broken-tests 1a3c35ed97026270d36547ed5239a68d9889daac
+Commit message: "Update TestThisWillFailAbunch.java"
+ > git rev-list --no-walk 1a3c35ed97026270d36547ed5239a68d9889daac # timeout=10
+Cleaning workspace
+ > git rev-parse --verify HEAD # timeout=10
+Resetting working tree
+ > git reset --hard # timeout=10
+ > git clean -fdx # timeout=10

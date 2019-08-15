@@ -1,0 +1,255 @@
+<?xml version='1.1' encoding='UTF-8'?>
+<flow-build plugin="workflow-job@2.22">
+  <actions>
+    <hudson.model.CauseAction>
+      <causeBag class="linked-hash-map">
+        <entry>
+          <jenkins.branch.BranchIndexingCause plugin="branch-api@2.0.20"/>
+          <int>1</int>
+        </entry>
+      </causeBag>
+    </hudson.model.CauseAction>
+    <jenkins.scm.api.SCMRevisionAction plugin="scm-api@2.2.7">
+      <sourceId>blueocean</sourceId>
+      <revision class="jenkins.plugins.git.AbstractGitSCMSource$SCMRevisionImpl" plugin="git@3.9.1">
+        <head class="org.jenkinsci.plugins.github_branch_source.BranchSCMHead" plugin="github-branch-source@2.3.6">
+          <name>release/1.5</name>
+        </head>
+        <hash>3be6293a8189f2db9b7f9ed1394bc54dfdd40cdc</hash>
+      </revision>
+    </jenkins.scm.api.SCMRevisionAction>
+    <org.jenkinsci.plugins.workflow.libs.LibrariesAction plugin="workflow-cps-global-lib@2.9">
+      <libraries/>
+    </org.jenkinsci.plugins.workflow.libs.LibrariesAction>
+    <hudson.plugins.git.util.BuildData plugin="git@3.9.1">
+      <buildsByBranchName>
+        <entry>
+          <string>release/1.5</string>
+          <hudson.plugins.git.util.Build>
+            <marked plugin="git-client@2.7.2">
+              <sha1>3be6293a8189f2db9b7f9ed1394bc54dfdd40cdc</sha1>
+              <branches class="singleton-set">
+                <hudson.plugins.git.Branch>
+                  <sha1 reference="../../../sha1"/>
+                  <name>release/1.5</name>
+                </hudson.plugins.git.Branch>
+              </branches>
+            </marked>
+            <revision reference="../marked"/>
+            <hudsonBuildNumber>1</hudsonBuildNumber>
+          </hudson.plugins.git.util.Build>
+        </entry>
+      </buildsByBranchName>
+      <lastBuild reference="../buildsByBranchName/entry/hudson.plugins.git.util.Build"/>
+      <remoteUrls>
+        <string>https://github.com/adildsw/blueocean-plugin.git</string>
+      </remoteUrls>
+    </hudson.plugins.git.util.BuildData>
+    <hudson.plugins.git.GitTagAction plugin="git@3.9.1">
+      <tags class="hudson.util.CopyOnWriteMap$Tree">
+        <entry>
+          <string>release/1.5</string>
+          <list/>
+        </entry>
+      </tags>
+      <ws>/home/adildsw/jenkins-plugins/demoplugin/work/jobs/blueocean-plugin/branches/release-1-5.4s4s0l/workspace</ws>
+    </hudson.plugins.git.GitTagAction>
+    <org.jenkinsci.plugins.workflow.steps.scm.MultiSCMRevisionState plugin="workflow-scm-step@2.6">
+      <revisionStates>
+        <entry>
+          <string>git https://github.com/adildsw/blueocean-plugin.git</string>
+          <hudson.scm.SCMRevisionState_-None/>
+        </entry>
+      </revisionStates>
+    </org.jenkinsci.plugins.workflow.steps.scm.MultiSCMRevisionState>
+  </actions>
+  <queueId>89</queueId>
+  <timestamp>1531378704775</timestamp>
+  <startTime>1531378704962</startTime>
+  <result>FAILURE</result>
+  <duration>513379</duration>
+  <keepLog>false</keepLog>
+  <execution class="org.jenkinsci.plugins.workflow.cps.CpsFlowExecution">
+    <result>FAILURE</result>
+    <script>#!groovy
+
+// only 20 builds
+properties([buildDiscarder(logRotator(artifactNumToKeepStr: &apos;20&apos;, numToKeepStr: &apos;20&apos;))])
+
+node() {
+  stage(&apos;Setup&apos;) {
+    deleteDir()
+    checkout scm
+    sh &apos;docker build -t blueocean_build_env --build-arg GID=$(id -g ${USER}) --build-arg UID=$(id -u ${USER}) - &lt; Dockerfile.build&apos;
+    withCredentials([file(credentialsId: &apos;blueoceandeploy_ath&apos;, variable: &apos;FILE&apos;)]) {
+      sh &apos;mv $FILE acceptance-tests/live.properties&apos;
+    }
+    configFileProvider([configFile(fileId: &apos;blueocean-maven-settings&apos;, variable: &apos;MAVEN_SETTINGS&apos;)]) {
+      sh &apos;mv $MAVEN_SETTINGS settings.xml&apos;
+    }
+    withCredentials([file(credentialsId: &apos;blueocean-ath-private-repo-key&apos;, variable: &apos;FILE&apos;)]) {
+      sh &apos;mv $FILE acceptance-tests/bo-ath.key&apos;
+    }
+    sh &quot;./acceptance-tests/runner/scripts/start-selenium.sh&quot;
+    sh &quot;./acceptance-tests/runner/scripts/start-bitbucket-server.sh&quot;
+  }
+
+  docker.image(&apos;blueocean_build_env&apos;).inside(&quot;--net=container:blueo-selenium&quot;) {
+    withEnv([&apos;GIT_COMMITTER_EMAIL=me@hatescake.com&apos;,&apos;GIT_COMMITTER_NAME=Hates&apos;,&apos;GIT_AUTHOR_NAME=Cake&apos;,&apos;GIT_AUTHOR_EMAIL=hates@cake.com&apos;]) {
+      try {
+        stage(&apos;Sanity check dependencies&apos;) {
+          sh &quot;node ./bin/checkdeps.js&quot;
+          sh &quot;node ./bin/checkshrinkwrap.js&quot;
+        }
+
+        stage(&apos;Building JS Libraries&apos;) {
+          sh &apos;node -v &amp;&amp; npm -v&apos;
+          sh &apos;npm --prefix ./js-extensions run build&apos;
+        }
+
+        stage(&apos;Building BlueOcean&apos;) {
+          try {
+            sh &quot;mvn clean install -B -DcleanNode -Dorg.slf4j.simpleLogger.log.org.apache.maven.cli.transfer.Slf4jMavenTransferListener=warn -Dmaven.test.failure.ignore -s settings.xml -Dmaven.artifact.threads=30&quot;
+          } catch(e) {
+            throw e;
+          }
+          junit &apos;**/target/surefire-reports/TEST-*.xml&apos;
+          junit &apos;**/target/jest-reports/*.xml&apos;
+          archive &apos;*/target/code-coverage/**/*.html&apos;
+          archive &apos;*/target/*.hpi&apos;
+        }
+
+        stage(&apos;ATH - Jenkins 2.73.3&apos;) {
+          sh &quot;cd acceptance-tests &amp;&amp; ./run.sh -v=2.73.3 --no-selenium --settings=&apos;-s ${env.WORKSPACE}/settings.xml&apos;&quot;
+          junit &apos;acceptance-tests/target/surefire-reports/*.xml&apos;
+          archive &apos;acceptance-tests/target/screenshots/**/*&apos;
+        }
+
+        if (env.JOB_NAME =~ &apos;blueocean-weekly-ath&apos;) {
+          stage(&apos;ATH - Jenkins 2.73.2&apos;) {
+            sh &quot;cd acceptance-tests &amp;&amp; ./run.sh -v=2.73.2 --no-selenium --settings=&apos;-s ${env.WORKSPACE}/settings.xml&apos;&quot;
+            junit &apos;acceptance-tests/target/surefire-reports/*.xml&apos;
+          }
+          stage(&apos;ATH - Jenkins 2.73.3&apos;) {
+            sh &quot;cd acceptance-tests &amp;&amp; ./run.sh -v=2.73.3 --no-selenium --settings=&apos;-s ${env.WORKSPACE}/settings.xml&apos;&quot;
+            junit &apos;acceptance-tests/target/surefire-reports/*.xml&apos;
+          }
+        }
+
+
+      } catch(err) {
+        currentBuild.result = &quot;FAILURE&quot;
+
+        if (err.toString().contains(&apos;exit code 143&apos;)) {
+          currentBuild.result = &quot;ABORTED&quot;
+        }
+      } finally {
+        stage(&apos;Cleanup&apos;) {
+          sh &quot;${env.WORKSPACE}/acceptance-tests/runner/scripts/stop-selenium.sh&quot;
+          sh &quot;${env.WORKSPACE}/acceptance-tests/runner/scripts/stop-bitbucket-server.sh&quot;
+          sendhipchat()
+          deleteDir()
+        }
+      }
+    }
+  }
+}
+
+
+def sendhipchat() {
+  res = currentBuild.result
+  if(currentBuild.result == null) {
+    res = &quot;SUCCESS&quot;
+  }
+  message = &quot;${env.JOB_NAME} #${env.BUILD_NUMBER}, status: ${res} (&lt;a href=&apos;${env.RUN_DISPLAY_URL}&apos;&gt;Open&lt;/a&gt;)&quot;
+  color = null
+  if(currentBuild.result == &quot;UNSTABLE&quot;) {
+      color = &quot;YELLOW&quot;
+  } else if(currentBuild.result == &quot;SUCCESS&quot; || currentBuild.result == null){
+      color = &quot;GREEN&quot;
+  } else if(currentBuild.result == &quot;FAILURE&quot;) {
+      color = &quot;RED&quot;
+  } else if(currentBuild.result == &quot;ABORTED&quot;) {
+      color = &quot;GRAY&quot;
+  }
+  if(color != null) {
+      hipchatSend message: message, color: color
+  }
+}
+</script>
+    <loadedScripts class="map"/>
+    <durabilityHint>MAX_SURVIVABILITY</durabilityHint>
+    <timings class="map">
+      <entry>
+        <string>flowNode</string>
+        <long>3436267023</long>
+      </entry>
+      <entry>
+        <string>classLoad</string>
+        <long>891401339</long>
+      </entry>
+      <entry>
+        <string>run</string>
+        <long>3595698900</long>
+      </entry>
+      <entry>
+        <string>parse</string>
+        <long>951759425</long>
+      </entry>
+      <entry>
+        <string>saveProgram</string>
+        <long>29145612</long>
+      </entry>
+    </timings>
+    <sandbox>true</sandbox>
+    <iota>15</iota>
+    <head>1:15</head>
+    <done>true</done>
+    <resumeBlocked>false</resumeBlocked>
+  </execution>
+  <completed>true</completed>
+  <checkouts class="hudson.util.PersistedList">
+    <org.jenkinsci.plugins.workflow.job.WorkflowRun_-SCMCheckout>
+      <scm class="hudson.plugins.git.GitSCM" plugin="git@3.9.1">
+        <configVersion>2</configVersion>
+        <userRemoteConfigs>
+          <hudson.plugins.git.UserRemoteConfig>
+            <name>origin</name>
+            <refspec>+refs/heads/release/1.5:refs/remotes/origin/release/1.5</refspec>
+            <url>https://github.com/adildsw/blueocean-plugin.git</url>
+            <credentialsId>github</credentialsId>
+          </hudson.plugins.git.UserRemoteConfig>
+        </userRemoteConfigs>
+        <branches class="singleton-list">
+          <hudson.plugins.git.BranchSpec>
+            <name>release/1.5</name>
+          </hudson.plugins.git.BranchSpec>
+        </branches>
+        <doGenerateSubmoduleConfigurations>false</doGenerateSubmoduleConfigurations>
+        <browser class="hudson.plugins.git.browser.GithubWeb">
+          <url>https://github.com/adildsw/blueocean-plugin</url>
+        </browser>
+        <submoduleCfg class="empty-list"/>
+        <extensions>
+          <hudson.plugins.git.extensions.impl.CleanBeforeCheckout/>
+          <hudson.plugins.git.extensions.impl.CleanCheckout/>
+          <hudson.plugins.git.extensions.impl.LocalBranch>
+            <localBranch>**</localBranch>
+          </hudson.plugins.git.extensions.impl.LocalBranch>
+          <jenkins.plugins.git.GitSCMSourceDefaults>
+            <includeTags>false</includeTags>
+          </jenkins.plugins.git.GitSCMSourceDefaults>
+          <hudson.plugins.git.extensions.impl.BuildChooserSetting>
+            <buildChooser class="jenkins.plugins.git.AbstractGitSCMSource$SpecificRevisionBuildChooser">
+              <revision reference="../../../../../../../actions/hudson.plugins.git.util.BuildData/buildsByBranchName/entry/hudson.plugins.git.util.Build/marked"/>
+            </buildChooser>
+          </hudson.plugins.git.extensions.impl.BuildChooserSetting>
+        </extensions>
+      </scm>
+      <node></node>
+      <workspace>/home/adildsw/jenkins-plugins/demoplugin/work/jobs/blueocean-plugin/branches/release-1-5.4s4s0l/workspace</workspace>
+      <changelogFile>/home/adildsw/jenkins-plugins/demoplugin/work/jobs/blueocean-plugin/branches/release-1-5.4s4s0l/builds/1/changelog0.xml</changelogFile>
+      <pollingBaseline class="hudson.scm.SCMRevisionState$None" reference="../../../actions/org.jenkinsci.plugins.workflow.steps.scm.MultiSCMRevisionState/revisionStates/entry/hudson.scm.SCMRevisionState_-None"/>
+    </org.jenkinsci.plugins.workflow.job.WorkflowRun_-SCMCheckout>
+  </checkouts>
+</flow-build>

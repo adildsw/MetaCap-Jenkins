@@ -1,0 +1,61 @@
+Branch indexing
+[8mha:////4JQlVu4HEjhQ+YYe1bonw9p4ELcDM5bUioi5nvRczJIoAAAAhB+LCAAAAAAAAP9b85aBtbiIwSa/KF0vKzUvOzOvODlTryCnNB3I0kvPLMkoTYpPKkrMS86IL84vLUpO1XPPLPEoTXLOzyvOz0n1yy9JZYAARiYGRi8GzpLM3NTiksTcgooiBqmM0pTi/Dy9ZIhiPayaGCoKgHRKr8fytQDntQJljgAAAA==[0mConnecting to https://api.github.com using adildsw/****** (GitHub Access Token)
+Obtained Jenkinsfile from 80627dcb6345c5abbf3b5fb849f25b6bc93d0aac
+Running in Durability level: MAX_SURVIVABILITY
+[8mha:////4O0i3euN0jWdK0TB8IigbEbS7P6iyj90hLcA5VmH/cQjAAAAaB+LCAAAAAAAAP9b85aBtbiIwTG/KF0vKzUvOzOvODlTryCnNB3I0ivPL8pOy8kv18vKT9JLzs8rzs9J1QuHCgaV5jlDhPzyS1IZIICRiYGhoohBKqM0pTg/D64Hh8ICAFt0h+h/AAAA[0m[Pipeline] properties
+[8mha:////4O0i3euN0jWdK0TB8IigbEbS7P6iyj90hLcA5VmH/cQjAAAAaB+LCAAAAAAAAP9b85aBtbiIwTG/KF0vKzUvOzOvODlTryCnNB3I0ivPL8pOy8kv18vKT9JLzs8rzs9J1QuHCgaV5jlDhPzyS1IZIICRiYGhoohBKqM0pTg/D64Hh8ICAFt0h+h/AAAA[0m[Pipeline] node
+Still waiting to schedule task
+Waiting for next available executor
+Running on [8mha:////4Mym/ya3LOVhm8uMaWm8ATecf+Mvdj4/pCxJadMVRHbDAAAAnh+LCAAAAAAAAP9b85aBtbiIQTGjNKU4P08vOT+vOD8nVc83PyU1x6OyILUoJzMv2y+/JJUBAhiZGBgqihhk0NSjKDWzXb3RdlLBUSYGJk8GtpzUvPSSDB8G5tKinBIGIZ+sxLJE/ZzEvHT94JKizLx0a6BxUmjGOUNodHsLgAz2EgZh/eT83ILSktQifY3cxGIgrakPAHib2iPIAAAA[0mJenkins in /home/adildsw/jenkins-plugins/demoplugin/work/jobs/blueocean-plugin/branches/task-JENK.q1a13dd6erq5.e-prallel/workspace
+[8mha:////4O0i3euN0jWdK0TB8IigbEbS7P6iyj90hLcA5VmH/cQjAAAAaB+LCAAAAAAAAP9b85aBtbiIwTG/KF0vKzUvOzOvODlTryCnNB3I0ivPL8pOy8kv18vKT9JLzs8rzs9J1QuHCgaV5jlDhPzyS1IZIICRiYGhoohBKqM0pTg/D64Hh8ICAFt0h+h/AAAA[0m[Pipeline] {
+[8mha:////4O0i3euN0jWdK0TB8IigbEbS7P6iyj90hLcA5VmH/cQjAAAAaB+LCAAAAAAAAP9b85aBtbiIwTG/KF0vKzUvOzOvODlTryCnNB3I0ivPL8pOy8kv18vKT9JLzs8rzs9J1QuHCgaV5jlDhPzyS1IZIICRiYGhoohBKqM0pTg/D64Hh8ICAFt0h+h/AAAA[0m[Pipeline] stage
+[8mha:////4O0i3euN0jWdK0TB8IigbEbS7P6iyj90hLcA5VmH/cQjAAAAaB+LCAAAAAAAAP9b85aBtbiIwTG/KF0vKzUvOzOvODlTryCnNB3I0ivPL8pOy8kv18vKT9JLzs8rzs9J1QuHCgaV5jlDhPzyS1IZIICRiYGhoohBKqM0pTg/D64Hh8ICAFt0h+h/AAAA[0m[Pipeline] { (Setup)
+[8mha:////4O0i3euN0jWdK0TB8IigbEbS7P6iyj90hLcA5VmH/cQjAAAAaB+LCAAAAAAAAP9b85aBtbiIwTG/KF0vKzUvOzOvODlTryCnNB3I0ivPL8pOy8kv18vKT9JLzs8rzs9J1QuHCgaV5jlDhPzyS1IZIICRiYGhoohBKqM0pTg/D64Hh8ICAFt0h+h/AAAA[0m[Pipeline] deleteDir
+[8mha:////4O0i3euN0jWdK0TB8IigbEbS7P6iyj90hLcA5VmH/cQjAAAAaB+LCAAAAAAAAP9b85aBtbiIwTG/KF0vKzUvOzOvODlTryCnNB3I0ivPL8pOy8kv18vKT9JLzs8rzs9J1QuHCgaV5jlDhPzyS1IZIICRiYGhoohBKqM0pTg/D64Hh8ICAFt0h+h/AAAA[0m[Pipeline] checkout
+Cloning the remote Git repository
+Cloning with configured refspecs honoured and without tags
+Cloning repository https://github.com/adildsw/blueocean-plugin.git
+ > git init /home/adildsw/jenkins-plugins/demoplugin/work/jobs/blueocean-plugin/branches/task-JENK.q1a13dd6erq5.e-prallel/workspace # timeout=10
+Fetching upstream changes from https://github.com/adildsw/blueocean-plugin.git
+ > git --version # timeout=10
+using GIT_ASKPASS to set credentials GitHub Access Token
+ > git fetch --no-tags --progress https://github.com/adildsw/blueocean-plugin.git +refs/heads/task/JENKINS-43746_update_step_heading_to_include_prallel:refs/remotes/origin/task/JENKINS-43746_update_step_heading_to_include_prallel
+ > git config remote.origin.url https://github.com/adildsw/blueocean-plugin.git # timeout=10
+ > git config --add remote.origin.fetch +refs/heads/task/JENKINS-43746_update_step_heading_to_include_prallel:refs/remotes/origin/task/JENKINS-43746_update_step_heading_to_include_prallel # timeout=10
+ > git config remote.origin.url https://github.com/adildsw/blueocean-plugin.git # timeout=10
+Cleaning workspace
+ > git rev-parse --verify HEAD # timeout=10
+No valid HEAD. Skipping the resetting
+ > git clean -fdx # timeout=10
+Fetching without tags
+Fetching upstream changes from https://github.com/adildsw/blueocean-plugin.git
+using GIT_ASKPASS to set credentials GitHub Access Token
+ > git fetch --no-tags --progress https://github.com/adildsw/blueocean-plugin.git +refs/heads/task/JENKINS-43746_update_step_heading_to_include_prallel:refs/remotes/origin/task/JENKINS-43746_update_step_heading_to_include_prallel
+Checking out Revision 80627dcb6345c5abbf3b5fb849f25b6bc93d0aac (task/JENKINS-43746_update_step_heading_to_include_prallel)
+ > git config core.sparsecheckout # timeout=10
+ > git checkout -f 80627dcb6345c5abbf3b5fb849f25b6bc93d0aac
+ > git branch -a -v --no-abbrev # timeout=10
+ > git checkout -b task/JENKINS-43746_update_step_heading_to_include_prallel 80627dcb6345c5abbf3b5fb849f25b6bc93d0aac
+Commit message: "implement PR suggestion"
+First time build. Skipping changelog.
+Cleaning workspace
+ > git rev-parse --verify HEAD # timeout=10
+Resetting working tree
+ > git reset --hard # timeout=10
+ > git clean -fdx # timeout=10
+[8mha:////4O0i3euN0jWdK0TB8IigbEbS7P6iyj90hLcA5VmH/cQjAAAAaB+LCAAAAAAAAP9b85aBtbiIwTG/KF0vKzUvOzOvODlTryCnNB3I0ivPL8pOy8kv18vKT9JLzs8rzs9J1QuHCgaV5jlDhPzyS1IZIICRiYGhoohBKqM0pTg/D64Hh8ICAFt0h+h/AAAA[0m[Pipeline] sh
+[workspace] Running shell script
++ id -g adildsw
++ id -u adildsw
++ docker build -t blueocean_build_env --build-arg GID=1000 --build-arg UID=1000 -
+/home/adildsw/jenkins-plugins/demoplugin/work/jobs/blueocean-plugin/branches/task-JENK.q1a13dd6erq5.e-prallel/workspace@tmp/durable-48f3ba21/script.sh: 2: /home/adildsw/jenkins-plugins/demoplugin/work/jobs/blueocean-plugin/branches/task-JENK.q1a13dd6erq5.e-prallel/workspace@tmp/durable-48f3ba21/script.sh: docker: not found
+[8mha:////4O0i3euN0jWdK0TB8IigbEbS7P6iyj90hLcA5VmH/cQjAAAAaB+LCAAAAAAAAP9b85aBtbiIwTG/KF0vKzUvOzOvODlTryCnNB3I0ivPL8pOy8kv18vKT9JLzs8rzs9J1QuHCgaV5jlDhPzyS1IZIICRiYGhoohBKqM0pTg/D64Hh8ICAFt0h+h/AAAA[0m[Pipeline] }
+[8mha:////4O0i3euN0jWdK0TB8IigbEbS7P6iyj90hLcA5VmH/cQjAAAAaB+LCAAAAAAAAP9b85aBtbiIwTG/KF0vKzUvOzOvODlTryCnNB3I0ivPL8pOy8kv18vKT9JLzs8rzs9J1QuHCgaV5jlDhPzyS1IZIICRiYGhoohBKqM0pTg/D64Hh8ICAFt0h+h/AAAA[0m[Pipeline] // stage
+[8mha:////4O0i3euN0jWdK0TB8IigbEbS7P6iyj90hLcA5VmH/cQjAAAAaB+LCAAAAAAAAP9b85aBtbiIwTG/KF0vKzUvOzOvODlTryCnNB3I0ivPL8pOy8kv18vKT9JLzs8rzs9J1QuHCgaV5jlDhPzyS1IZIICRiYGhoohBKqM0pTg/D64Hh8ICAFt0h+h/AAAA[0m[Pipeline] }
+[8mha:////4O0i3euN0jWdK0TB8IigbEbS7P6iyj90hLcA5VmH/cQjAAAAaB+LCAAAAAAAAP9b85aBtbiIwTG/KF0vKzUvOzOvODlTryCnNB3I0ivPL8pOy8kv18vKT9JLzs8rzs9J1QuHCgaV5jlDhPzyS1IZIICRiYGhoohBKqM0pTg/D64Hh8ICAFt0h+h/AAAA[0m[Pipeline] // node
+[8mha:////4O0i3euN0jWdK0TB8IigbEbS7P6iyj90hLcA5VmH/cQjAAAAaB+LCAAAAAAAAP9b85aBtbiIwTG/KF0vKzUvOzOvODlTryCnNB3I0ivPL8pOy8kv18vKT9JLzs8rzs9J1QuHCgaV5jlDhPzyS1IZIICRiYGhoohBKqM0pTg/D64Hh8ICAFt0h+h/AAAA[0m[Pipeline] End of Pipeline
+
+GitHub has been notified of this commit’s build result
+
+ERROR: script returned exit code 127
+Finished: FAILURE

@@ -1,0 +1,2 @@
+Required context class hudson.FilePath is missing
+Perhaps you forgot to surround the code with a step that provides this, such as: node

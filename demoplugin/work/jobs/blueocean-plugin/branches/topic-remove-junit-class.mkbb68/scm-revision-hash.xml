@@ -1,0 +1,7 @@
+<?xml version='1.1' encoding='UTF-8'?>
+<jenkins.plugins.git.AbstractGitSCMSource_-SCMRevisionImpl plugin="git@3.9.1">
+  <head class="org.jenkinsci.plugins.github_branch_source.BranchSCMHead" plugin="github-branch-source@2.3.6">
+    <name>topic/remove-junit-class</name>
+  </head>
+  <hash>a065b8ef622b34c8885c9136e1894bfa322339bb</hash>
+</jenkins.plugins.git.AbstractGitSCMSource_-SCMRevisionImpl>

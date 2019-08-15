@@ -1,0 +1,31 @@
+Cloning the remote Git repository
+Cloning with configured refspecs honoured and without tags
+Cloning repository https://github.com/adildsw/blueocean-plugin.git
+ > git init /home/adildsw/jenkins-plugins/demoplugin/work/jobs/blueocean-plugin/branches/experiment-ath-batch-mode.v1nrj5/workspace # timeout=10
+Fetching upstream changes from https://github.com/adildsw/blueocean-plugin.git
+ > git --version # timeout=10
+using GIT_ASKPASS to set credentials GitHub Access Token
+ > git fetch --no-tags --progress https://github.com/adildsw/blueocean-plugin.git +refs/heads/experiment/ath-batch-mode:refs/remotes/origin/experiment/ath-batch-mode
+ > git config remote.origin.url https://github.com/adildsw/blueocean-plugin.git # timeout=10
+ > git config --add remote.origin.fetch +refs/heads/experiment/ath-batch-mode:refs/remotes/origin/experiment/ath-batch-mode # timeout=10
+ > git config remote.origin.url https://github.com/adildsw/blueocean-plugin.git # timeout=10
+Cleaning workspace
+ > git rev-parse --verify HEAD # timeout=10
+No valid HEAD. Skipping the resetting
+ > git clean -fdx # timeout=10
+Fetching without tags
+Fetching upstream changes from https://github.com/adildsw/blueocean-plugin.git
+using GIT_ASKPASS to set credentials GitHub Access Token
+ > git fetch --no-tags --progress https://github.com/adildsw/blueocean-plugin.git +refs/heads/experiment/ath-batch-mode:refs/remotes/origin/experiment/ath-batch-mode
+Checking out Revision 82f680f91919aed780ed7b9fa9a479cae6606ecb (experiment/ath-batch-mode)
+ > git config core.sparsecheckout # timeout=10
+ > git checkout -f 82f680f91919aed780ed7b9fa9a479cae6606ecb
+ > git branch -a -v --no-abbrev # timeout=10
+ > git checkout -b experiment/ath-batch-mode 82f680f91919aed780ed7b9fa9a479cae6606ecb
+Commit message: "try removing some more things from ATH that may not actually be used (?)"
+First time build. Skipping changelog.
+Cleaning workspace
+ > git rev-parse --verify HEAD # timeout=10
+Resetting working tree
+ > git reset --hard # timeout=10
+ > git clean -fdx # timeout=10

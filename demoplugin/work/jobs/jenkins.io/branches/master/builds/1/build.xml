@@ -1,0 +1,205 @@
+<?xml version='1.1' encoding='UTF-8'?>
+<flow-build plugin="workflow-job@2.22">
+  <actions>
+    <hudson.model.CauseAction>
+      <causeBag class="linked-hash-map">
+        <entry>
+          <jenkins.branch.BranchIndexingCause plugin="branch-api@2.0.20"/>
+          <int>1</int>
+        </entry>
+      </causeBag>
+    </hudson.model.CauseAction>
+    <jenkins.scm.api.SCMRevisionAction plugin="scm-api@2.2.7">
+      <sourceId>blueocean</sourceId>
+      <revision class="jenkins.plugins.git.AbstractGitSCMSource$SCMRevisionImpl" plugin="git@3.9.1">
+        <head class="org.jenkinsci.plugins.github_branch_source.BranchSCMHead" plugin="github-branch-source@2.3.6">
+          <name>master</name>
+        </head>
+        <hash>275a4f41d833d1a479ef47549d68569df7c1929b</hash>
+      </revision>
+    </jenkins.scm.api.SCMRevisionAction>
+    <org.jenkinsci.plugins.workflow.libs.LibrariesAction plugin="workflow-cps-global-lib@2.9">
+      <libraries/>
+    </org.jenkinsci.plugins.workflow.libs.LibrariesAction>
+    <org.jenkinsci.plugins.workflow.cps.EnvActionImpl plugin="workflow-cps@2.54">
+      <env class="tree-map"/>
+    </org.jenkinsci.plugins.workflow.cps.EnvActionImpl>
+    <jenkins.model.InterruptedBuildAction>
+      <causes class="com.google.common.collect.ImmutableList">
+        <jenkins.model.CauseOfInterruption_-UserInterruption>
+          <user>adildsw</user>
+        </jenkins.model.CauseOfInterruption_-UserInterruption>
+      </causes>
+    </jenkins.model.InterruptedBuildAction>
+  </actions>
+  <queueId>14</queueId>
+  <timestamp>1532103543075</timestamp>
+  <startTime>1532103543144</startTime>
+  <result>ABORTED</result>
+  <duration>102514</duration>
+  <keepLog>false</keepLog>
+  <execution class="org.jenkinsci.plugins.workflow.cps.CpsFlowExecution">
+    <result>ABORTED</result>
+    <script>#!/usr/bin/env groovy
+
+/* Only keep the 10 most recent builds. */
+def projectProperties = [
+    [$class: &apos;BuildDiscarderProperty&apos;,strategy: [$class: &apos;LogRotator&apos;, numToKeepStr: &apos;5&apos;]],
+]
+def imageName = &apos;jenkinsciinfra/jenkinsio&apos;
+
+if (!env.CHANGE_ID) {
+    if (env.BRANCH_NAME == null) {
+        projectProperties.add(pipelineTriggers([cron(&apos;H/30 * * * *&apos;)]))
+    }
+}
+
+properties(projectProperties)
+
+
+try {
+    /* Assuming that wherever we&apos;re going to build, we have nodes labelled with
+    * &quot;Docker&quot; so we can have our own isolated build environment
+    */
+    node(&apos;docker&apos;) {
+        stage(&apos;Clean workspace&apos;) {
+            /* Running on a fresh Docker instance makes this redundant, but just in
+            * case the host isn&apos;t configured to give us a new Docker image for every
+            * build, make sure we clean things before we do anything
+            */
+            deleteDir()
+            sh &apos;ls -lah&apos;
+        }
+
+
+        stage(&apos;Checkout source&apos;) {
+            /*
+            * For a standalone workflow script, we would use the `git` step
+            *
+            *
+            * git url: &apos;git://github.com/jenkinsci/jenkins.io&apos;,
+            *     branch: &apos;master&apos;
+            */
+
+            /*
+            * Represents the SCM configuration in a &quot;Workflow from SCM&quot; project build. Use checkout
+            * scm to check out sources matching Jenkinsfile with the SCM details from
+            * the build that is executing this Jenkinsfile.
+            *
+            * when not in multibranch: https://issues.jenkins-ci.org/browse/JENKINS-31386
+            */
+            checkout scm
+        }
+
+        stage(&apos;Build site&apos;) {
+            /* If the agent can&apos;t gather resources and build the site in 60 minutes,
+            * something is very wrong
+            */
+            timeout(60) {
+                sh &apos;&apos;&apos;#!/usr/bin/env bash
+                    set -o errexit
+                    set -o nounset
+                    set -o pipefail
+                    set -o xtrace
+
+                    make all
+
+                    illegal_htaccess_content=&quot;$( find content -name &apos;.htaccess&apos; -type f -exec grep --extended-regexp --invert-match &apos;^(#|ErrorDocument)&apos; {} \\; )&quot;
+                    if [[ -n &quot;$illegal_htaccess_content&quot; ]] ; then
+                        echo &quot;Failing build due to illegal content in .htaccess files, only ErrorDocument is allowed:&quot; &gt;&amp;2
+                        echo &quot;$illegal_htaccess_content&quot; &gt;&amp;2
+                        exit 1
+                    fi
+                    &apos;&apos;&apos;
+            }
+        }
+
+        def container
+        stage(&apos;Build docker image&apos;){
+            timestamps {
+                dir(&apos;docker&apos;){
+                    /* Only update docker tag when docker files change*/
+                    def imageTag = sh(script: &apos;tar cf - docker | md5sum&apos;, returnStdout: true).take(6)
+                    echo &quot;Creating the container ${imageName}:${imageTag}&quot;
+                    container = docker.build(&quot;${imageName}:${imageTag}&quot;)
+                }
+            }
+        }
+
+        stage(&apos;Archive site&apos;) {
+            /* The `archive` task inside the Gradle build should be creating a zip file
+            * which we can use for the deployment of the site. This stage will archive
+            * that artifact so we can pick it up later
+            */
+            archiveArtifacts artifacts: &apos;build/**/*.zip,build/_site/*.pdf&apos;, fingerprint: true
+        }
+
+        /* The Jenkins which deploys doesn&apos;t use multibranch or GitHub Org Folders
+        */
+        if (env.BRANCH_NAME == null) {
+            stage(&apos;Publish on Azure&apos;) {
+                /* -&gt; https://github.com/Azure/blobxfer
+                Require credential &apos;BLOBXFER_STORAGEACCOUNTKEY&apos; set to the storage account key */
+                withCredentials([string(credentialsId: &apos;BLOBXFER_STORAGEACCOUNTKEY&apos;, variable: &apos;BLOBXFER_STORAGEACCOUNTKEY&apos;)]) {
+                    sh &apos;./scripts/blobxfer upload --local-path /data/_site --storage-account-key $BLOBXFER_STORAGEACCOUNTKEY --storage-account prodjenkinsio --remote-path jenkinsio --recursive --mode file --skip-on-md5-match --file-md5&apos;
+                }
+            }
+            stage(&apos;Publish docker image&apos;) {
+                infra.withDockerCredentials {
+                    timestamps { container.push() }
+                }
+            }
+        }
+    }
+
+}
+catch (exc) {
+    echo &quot;Caught: ${exc}&quot;
+
+    String recipient = &apos;infra@lists.jenkins-ci.org&apos;
+
+    mail subject: &quot;${env.JOB_NAME} (${env.BUILD_NUMBER}) failed&quot;,
+            body: &quot;It appears that ${env.BUILD_URL} is failing, somebody should do something about that&quot;,
+              to: recipient,
+         replyTo: recipient,
+            from: &apos;noreply@ci.jenkins.io&apos;
+
+    /* Rethrow to fail the Pipeline properly */
+    throw exc
+}
+
+// vim: ft=groovy
+</script>
+    <loadedScripts class="map"/>
+    <durabilityHint>MAX_SURVIVABILITY</durabilityHint>
+    <timings class="map">
+      <entry>
+        <string>flowNode</string>
+        <long>723672140</long>
+      </entry>
+      <entry>
+        <string>classLoad</string>
+        <long>657036672</long>
+      </entry>
+      <entry>
+        <string>run</string>
+        <long>1055336629</long>
+      </entry>
+      <entry>
+        <string>parse</string>
+        <long>383726768</long>
+      </entry>
+      <entry>
+        <string>saveProgram</string>
+        <long>13865819</long>
+      </entry>
+    </timings>
+    <sandbox>true</sandbox>
+    <iota>8</iota>
+    <head>1:8</head>
+    <done>true</done>
+    <resumeBlocked>false</resumeBlocked>
+  </execution>
+  <completed>true</completed>
+  <checkouts class="hudson.util.PersistedList"/>
+</flow-build>

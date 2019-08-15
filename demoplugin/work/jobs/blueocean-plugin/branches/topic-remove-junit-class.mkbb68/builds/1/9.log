@@ -1,0 +1,31 @@
+Cloning the remote Git repository
+Cloning with configured refspecs honoured and without tags
+Cloning repository https://github.com/adildsw/blueocean-plugin.git
+ > git init /home/adildsw/jenkins-plugins/demoplugin/work/jobs/blueocean-plugin/branches/topic-remove-junit-class.mkbb68/workspace # timeout=10
+Fetching upstream changes from https://github.com/adildsw/blueocean-plugin.git
+ > git --version # timeout=10
+using GIT_ASKPASS to set credentials GitHub Access Token
+ > git fetch --no-tags --progress https://github.com/adildsw/blueocean-plugin.git +refs/heads/topic/remove-junit-class:refs/remotes/origin/topic/remove-junit-class
+ > git config remote.origin.url https://github.com/adildsw/blueocean-plugin.git # timeout=10
+ > git config --add remote.origin.fetch +refs/heads/topic/remove-junit-class:refs/remotes/origin/topic/remove-junit-class # timeout=10
+ > git config remote.origin.url https://github.com/adildsw/blueocean-plugin.git # timeout=10
+Cleaning workspace
+ > git rev-parse --verify HEAD # timeout=10
+No valid HEAD. Skipping the resetting
+ > git clean -fdx # timeout=10
+Fetching without tags
+Fetching upstream changes from https://github.com/adildsw/blueocean-plugin.git
+using GIT_ASKPASS to set credentials GitHub Access Token
+ > git fetch --no-tags --progress https://github.com/adildsw/blueocean-plugin.git +refs/heads/topic/remove-junit-class:refs/remotes/origin/topic/remove-junit-class
+Checking out Revision a065b8ef622b34c8885c9136e1894bfa322339bb (topic/remove-junit-class)
+ > git config core.sparsecheckout # timeout=10
+ > git checkout -f a065b8ef622b34c8885c9136e1894bfa322339bb
+ > git branch -a -v --no-abbrev # timeout=10
+ > git checkout -b topic/remove-junit-class a065b8ef622b34c8885c9136e1894bfa322339bb
+Commit message: "Remove JUnit test class model"
+First time build. Skipping changelog.
+Cleaning workspace
+ > git rev-parse --verify HEAD # timeout=10
+Resetting working tree
+ > git reset --hard # timeout=10
+ > git clean -fdx # timeout=10

@@ -1,0 +1,12 @@
+Started by user unknown or anonymous
+Building in workspace /home/adildsw/jenkins-plugins/demoplugin/work/jobs/log-test/workspace
+[workspace] $ /bin/sh -xe /tmp/jenkins4791418731564068876.sh
++ echo test runs
+test runs
++ date
+Tue Jul 17 01:01:38 EDT 2018
++ echo finalising test runs
+finalising test runs
++ echo Done!
+Done!
+Finished: SUCCESS

@@ -1,0 +1,26 @@
+ > git rev-parse --is-inside-work-tree # timeout=10
+Fetching changes from the remote Git repository
+ > git config remote.origin.url https://github.com/adildsw/whimsy.git # timeout=10
+Cleaning workspace
+ > git rev-parse --verify HEAD # timeout=10
+Resetting working tree
+ > git reset --hard # timeout=10
+ > git clean -fdx # timeout=10
+Fetching without tags
+Fetching upstream changes from https://github.com/adildsw/whimsy.git
+ > git --version # timeout=10
+using GIT_ASKPASS to set credentials GitHub Access Token
+ > git fetch --no-tags --progress https://github.com/adildsw/whimsy.git +refs/heads/master:refs/remotes/origin/master
+Checking out Revision e41c447b8c88b3f5ccecb5fa64455680434239a4 (master)
+ > git config core.sparsecheckout # timeout=10
+ > git checkout -f e41c447b8c88b3f5ccecb5fa64455680434239a4
+ > git branch -a -v --no-abbrev # timeout=10
+ > git branch -D master # timeout=10
+ > git checkout -b master e41c447b8c88b3f5ccecb5fa64455680434239a4
+Commit message: "Updated Jenkinsfile"
+ > git rev-list --no-walk e41c447b8c88b3f5ccecb5fa64455680434239a4 # timeout=10
+Cleaning workspace
+ > git rev-parse --verify HEAD # timeout=10
+Resetting working tree
+ > git reset --hard # timeout=10
+ > git clean -fdx # timeout=10

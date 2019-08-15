@@ -1,0 +1,24 @@
+Started by user unknown or anonymous
+Building in workspace /home/adildsw/jenkins-plugins/demoplugin/work/jobs/marc4j-build/workspace
+ > git rev-parse --is-inside-work-tree # timeout=10
+Fetching changes from the remote Git repository
+ > git config remote.origin.url https://github.com/adildsw/marc4j.git # timeout=10
+Fetching upstream changes from https://github.com/adildsw/marc4j.git
+ > git --version # timeout=10
+ > git fetch --tags --progress https://github.com/adildsw/marc4j.git +refs/heads/*:refs/remotes/origin/*
+ > git rev-parse refs/remotes/origin/master^{commit} # timeout=10
+ > git rev-parse refs/remotes/origin/origin/master^{commit} # timeout=10
+Checking out Revision 64e761a591dc6b7db8c8cbabe146e096905ba88c (refs/remotes/origin/master)
+ > git config core.sparsecheckout # timeout=10
+ > git checkout -f 64e761a591dc6b7db8c8cbabe146e096905ba88c
+Commit message: "Fix bug that prevents a control field from being created via insertparameterizedfield"
+ > git rev-list --no-walk 64e761a591dc6b7db8c8cbabe146e096905ba88c # timeout=10
+[workspace] $ /bin/sh -xe /tmp/jenkins4877962565575295005.sh
++ chmod +x build.bat
++ ./build.bat
+./build.bat: 1: ./build.bat: @echo: not found
+marc4j build system
+-------------------
+./build.bat: 28: ./build.bat: Syntax error: end of file unexpected (expecting "then")
+Build step 'Execute shell' marked build as failure
+Finished: FAILURE

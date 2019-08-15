@@ -1,0 +1,5 @@
+
+getFullDisplayName: pipeline-test
+Is Pipeline: true
+Workspace Name: workspace
+FilePath: /home/adildsw/jenkins-plugins/demoplugin/work/jobs/pipeline-test/workspace

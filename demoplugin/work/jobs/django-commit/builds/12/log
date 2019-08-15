@@ -1,0 +1,28 @@
+Started by user unknown or anonymous
+Building in workspace /home/adildsw/jenkins-plugins/demoplugin/work/jobs/django-commit/workspace
+ > git rev-parse --is-inside-work-tree # timeout=10
+Fetching changes from the remote Git repository
+ > git config remote.origin.url https://github.com/adildsw/django.git # timeout=10
+Fetching upstream changes from https://github.com/adildsw/django.git
+ > git --version # timeout=10
+ > git fetch --tags --progress https://github.com/adildsw/django.git +refs/heads/*:refs/remotes/origin/*
+ > git rev-parse refs/remotes/origin/master^{commit} # timeout=10
+ > git rev-parse refs/remotes/origin/origin/master^{commit} # timeout=10
+Checking out Revision 6dd0a88040b16b97f29f1bd826f45c3fd550a1a7 (refs/remotes/origin/master)
+ > git config core.sparsecheckout # timeout=10
+ > git checkout -f 6dd0a88040b16b97f29f1bd826f45c3fd550a1a7
+Commit message: "Added a TestDoc for testing purpose"
+ > git rev-list --no-walk 6dd0a88040b16b97f29f1bd826f45c3fd550a1a7 # timeout=10
+[workspace] $ git show -s --format=%H
+[workspace] $ git show -s --format=%cn
+[workspace] $ git show -s --format=%cd
+[workspace] $ git show -s --format=%s
+Commit Hash: 6dd0a88040b16b97f29f1bd826f45c3fd550a1a7
+
+Commit Author: AdilDSW
+
+Commit Date: Mon Jul 9 23:54:05 2018 -0400
+
+Commit Message: Added a TestDoc for testing purpose
+
+Finished: SUCCESS

@@ -1,0 +1,1364 @@
+Started by user Tobias Herp
+[EnvInject] - Loading node environment variables.
+Building remotely on Node2 (hetzner Ubuntu18.04) in workspace /home/jenkins/workspace/plone-4.3-python-2.7
+[WS-CLEANUP] Deleting project workspace...
+[WS-CLEANUP] Done
+Cloning the remote Git repository
+Cloning repository git://github.com/plone/buildout.coredev.git
+ > git init /home/jenkins/workspace/plone-4.3-python-2.7 # timeout=10
+Fetching upstream changes from git://github.com/plone/buildout.coredev.git
+ > git --version # timeout=10
+ > git fetch --tags --progress git://github.com/plone/buildout.coredev.git +refs/heads/*:refs/remotes/origin/*
+ > git config remote.origin.url git://github.com/plone/buildout.coredev.git # timeout=10
+ > git config --add remote.origin.fetch +refs/heads/*:refs/remotes/origin/* # timeout=10
+ > git config remote.origin.url git://github.com/plone/buildout.coredev.git # timeout=10
+Fetching upstream changes from git://github.com/plone/buildout.coredev.git
+ > git fetch --tags --progress git://github.com/plone/buildout.coredev.git +refs/heads/*:refs/remotes/origin/*
+ > git rev-parse origin/4.3^{commit} # timeout=10
+Checking out Revision 6caf30223742cf085370abee14e70ba3f46e4ffd (origin/4.3)
+ > git config core.sparsecheckout # timeout=10
+ > git checkout -f 6caf30223742cf085370abee14e70ba3f46e4ffd
+Commit message: "[fc] Repository: plone.indexer"
+ > git rev-list --no-walk 6caf30223742cf085370abee14e70ba3f46e4ffd # timeout=10
+No emails were triggered.
+Allocating TCP port ZSERVER_PORT
+  -> Assigned 38243
+Allocating TCP port FTPSERVER_PORT
+  -> Assigned 35428
+TCP port allocation complete
+Xvfb starting$ /usr/bin/Xvfb :4 -screen 0 1024x768x24 -fbdir /home/jenkins/xvfb-395-..fbdir8962076334015358345
+[plone-4.3-python-2.7] $ /srv/python2.7/bin/python2.7 /home/jenkins/shiningpanda/jobs/59d624b3/virtualenv.py /home/jenkins/shiningpanda/jobs/59d624b3/virtualenvs/d41d8cd9
+New python executable in /home/jenkins/shiningpanda/jobs/59d624b3/virtualenvs/d41d8cd9/bin/python2.7
+Also creating executable in /home/jenkins/shiningpanda/jobs/59d624b3/virtualenvs/d41d8cd9/bin/python
+Installing setuptools, pip, wheel...done.
+[plone-4.3-python-2.7] $ /bin/sh -xe /tmp/shiningpanda3987230459998131502.sh
++ pip install -r requirements.txt
+Collecting zc.buildout==1.7.1 (from -r requirements.txt (line 1))
+Collecting setuptools==26.1.1 (from -r requirements.txt (line 2))
+  Using cached https://files.pythonhosted.org/packages/3b/c7/e9724e6f81c96248fba5876054418c11d327b3093d075790903cd66fad44/setuptools-26.1.1-py2.py3-none-any.whl
+Installing collected packages: setuptools, zc.buildout
+  Found existing installation: setuptools 40.0.0
+    Uninstalling setuptools-40.0.0:
+      Successfully uninstalled setuptools-40.0.0
+Successfully installed setuptools-26.1.1 zc.buildout-1.7.1
++ buildout -c jenkins.cfg
+mr.developer: Creating missing sources dir /home/jenkins/workspace/plone-4.3-python-2.7/src.
+mr.developer: Queued 'Products.CMFDynamicViewFTI' for checkout.
+mr.developer: Queued 'Products.CMFPlone' for checkout.
+mr.developer: Queued 'collective.monkeypatcher' for checkout.
+mr.developer: Queued 'plone.api' for checkout.
+mr.developer: Queued 'plone.app.locales' for checkout.
+mr.developer: Queued 'plone.app.robotframework' for checkout.
+mr.developer: Queued 'plone.app.upgrade' for checkout.
+mr.developer: Queued 'plone.app.viewletmanager' for checkout.
+mr.developer: Queued 'plone.indexer' for checkout.
+mr.developer: Queued 'plone.keyring' for checkout.
+mr.developer: Queued 'plone.rfc822' for checkout.
+mr.developer: Cloned 'Products.CMFDynamicViewFTI' with git using branch '4.x' from 'git://github.com/plone/Products.CMFDynamicViewFTI.git'.
+mr.developer: Cloned 'plone.api' with git using branch 'master' from 'git://github.com/plone/plone.api.git'.
+mr.developer: Cloned 'plone.app.robotframework' with git using branch 'master' from 'git://github.com/plone/plone.app.robotframework.git'.
+mr.developer: Cloned 'plone.app.upgrade' with git using branch '1.x' from 'git://github.com/plone/plone.app.upgrade.git'.
+mr.developer: Cloned 'plone.app.viewletmanager' with git using branch '2.x' from 'git://github.com/plone/plone.app.viewletmanager.git'.
+mr.developer: Cloned 'plone.indexer' with git using branch 'master' from 'git://github.com/plone/plone.indexer.git'.
+mr.developer: Cloned 'plone.keyring' with git using branch '3.0.x' from 'git://github.com/plone/plone.keyring.git'.
+mr.developer: Cloned 'plone.rfc822' with git using branch '1.x' from 'git://github.com/plone/plone.rfc822.git'.
+mr.developer: Cloned 'collective.monkeypatcher' with git using branch 'master' from 'git://github.com/plone/collective.monkeypatcher.git'.
+mr.developer: Cloned 'Products.CMFPlone' with git using branch '4.3.x' from 'git://github.com/plone/Products.CMFPlone.git'.
+mr.developer: Cloned 'plone.app.locales' with git using branch '4.3.x' from 'git://github.com/collective/plone.app.locales.git'.
+Creating directory '/home/jenkins/workspace/plone-4.3-python-2.7/bin'.
+Creating directory '/home/jenkins/workspace/plone-4.3-python-2.7/parts'.
+Creating directory '/home/jenkins/workspace/plone-4.3-python-2.7/develop-eggs'.
+Not upgrading because not running a local buildout command.
+Develop: '/home/jenkins/workspace/plone-4.3-python-2.7/src/Products.CMFDynamicViewFTI'
+warning: no previously-included files matching '*pyc' found anywhere in distribution
+warning: no previously-included files found matching '.installed.cfg'
+Develop: '/home/jenkins/workspace/plone-4.3-python-2.7/src/plone.keyring'
+warning: no previously-included files matching '*pyc' found anywhere in distribution
+Develop: '/home/jenkins/workspace/plone-4.3-python-2.7/src/plone.app.locales'
+warning: no files found matching '*.mo' anywhere in distribution
+warning: no previously-included files matching '*pyc' found anywhere in distribution
+warning: no previously-included files matching '*pyo' found anywhere in distribution
+Develop: '/home/jenkins/workspace/plone-4.3-python-2.7/src/plone.app.upgrade'
+warning: no previously-included files matching '*pyc' found anywhere in distribution
+warning: no previously-included files matching '*' found under directory 'news'
+warning: no previously-included files found matching 'news'
+Develop: '/home/jenkins/workspace/plone-4.3-python-2.7/src/plone.rfc822'
+warning: no previously-included files matching '*.pyc' found anywhere in distribution
+Develop: '/home/jenkins/workspace/plone-4.3-python-2.7/src/plone.app.robotframework'
+warning: no previously-included files matching '*.pyc' found anywhere in distribution
+Develop: '/home/jenkins/workspace/plone-4.3-python-2.7/src/plone.app.viewletmanager'
+warning: no previously-included files matching '*pyc' found anywhere in distribution
+Develop: '/home/jenkins/workspace/plone-4.3-python-2.7/src/Products.CMFPlone'
+warning: no previously-included files matching '*.pyc' found anywhere in distribution
+Develop: '/home/jenkins/workspace/plone-4.3-python-2.7/src/plone.indexer'
+warning: no previously-included files matching '*pyc' found anywhere in distribution
+Develop: '/home/jenkins/workspace/plone-4.3-python-2.7/src/plone.api'
+no previously-included directories found matching 'docs'
+warning: no previously-included files matching '*.pyc' found anywhere in distribution
+Develop: '/home/jenkins/workspace/plone-4.3-python-2.7/src/collective.monkeypatcher'
+warning: no previously-included files matching '*pyc' found anywhere in distribution
+Unused options for buildout: 'download-directory'.
+Installing _mr.developer.
+Generated script '/home/jenkins/workspace/plone-4.3-python-2.7/bin/develop'.
+Installing instance.
+/home/jenkins/shiningpanda/jobs/59d624b3/virtualenvs/d41d8cd9/lib/python2.7/site-packages/pkg_resources/__init__.py:188: RuntimeWarning: You have iterated over the result of pkg_resources.parse_version. This is a legacy behavior which is inconsistent with the new version class introduced in setuptools 8.0. In most cases, conversion to a tuple is unnecessary. For comparison of versions, sort the Version instances directly. If you have another use case requiring the tuple, please file a bug with the setuptools project describing that need.
+  stacklevel=1,
+Generated script '/home/jenkins/workspace/plone-4.3-python-2.7/bin/instance'.
+Generated interpreter '/home/jenkins/workspace/plone-4.3-python-2.7/parts/instance/bin/interpreter'.
+Installing zopepy.
+Generated interpreter '/home/jenkins/workspace/plone-4.3-python-2.7/bin/zopepy'.
+Installing test.
+Generated script '/home/jenkins/workspace/plone-4.3-python-2.7/bin/test'.
+Installing robot.
+Generated script '/home/jenkins/workspace/plone-4.3-python-2.7/bin/diazocompiler'.
+Generated script '/home/jenkins/workspace/plone-4.3-python-2.7/bin/diazorun'.
+Generated script '/home/jenkins/workspace/plone-4.3-python-2.7/bin/diazopreprocessor'.
+Generated script '/home/jenkins/workspace/plone-4.3-python-2.7/bin/robot-server'.
+Generated script '/home/jenkins/workspace/plone-4.3-python-2.7/bin/robot-debug'.
+Generated script '/home/jenkins/workspace/plone-4.3-python-2.7/bin/ride'.
+Generated script '/home/jenkins/workspace/plone-4.3-python-2.7/bin/robot'.
+Generated script '/home/jenkins/workspace/plone-4.3-python-2.7/bin/libdoc'.
+Generated script '/home/jenkins/workspace/plone-4.3-python-2.7/bin/pybabel'.
+Generated script '/home/jenkins/workspace/plone-4.3-python-2.7/bin/pybot'.
+Installing alltests.
+Generated script '/home/jenkins/workspace/plone-4.3-python-2.7/bin/alltests'.
+Installing checkversions.
+Generated script '/home/jenkins/workspace/plone-4.3-python-2.7/bin/checkversions'.
+Installing packages.
+packages: (While processing egg feedparser) Package 'feedparser' is zipped.  Skipping.
+packages: (While processing egg setuptools) Package 'easy_install' is zipped.  Skipping.
+packages: (While processing egg setuptools) Package 'pkg_resources' is zipped.  Skipping.
+packages: (While processing egg setuptools) Package 'setuptools' is zipped.  Skipping.
+packages: (While processing egg Pillow) Package 'PIL' is zipped.  Skipping.
+packages: (While processing egg Markdown) Package 'markdown' is zipped.  Skipping.
+packages: (While processing egg mocker) Package 'mocker' is zipped.  Skipping.
+packages: (While processing egg ZServer) Link already exists (/home/jenkins/.buildout/eggs/ZServer-3.0-py2.7.egg/Products -> /home/jenkins/workspace/plone-4.3-python-2.7/parts/packages/Products).  Skipping.
+packages: (While processing egg persistent) Link already exists (/home/jenkins/.buildout/eggs/persistent-4.2.4.2-py2.7-linux-x86_64.egg/persistent -> /home/jenkins/workspace/plone-4.3-python-2.7/parts/packages/persistent).  Skipping.
+packages: (While processing egg pytz) Package 'pytz' is zipped.  Skipping.
+Installing pep8.
+Generated script '/home/jenkins/workspace/plone-4.3-python-2.7/bin/pep8'.
+Installing releaser.
+Generated script '/home/jenkins/workspace/plone-4.3-python-2.7/bin/fullrelease'.
+Generated script '/home/jenkins/workspace/plone-4.3-python-2.7/bin/postrelease'.
+Generated script '/home/jenkins/workspace/plone-4.3-python-2.7/bin/lasttagdiff'.
+Generated script '/home/jenkins/workspace/plone-4.3-python-2.7/bin/addchangelogentry'.
+Generated script '/home/jenkins/workspace/plone-4.3-python-2.7/bin/bumpversion'.
+Generated script '/home/jenkins/workspace/plone-4.3-python-2.7/bin/prerelease'.
+Generated script '/home/jenkins/workspace/plone-4.3-python-2.7/bin/release'.
+Generated script '/home/jenkins/workspace/plone-4.3-python-2.7/bin/longtest'.
+Generated script '/home/jenkins/workspace/plone-4.3-python-2.7/bin/lasttaglog'.
+Installing jenkins-test.
+Generated script '/home/jenkins/workspace/plone-4.3-python-2.7/bin/jenkins-test'.
+Installing jenkins-test-robot.
+Generated script '/home/jenkins/workspace/plone-4.3-python-2.7/bin/jenkins-test-robot'.
+Installing jenkins-test-coverage.
+Installing coverage.
+Generated script '/home/jenkins/workspace/plone-4.3-python-2.7/bin/coverage2'.
+Generated script '/home/jenkins/workspace/plone-4.3-python-2.7/bin/coverage-2.7'.
+Generated script '/home/jenkins/workspace/plone-4.3-python-2.7/bin/coverage'.
+Generated interpreter '/home/jenkins/workspace/plone-4.3-python-2.7/bin/zopepy'.
+Installing jenkins-alltests.
+Generated script '/home/jenkins/workspace/plone-4.3-python-2.7/bin/jenkins-alltests'.
+Installing package-in-auto-checkout.
+Installing add-package-to-auto-checkout.
+*************** PICKED VERSIONS ****************
+[versions]
+certifi = 2018.4.16
+chardet = 3.0.4
+idna = 2.6
+persistent = 4.2.4.2
+tqdm = 4.23.4
+urllib3 = 1.22
+
+*************** /PICKED VERSIONS ***************
++ bin/jenkins-alltests -1
+#### Running tests for group ATCT ####
+Running Products.PloneTestCase.layer.PloneSite tests:
+  Set up Testing.ZopeTestCase.layer.ZopeLite in 0.280 seconds.
+  Set up Products.PloneTestCase.layer.ZCML in 3.591 seconds.
+  Set up Products.PloneTestCase.layer.PloneSite in 2.205 seconds.
+  Ran 615 tests with 0 failures, 0 errors and 0 skipped in 35.841 seconds.
+Tearing down left over layers:
+  Tear down Products.PloneTestCase.layer.PloneSite in 0.084 seconds.
+  Tear down Products.PloneTestCase.layer.ZCML in 0.005 seconds.
+  Tear down Testing.ZopeTestCase.layer.ZopeLite in 0.000 seconds.
+#### Finished tests for group ATCT ####
+
+#### Running tests for group Add-ons ####
+Running Products.PloneTestCase.layer.PloneSite tests:
+  Set up Testing.ZopeTestCase.layer.ZopeLite in 0.000 seconds.
+  Set up Products.PloneTestCase.layer.ZCML in 1.237 seconds.
+  Set up Products.PloneTestCase.layer.PloneSite in 2.524 seconds.
+  Ran 37 tests with 0 failures, 0 errors and 0 skipped in 10.690 seconds.
+Running Products.CMFPlacefulWorkflow.tests.test_exportimport.ExportImportLayer tests:
+  Set up Products.CMFPlacefulWorkflow.tests.test_exportimport.ExportImportLayer in 0.002 seconds.
+  Ran 1 tests with 0 failures, 0 errors and 0 skipped in 0.428 seconds.
+Running plone.app.openid.testing.PloneAppCollectionLayer:Integration tests:
+  Tear down Products.CMFPlacefulWorkflow.tests.test_exportimport.ExportImportLayer in 0.000 seconds.
+  Tear down Products.PloneTestCase.layer.PloneSite in 0.083 seconds.
+  Tear down Products.PloneTestCase.layer.ZCML in 0.004 seconds.
+  Tear down Testing.ZopeTestCase.layer.ZopeLite in 0.000 seconds.
+  Set up plone.testing.zca.LayerCleanup in 0.000 seconds.
+  Set up plone.testing.z2.Startup in 0.041 seconds.
+  Set up plone.app.testing.layers.PloneFixture in 2.410 seconds.
+  Set up plone.app.openid.testing.PloneAppOpenidLayer in 0.014 seconds.
+  Set up plone.app.openid.testing.PloneAppCollectionLayer:Integration in 0.000 seconds.
+  Ran 3 tests with 0 failures, 0 errors and 0 skipped in 0.313 seconds.
+Running zope.testrunner.layer.UnitTests tests:
+  Tear down plone.app.openid.testing.PloneAppCollectionLayer:Integration in 0.000 seconds.
+  Tear down plone.app.openid.testing.PloneAppOpenidLayer in 0.005 seconds.
+  Tear down plone.app.testing.layers.PloneFixture in 0.041 seconds.
+  Tear down plone.testing.z2.Startup in 0.003 seconds.
+  Tear down plone.testing.zca.LayerCleanup in 0.001 seconds.
+  Set up zope.testrunner.layer.UnitTests in 0.000 seconds.
+  Ran 13 tests with 0 failures, 0 errors and 4 skipped in 0.005 seconds.
+Tearing down left over layers:
+  Tear down zope.testrunner.layer.UnitTests in 0.000 seconds.
+Total: 54 tests, 0 failures, 0 errors and 4 skipped in 18.600 seconds.
+#### Finished tests for group Add-ons ####
+
+#### Running tests for group Archetypes ####
+Running Testing.ZopeTestCase.layer.ZopeLite tests:
+  Set up Testing.ZopeTestCase.layer.ZopeLite in 0.076 seconds.
+  Ran 5 tests with 0 failures, 0 errors and 0 skipped in 0.009 seconds.
+Running Products.Archetypes.tests.layer.ZCML tests:
+  Set up Products.CMFCore.testing.FunctionalZCMLLayer in 0.097 seconds.
+  Set up Products.Archetypes.tests.layer.ZCML in 0.136 seconds.
+  Ran 75 tests with 0 failures, 0 errors and 0 skipped in 1.172 seconds.
+Running Products.Archetypes.tests.layer.ArchetypesSite tests:
+  Set up Products.Archetypes.tests.layer.ArchetypesSite in 0.657 seconds.
+  Ran 489 tests with 0 failures, 0 errors and 0 skipped in 22.103 seconds.
+Running plone.app.testing.bbb.PloneTestCase:Functional tests:
+  Tear down Products.Archetypes.tests.layer.ArchetypesSite in 0.023 seconds.
+  Tear down Products.Archetypes.tests.layer.ZCML in 0.003 seconds.
+  Tear down Products.CMFCore.testing.FunctionalZCMLLayer in 0.000 seconds.
+  Tear down Testing.ZopeTestCase.layer.ZopeLite in 0.000 seconds.
+  Set up plone.testing.zca.LayerCleanup in 0.000 seconds.
+  Set up plone.testing.z2.Startup in 0.043 seconds.
+  Set up plone.app.testing.layers.PloneFixture in 3.482 seconds.
+  Set up plone.app.testing.bbb.PloneTestCaseFixture in 0.179 seconds.
+  Set up plone.app.testing.bbb.PloneTestCase:Functional in 0.000 seconds.
+  Ran 18 tests with 0 failures, 0 errors and 0 skipped in 0.378 seconds.
+Running plone.app.testing.layers.Plone:Integration tests:
+  Tear down plone.app.testing.bbb.PloneTestCase:Functional in 0.000 seconds.
+  Tear down plone.app.testing.bbb.PloneTestCaseFixture in 0.007 seconds.
+  Set up plone.app.testing.layers.Plone:Integration in 0.000 seconds.
+  Ran 4 tests with 0 failures, 0 errors and 0 skipped in 0.009 seconds.
+Running zope.testrunner.layer.UnitTests tests:
+  Tear down plone.app.testing.layers.Plone:Integration in 0.000 seconds.
+  Tear down plone.app.testing.layers.PloneFixture in 0.041 seconds.
+  Tear down plone.testing.z2.Startup in 0.003 seconds.
+  Tear down plone.testing.zca.LayerCleanup in 0.001 seconds.
+  Set up zope.testrunner.layer.UnitTests in 0.000 seconds.
+  Ran 27 tests with 0 failures, 0 errors and 0 skipped in 0.058 seconds.
+Tearing down left over layers:
+  Tear down zope.testrunner.layer.UnitTests in 0.000 seconds.
+Total: 618 tests, 0 failures, 0 errors and 0 skipped in 29.413 seconds.
+#### Finished tests for group Archetypes ####
+
+#### Running tests for group CMF ####
+Running Testing.ZopeTestCase.layer.ZopeLite tests:
+  Set up Testing.ZopeTestCase.layer.ZopeLite in 0.031 seconds.
+  Ran 239 tests with 0 failures, 0 errors and 0 skipped in 1.042 seconds.
+Running Products.CMFCalendar.testing.FunctionalLayer tests:
+  Set up Products.CMFCore.testing.FunctionalZCMLLayer in 0.073 seconds.
+  Set up Products.CMFCalendar.testing.FunctionalLayer in 0.146 seconds.
+  Ran 20 tests with 0 failures, 0 errors and 0 skipped in 0.535 seconds.
+Running Products.CMFCore.testing.EventZCMLLayer tests:
+  Tear down Products.CMFCalendar.testing.FunctionalLayer in 0.009 seconds.
+  Tear down Products.CMFCore.testing.FunctionalZCMLLayer in 0.001 seconds.
+  Set up Products.CMFCore.testing.EventZCMLLayer in 0.001 seconds.
+  Ran 8 tests with 0 failures, 0 errors and 0 skipped in 0.093 seconds.
+Running Products.CMFCore.testing.ExportImportZCMLLayer tests:
+  Tear down Products.CMFCore.testing.EventZCMLLayer in 0.000 seconds.
+  Set up Products.CMFCore.testing.ExportImportZCMLLayer in 0.001 seconds.
+  Ran 10 tests with 0 failures, 0 errors and 0 skipped in 0.267 seconds.
+Running Products.CMFCore.testing.TraversingEventZCMLLayer tests:
+  Tear down Products.CMFCore.testing.ExportImportZCMLLayer in 0.000 seconds.
+  Set up Products.CMFCore.testing.TraversingEventZCMLLayer in 0.001 seconds.
+  Ran 7 tests with 0 failures, 0 errors and 0 skipped in 0.121 seconds.
+Running Products.CMFDefault.testing.FunctionalLayer tests:
+  Tear down Products.CMFCore.testing.TraversingEventZCMLLayer in 0.000 seconds.
+  Set up Products.CMFCore.testing.FunctionalZCMLLayer in 0.065 seconds.
+  Set up Products.CMFDefault.testing.FunctionalLayer in 0.111 seconds.
+  Ran 32 tests with 0 failures, 0 errors and 0 skipped in 1.673 seconds.
+Running Products.CMFUid.testing.UidEventZCMLLayer tests:
+  Tear down Products.CMFDefault.testing.FunctionalLayer in 0.008 seconds.
+  Tear down Products.CMFCore.testing.FunctionalZCMLLayer in 0.001 seconds.
+  Set up Products.CMFUid.testing.UidEventZCMLLayer in 0.001 seconds.
+  Ran 12 tests with 0 failures, 0 errors and 0 skipped in 0.141 seconds.
+Running Products.DCWorkflow.testing.ExportImportZCMLLayer tests:
+  Tear down Products.CMFUid.testing.UidEventZCMLLayer in 0.000 seconds.
+  Set up Products.DCWorkflow.testing.ExportImportZCMLLayer in 0.063 seconds.
+  Ran 43 tests with 0 failures, 0 errors and 0 skipped in 0.335 seconds.
+Running Products.GenericSetup.testing.ExportImportZCMLLayer tests:
+  Tear down Products.DCWorkflow.testing.ExportImportZCMLLayer in 0.000 seconds.
+  Set up Products.GenericSetup.testing.ExportImportZCMLLayer in 0.026 seconds.
+  Ran 233 tests with 0 failures, 0 errors and 0 skipped in 0.345 seconds.
+Running zope.testrunner.layer.UnitTests tests:
+  Tear down Products.GenericSetup.testing.ExportImportZCMLLayer in 0.000 seconds.
+  Tear down Testing.ZopeTestCase.layer.ZopeLite in 0.000 seconds.
+  Set up zope.testrunner.layer.UnitTests in 0.000 seconds.
+  Ran 265 tests with 0 failures, 0 errors and 0 skipped in 0.183 seconds.
+Tearing down left over layers:
+  Tear down zope.testrunner.layer.UnitTests in 0.000 seconds.
+Total: 869 tests, 0 failures, 0 errors and 0 skipped in 6.120 seconds.
+#### Finished tests for group CMF ####
+
+#### Running tests for group CMFEditions ####
+Running Testing.ZopeTestCase.layer.ZopeLite tests:
+  Set up Testing.ZopeTestCase.layer.ZopeLite in 0.201 seconds.
+  Ran 32 tests with 0 failures, 0 errors and 0 skipped in 0.037 seconds.
+Running Products.CMFDiffTool.testing.PackageLayer tests:
+  Set up Products.PloneTestCase.layer.ZCML in 1.858 seconds.
+  Set up Products.PloneTestCase.layer.PloneSite in 2.212 seconds.
+  Set up collective.testcaselayer.ptc.PTCLayer in 0.011 seconds.
+  Set up collective.testcaselayer.mail.MockMailHostLayer in 0.137 seconds.
+  Set up collective.testcaselayer.common.CommonPTCLayer in 0.002 seconds.
+  Set up Products.CMFDiffTool.testing.PackageLayer in 0.009 seconds.
+  Ran 9 tests with 0 failures, 0 errors and 0 skipped in 0.355 seconds.
+Running Products.CMFDiffTool.tests.BaseTestCase.CMFDiffToolLayer tests:
+  Tear down Products.CMFDiffTool.testing.PackageLayer in 0.000 seconds.
+  Tear down collective.testcaselayer.common.CommonPTCLayer in 0.000 seconds.
+  Tear down collective.testcaselayer.mail.MockMailHostLayer in 0.000 seconds.
+  Tear down collective.testcaselayer.ptc.PTCLayer in 0.000 seconds.
+  Set up Products.CMFDiffTool.tests.BaseTestCase.CMFDiffToolLayer in 0.003 seconds.
+  Ran 2 tests with 0 failures, 0 errors and 0 skipped in 0.132 seconds.
+Running Products.CMFTestCase.layer.CMFSite tests:
+  Tear down Products.CMFDiffTool.tests.BaseTestCase.CMFDiffToolLayer in 0.084 seconds.
+  Tear down Products.PloneTestCase.layer.PloneSite in 0.000 seconds.
+  Tear down Products.PloneTestCase.layer.ZCML in 0.002 seconds.
+  Set up Products.CMFTestCase.layer.ZCML in 1.238 seconds.
+  Set up Products.CMFTestCase.layer.CMFSite in 0.084 seconds.
+  Ran 20 tests with 0 failures, 0 errors and 0 skipped in 0.186 seconds.
+Running plone.app.testing.bbb.PloneTestCase:Functional tests:
+  Tear down Products.CMFTestCase.layer.CMFSite in 0.011 seconds.
+  Tear down Products.CMFTestCase.layer.ZCML in 0.002 seconds.
+  Tear down Testing.ZopeTestCase.layer.ZopeLite in 0.000 seconds.
+  Set up plone.testing.zca.LayerCleanup in 0.000 seconds.
+  Set up plone.testing.z2.Startup in 0.047 seconds.
+  Set up plone.app.testing.layers.PloneFixture in 2.361 seconds.
+  Set up plone.app.testing.bbb.PloneTestCaseFixture in 0.173 seconds.
+  Set up plone.app.testing.bbb.PloneTestCase:Functional in 0.000 seconds.
+  Ran 147 tests with 0 failures, 0 errors and 0 skipped in 10.422 seconds.
+Running zope.testrunner.layer.UnitTests tests:
+  Tear down plone.app.testing.bbb.PloneTestCase:Functional in 0.000 seconds.
+  Tear down plone.app.testing.bbb.PloneTestCaseFixture in 0.007 seconds.
+  Tear down plone.app.testing.layers.PloneFixture in 0.037 seconds.
+  Tear down plone.testing.z2.Startup in 0.003 seconds.
+  Tear down plone.testing.zca.LayerCleanup in 0.002 seconds.
+  Set up zope.testrunner.layer.UnitTests in 0.000 seconds.
+  Ran 8 tests with 0 failures, 0 errors and 0 skipped in 0.006 seconds.
+Tearing down left over layers:
+  Tear down zope.testrunner.layer.UnitTests in 0.000 seconds.
+Total: 218 tests, 0 failures, 0 errors and 0 skipped in 20.601 seconds.
+#### Finished tests for group CMFEditions ####
+
+#### Running tests for group Dexterity ####
+Running Testing.ZopeTestCase.layer.ZopeLite tests:
+  Set up Testing.ZopeTestCase.layer.ZopeLite in 0.216 seconds.
+  Ran 5 tests with 0 failures, 0 errors and 0 skipped in 1.953 seconds.
+Running Products.PloneTestCase.layer.PloneSite tests:
+  Set up Products.PloneTestCase.layer.ZCML in 1.815 seconds.
+  Set up Products.PloneTestCase.layer.PloneSite in 2.166 seconds.
+  Ran 3 tests with 0 failures, 0 errors and 0 skipped in 0.134 seconds.
+Running plone.app.testing.layers.PloneFixture tests:
+  Tear down Products.PloneTestCase.layer.PloneSite in 0.076 seconds.
+  Tear down Products.PloneTestCase.layer.ZCML in 0.002 seconds.
+  Tear down Testing.ZopeTestCase.layer.ZopeLite in 0.000 seconds.
+  Set up plone.testing.zca.LayerCleanup in 0.000 seconds.
+  Set up plone.testing.z2.Startup in 0.039 seconds.
+  Set up plone.app.testing.layers.PloneFixture in 2.352 seconds.
+  Ran 3 tests with 0 failures, 0 errors and 0 skipped in 0.025 seconds.
+Running plone.app.textfield.tests.PloneAppTextfieldTest:Functional tests:
+  Set up plone.app.textfield.tests.IntegrationFixture in 0.025 seconds.
+  Set up plone.app.textfield.tests.PloneAppTextfieldTest:Functional in 0.000 seconds.
+  Ran 10 tests with 0 failures, 0 errors and 0 skipped in 0.050 seconds.
+Running plone.app.z3cform.tests.layer.InlineValidationTestLayer tests:
+  Tear down plone.app.textfield.tests.PloneAppTextfieldTest:Functional in 0.000 seconds.
+  Tear down plone.app.textfield.tests.IntegrationFixture in 0.002 seconds.
+  Tear down plone.app.testing.layers.PloneFixture in 0.040 seconds.
+  Tear down plone.testing.z2.Startup in 0.002 seconds.
+  Tear down plone.testing.zca.LayerCleanup in 0.002 seconds.
+  Set up plone.app.z3cform.tests.layer.InlineValidationTestLayer in 0.109 seconds.
+  Ran 13 tests with 0 failures, 0 errors and 0 skipped in 0.023 seconds.
+Running plone.app.z3cform.tests.layer.IntegrationTestLayer tests:
+  Tear down plone.app.z3cform.tests.layer.InlineValidationTestLayer in 0.002 seconds.
+  Set up Testing.ZopeTestCase.layer.ZopeLite in 0.006 seconds.
+  Set up Products.PloneTestCase.layer.ZCML in 1.264 seconds.
+  Set up Products.PloneTestCase.layer.PloneSite in 1.978 seconds.
+  Set up collective.testcaselayer.ptc.PTCLayer in 0.011 seconds.
+  Set up plone.app.z3cform.tests.layer.IntegrationTestLayer in 0.002 seconds.
+  Ran 2 tests with 0 failures, 0 errors and 0 skipped in 0.056 seconds.
+Running plone.autoform.testing.plone.autoform:Integration tests:
+  Tear down plone.app.z3cform.tests.layer.IntegrationTestLayer in 0.001 seconds.
+  Tear down collective.testcaselayer.ptc.PTCLayer in 0.000 seconds.
+  Tear down Products.PloneTestCase.layer.PloneSite in 0.076 seconds.
+  Tear down Products.PloneTestCase.layer.ZCML in 0.003 seconds.
+  Tear down Testing.ZopeTestCase.layer.ZopeLite in 0.000 seconds.
+  Set up plone.testing.zca.LayerCleanup in 0.001 seconds.
+  Set up plone.testing.z2.Startup in 0.039 seconds.
+  Set up plone.testing.zca.plone.autoform:Fixture in 0.041 seconds.
+  Set up plone.autoform.testing.plone.autoform:Integration in 0.000 seconds.
+  Ran 22 tests with 0 failures, 0 errors and 0 skipped in 0.015 seconds.
+Running plone.folder.testing.PloneFolderLayer:FunctionalTesting tests:
+  Tear down plone.autoform.testing.plone.autoform:Integration in 0.000 seconds.
+  Tear down plone.testing.zca.plone.autoform:Fixture in 0.000 seconds.
+  Set up plone.app.testing.layers.PloneFixture in 2.396 seconds.
+  Set up plone.folder.testing.PloneFolderLayer in 0.011 seconds.
+  Set up plone.folder.testing.PloneFolderLayer:FunctionalTesting in 0.000 seconds.
+  Ran 6 tests with 0 failures, 0 errors and 0 skipped in 0.343 seconds.
+Running plone.folder.testing.PloneFolderLayer:IntegrationTesting tests:
+  Tear down plone.folder.testing.PloneFolderLayer:FunctionalTesting in 0.000 seconds.
+  Set up plone.folder.testing.PloneFolderLayer:IntegrationTesting in 0.000 seconds.
+  Ran 66 tests with 0 failures, 0 errors and 0 skipped in 0.127 seconds.
+Running plone.namedfile.tests.base.NamedFileLayer tests:
+  Tear down plone.folder.testing.PloneFolderLayer:IntegrationTesting in 0.000 seconds.
+  Tear down plone.folder.testing.PloneFolderLayer in 0.002 seconds.
+  Tear down plone.app.testing.layers.PloneFixture in 0.042 seconds.
+  Tear down plone.testing.z2.Startup in 0.002 seconds.
+  Tear down plone.testing.zca.LayerCleanup in 0.002 seconds.
+  Set up Testing.ZopeTestCase.layer.ZopeLite in 0.004 seconds.
+  Set up plone.namedfile.tests.base.NamedFileLayer /home/jenkins/.buildout/eggs/zope.configuration-3.7.4-py2.7.egg/zope/configuration/fields.py:417: UserWarning: You did not specify an i18n translation domain for the 'title' field in /home/jenkins/.buildout/eggs/plone.namedfile-3.0.11-py2.7.egg/plone/namedfile/tests/testing.zcml
+  "'%s' field in %s" % (self.getName(), context.info.file )
+in 0.015 seconds.
+  Ran 41 tests with 0 failures, 0 errors and 0 skipped in 0.114 seconds.
+Running plone.testing.zca.UnitTesting tests:
+  Tear down plone.namedfile.tests.base.NamedFileLayer in 0.002 seconds.
+  Tear down Testing.ZopeTestCase.layer.ZopeLite in 0.000 seconds.
+  Set up plone.testing.zca.UnitTesting in 0.000 seconds.
+  Ran 14 tests with 0 failures, 0 errors and 0 skipped in 0.403 seconds.
+Running plone.z3cform.tests.plone.z3cform:Functional tests:
+  Tear down plone.testing.zca.UnitTesting in 0.000 seconds.
+  Set up plone.testing.zca.LayerCleanup in 0.002 seconds.
+  Set up plone.testing.z2.Startup in 0.051 seconds.
+  Set up plone.z3cform.tests.P3FLayer in 0.037 seconds.
+  Set up plone.z3cform.tests.plone.z3cform:Functional in 0.000 seconds.
+  Ran 4 tests with 0 failures, 0 errors and 0 skipped in 0.083 seconds.
+Running zope.testrunner.layer.UnitTests tests:
+  Tear down plone.z3cform.tests.plone.z3cform:Functional in 0.000 seconds.
+  Tear down plone.z3cform.tests.P3FLayer in 0.000 seconds.
+  Tear down plone.testing.z2.Startup in 0.005 seconds.
+  Tear down plone.testing.zca.LayerCleanup in 0.002 seconds.
+  Set up zope.testrunner.layer.UnitTests in 0.000 seconds.
+  Ran 247 tests with 0 failures, 0 errors and 0 skipped in 3.764 seconds.
+Tearing down left over layers:
+  Tear down zope.testrunner.layer.UnitTests in 0.000 seconds.
+Total: 436 tests, 0 failures, 0 errors and 0 skipped in 22.606 seconds.
+#### Finished tests for group Dexterity ####
+
+#### Running tests for group Plone ####
+Running Products.CMFPlone.testing.CMFPloneLayer:Acceptance tests:
+  Set up plone.testing.zca.LayerCleanup in 0.000 seconds.
+  Set up plone.testing.z2.Startup in 0.085 seconds.
+  Set up plone.app.testing.layers.PloneFixture in 3.191 seconds.
+  Set up Products.CMFPlone.testing.ProductsCMFPloneLayer in 0.051 seconds.
+  Set up plone.app.robotframework.remote.CMFPloneRobotRemoteLibrary:RobotRemote in 0.002 seconds.
+  Set up plone.testing.z2.ZServer in 0.501 seconds.
+  Set up Products.CMFPlone.testing.CMFPloneLayer:Acceptance in 0.000 seconds.
+  Ran 39 tests with 0 failures, 0 errors and 0 skipped in 2 minutes 31.269 seconds.
+Running Products.CMFPlone.testing.CMFPloneLayer:Functional tests:
+  Tear down Products.CMFPlone.testing.CMFPloneLayer:Acceptance in 0.000 seconds.
+  Tear down plone.app.robotframework.remote.CMFPloneRobotRemoteLibrary:RobotRemote in 0.003 seconds.
+  Tear down plone.testing.z2.ZServer in 5.039 seconds.
+  Set up Products.CMFPlone.testing.CMFPloneLayer:Functional in 0.000 seconds.
+  Ran 4 tests with 0 failures, 0 errors and 0 skipped in 0.031 seconds.
+Running Products.CMFPlone.testing.CMFPloneLayer:Integration tests:
+  Tear down Products.CMFPlone.testing.CMFPloneLayer:Functional in 0.000 seconds.
+  Set up Products.CMFPlone.testing.CMFPloneLayer:Integration in 0.000 seconds.
+  Ran 6 tests with 0 failures, 0 errors and 0 skipped in 0.183 seconds.
+Running Products.CMFQuickInstallerTool.tests.test_install.CMFQuickInstallerToolTest:Functional tests:
+  Tear down Products.CMFPlone.testing.CMFPloneLayer:Integration in 0.000 seconds.
+  Tear down Products.CMFPlone.testing.ProductsCMFPloneLayer in 0.019 seconds.
+  Set up Products.CMFQuickInstallerTool.tests.test_install.QuickInstallerCaseFixture in 0.016 seconds.
+  Set up Products.CMFQuickInstallerTool.tests.test_install.CMFQuickInstallerToolTest:Functional in 0.000 seconds.
+  Ran 8 tests with 0 failures, 0 errors and 0 skipped in 2.553 seconds.
+Running Testing.ZopeTestCase.layer.ZopeLite tests:
+  Tear down Products.CMFQuickInstallerTool.tests.test_install.CMFQuickInstallerToolTest:Functional in 0.000 seconds.
+  Tear down Products.CMFQuickInstallerTool.tests.test_install.QuickInstallerCaseFixture in 0.003 seconds.
+  Tear down plone.app.testing.layers.PloneFixture in 0.043 seconds.
+  Tear down plone.testing.z2.Startup in 0.003 seconds.
+  Tear down plone.testing.zca.LayerCleanup in 0.003 seconds.
+  Set up Testing.ZopeTestCase.layer.ZopeLite in 0.062 seconds.
+  Ran 120 tests with 0 failures, 0 errors and 0 skipped in 0.289 seconds.
+Running Products.CMFTestCase.layer.CMFSite tests:
+  Set up Products.CMFTestCase.layer.ZCML in 1.399 seconds.
+  Set up Products.CMFTestCase.layer.CMFSite in 0.090 seconds.
+  Ran 26 tests with 0 failures, 0 errors and 0 skipped in 0.496 seconds.
+Running Products.PloneTestCase.layer.ZCML tests:
+  Tear down Products.CMFTestCase.layer.CMFSite in 0.013 seconds.
+  Tear down Products.CMFTestCase.layer.ZCML in 0.002 seconds.
+  Set up Products.PloneTestCase.layer.ZCML in 1.292 seconds.
+  Ran 12 tests with 0 failures, 0 errors and 0 skipped in 0.016 seconds.
+Running Products.PloneTestCase.layer.PloneSite tests:
+  Set up Products.PloneTestCase.layer.PloneSite in 5.331 seconds.
+  Ran 1480 tests with 0 failures, 0 errors and 0 skipped in 2 minutes 6.428 seconds.
+Running plone.app.content.testing.PloneAppContent:Functional tests:
+  Tear down Products.PloneTestCase.layer.PloneSite in 0.236 seconds.
+  Tear down Products.PloneTestCase.layer.ZCML in 0.007 seconds.
+  Tear down Testing.ZopeTestCase.layer.ZopeLite in 0.000 seconds.
+  Set up plone.testing.zca.LayerCleanup in 0.000 seconds.
+  Set up plone.testing.z2.Startup in 0.048 seconds.
+  Set up plone.app.testing.layers.PloneFixture in 2.290 seconds.
+  Set up plone.app.content.testing.PloneAppContent in 0.020 seconds.
+  Set up plone.app.content.testing.PloneAppContent:Functional in 0.000 seconds.
+  Ran 2 tests with 0 failures, 0 errors and 0 skipped in 0.013 seconds.
+Running plone.app.content.testing.PloneAppContent:Integration tests:
+  Tear down plone.app.content.testing.PloneAppContent:Functional in 0.000 seconds.
+  Set up plone.app.content.testing.PloneAppContent:Integration in 0.000 seconds.
+  Ran 1 tests with 0 failures, 0 errors and 0 skipped in 3.038 seconds.
+Running plone.app.contentrules.tests.test_configuration.TestContentrulesGSLayer tests:
+  Tear down plone.app.content.testing.PloneAppContent:Integration in 0.000 seconds.
+  Tear down plone.app.content.testing.PloneAppContent in 0.004 seconds.
+  Tear down plone.app.testing.layers.PloneFixture in 0.044 seconds.
+  Tear down plone.testing.z2.Startup in 0.003 seconds.
+  Tear down plone.testing.zca.LayerCleanup in 0.001 seconds.
+  Set up Testing.ZopeTestCase.layer.ZopeLite in 0.006 seconds.
+  Set up Products.PloneTestCase.layer.ZCML in 1.144 seconds.
+  Set up Products.PloneTestCase.layer.PloneSite in 5.509 seconds.
+  Set up plone.app.contentrules.tests.test_configuration.TestContentrulesGSLayer in 0.002 seconds.
+  Ran 7 tests with 0 failures, 0 errors and 0 skipped in 2.054 seconds.
+Running plone.app.customerize.tests.layer.PloneCustomerize tests:
+  Tear down plone.app.contentrules.tests.test_configuration.TestContentrulesGSLayer in 0.000 seconds.
+  Set up plone.app.customerize.tests.layer.PloneCustomerize in 0.011 seconds.
+  Ran 2 tests with 0 failures, 0 errors and 0 skipped in 1.291 seconds.
+Running plone.app.intid.testing.IntidSetupFixture:Setup tests:
+  Tear down plone.app.customerize.tests.layer.PloneCustomerize in 0.000 seconds.
+  Tear down Products.PloneTestCase.layer.PloneSite in 0.242 seconds.
+  Tear down Products.PloneTestCase.layer.ZCML in 0.003 seconds.
+  Tear down Testing.ZopeTestCase.layer.ZopeLite in 0.000 seconds.
+  Set up plone.testing.zca.LayerCleanup in 0.000 seconds.
+  Set up plone.testing.z2.Startup in 0.040 seconds.
+  Set up plone.app.testing.layers.PloneFixture in 2.287 seconds.
+  Set up plone.app.intid.testing.IntidSetupFixture in 0.016 seconds.
+  Set up plone.app.intid.testing.IntidSetupFixture:Setup in 0.000 seconds.
+  Ran 1 tests with 0 failures, 0 errors and 0 skipped in 0.139 seconds.
+Running plone.app.layout.testing.plone.app.layout:Integration tests:
+  Tear down plone.app.intid.testing.IntidSetupFixture:Setup in 0.000 seconds.
+  Tear down plone.app.intid.testing.IntidSetupFixture in 0.005 seconds.
+  Set up plone.app.layout.testing.Fixture in 0.017 seconds.
+  Set up plone.app.layout.testing.plone.app.layout:Integration in 0.000 seconds.
+  Ran 1 tests with 0 failures, 0 errors and 0 skipped in 0.156 seconds.
+Running plone.app.redirector.testing.PloneAppRedirector:Functional tests:
+  Tear down plone.app.layout.testing.plone.app.layout:Integration in 0.000 seconds.
+  Tear down plone.app.layout.testing.Fixture in 0.003 seconds.
+  Set up plone.app.redirector.testing.PloneAppRedirector in 0.017 seconds.
+  Set up plone.app.redirector.testing.PloneAppRedirector:Functional in 0.000 seconds.
+  Ran 1 tests with 0 failures, 0 errors and 0 skipped in 0.745 seconds.
+Running plone.app.redirector.testing.PloneAppRedirector:Integration tests:
+  Tear down plone.app.redirector.testing.PloneAppRedirector:Functional in 0.000 seconds.
+  Set up plone.app.redirector.testing.PloneAppRedirector:Integration in 0.000 seconds.
+  Ran 31 tests with 0 failures, 0 errors and 0 skipped in 1.305 seconds.
+Running plone.app.testing.bbb.PloneTestCase:Functional tests:
+  Tear down plone.app.redirector.testing.PloneAppRedirector:Integration in 0.000 seconds.
+  Tear down plone.app.redirector.testing.PloneAppRedirector in 0.004 seconds.
+  Set up plone.app.testing.bbb.PloneTestCaseFixture in 0.193 seconds.
+  Set up plone.app.testing.bbb.PloneTestCase:Functional in 0.000 seconds.
+  Ran 7 tests with 0 failures, 0 errors and 0 skipped in 0.090 seconds.
+Running plone.app.testing.layers.Plone:Functional tests:
+  Tear down plone.app.testing.bbb.PloneTestCase:Functional in 0.000 seconds.
+  Tear down plone.app.testing.bbb.PloneTestCaseFixture in 0.008 seconds.
+  Set up plone.app.testing.layers.Plone:Functional in 0.000 seconds.
+  Ran 1 tests with 0 failures, 0 errors and 0 skipped in 0.670 seconds.
+Running plone.app.vocabularies.testing.PAVocabularies:Integration tests:
+  Tear down plone.app.testing.layers.Plone:Functional in 0.000 seconds.
+  Set up plone.app.vocabularies.testing.PAVocabulariesLayer in 0.019 seconds.
+  Set up plone.app.vocabularies.testing.PAVocabularies:Integration in 0.000 seconds.
+  Ran 4 tests with 0 failures, 0 errors and 0 skipped in 0.016 seconds.
+Running zope.testrunner.layer.UnitTests tests:
+  Tear down plone.app.vocabularies.testing.PAVocabularies:Integration in 0.000 seconds.
+  Tear down plone.app.vocabularies.testing.PAVocabulariesLayer in 0.003 seconds.
+  Tear down plone.app.testing.layers.PloneFixture in 0.043 seconds.
+  Tear down plone.testing.z2.Startup in 0.003 seconds.
+  Tear down plone.testing.zca.LayerCleanup in 0.004 seconds.
+  Set up zope.testrunner.layer.UnitTests in 0.000 seconds.
+  Ran 142 tests with 0 failures, 0 errors and 0 skipped in 0.471 seconds.
+Tearing down left over layers:
+  Tear down zope.testrunner.layer.UnitTests in 0.000 seconds.
+Total: 1895 tests, 0 failures, 0 errors and 0 skipped in 5 minutes 28.867 seconds.
+#### Finished tests for group Plone ####
+
+#### Running tests for group PlonePAS ####
+Running Testing.ZopeTestCase.layer.ZopeLite tests:
+  Set up Testing.ZopeTestCase.layer.ZopeLite in 0.031 seconds.
+  Ran 170 tests with 0 failures, 0 errors and 0 skipped in 0.304 seconds.
+Running plone.app.testing.bbb.PloneTestCase:Functional tests:
+  Tear down Testing.ZopeTestCase.layer.ZopeLite in 0.000 seconds.
+  Set up plone.testing.zca.LayerCleanup in 0.000 seconds.
+  Set up plone.testing.z2.Startup in 0.052 seconds.
+  Set up plone.app.testing.layers.PloneFixture in 3.880 seconds.
+  Set up plone.app.testing.bbb.PloneTestCaseFixture in 0.182 seconds.
+  Set up plone.app.testing.bbb.PloneTestCase:Functional in 0.000 seconds.
+  Ran 169 tests with 0 failures, 0 errors and 0 skipped in 0.838 seconds.
+Running zope.testrunner.layer.UnitTests tests:
+  Tear down plone.app.testing.bbb.PloneTestCase:Functional in 0.000 seconds.
+  Tear down plone.app.testing.bbb.PloneTestCaseFixture in 0.006 seconds.
+  Tear down plone.app.testing.layers.PloneFixture in 0.037 seconds.
+  Tear down plone.testing.z2.Startup in 0.002 seconds.
+  Tear down plone.testing.zca.LayerCleanup in 0.001 seconds.
+  Set up zope.testrunner.layer.UnitTests in 0.000 seconds.
+  Ran 421 tests with 0 failures, 0 errors and 0 skipped in 0.132 seconds.
+Tearing down left over layers:
+  Tear down zope.testrunner.layer.UnitTests in 0.000 seconds.
+Total: 760 tests, 0 failures, 0 errors and 0 skipped in 5.863 seconds.
+#### Finished tests for group PlonePAS ####
+
+#### Running tests for group PloneTestCase ####
+Running Products.CMFTestCase.layer.CMFSite tests:
+  Set up Testing.ZopeTestCase.layer.ZopeLite in 0.265 seconds.
+  Set up Products.CMFTestCase.layer.ZCML in 1.899 seconds.
+  Set up Products.CMFTestCase.layer.CMFSite in 0.089 seconds.
+  Ran 58 tests with 0 failures, 0 errors and 0 skipped in 0.122 seconds.
+Running plone.app.jquerytools.testing.PloneAppJquerytools:Functional tests:
+  Tear down Products.CMFTestCase.layer.CMFSite in 0.011 seconds.
+  Tear down Products.CMFTestCase.layer.ZCML in 0.002 seconds.
+  Tear down Testing.ZopeTestCase.layer.ZopeLite in 0.000 seconds.
+  Set up plone.testing.zca.LayerCleanup in 0.000 seconds.
+  Set up plone.testing.z2.Startup in 0.046 seconds.
+  Set up plone.app.testing.layers.PloneFixture in 2.511 seconds.
+  Set up plone.app.jquerytools.testing.PloneSandboxLayer in 0.011 seconds.
+  Set up plone.app.jquerytools.testing.PloneAppJquerytools:Functional in 0.000 seconds.
+  Ran 1 tests with 0 failures, 0 errors and 0 skipped in 0.112 seconds.
+Running plonetheme.sunburst.tests.base.Layer tests:
+  Tear down plone.app.jquerytools.testing.PloneAppJquerytools:Functional in 0.000 seconds.
+  Tear down plone.app.jquerytools.testing.PloneSandboxLayer in 0.002 seconds.
+  Tear down plone.app.testing.layers.PloneFixture in 0.040 seconds.
+  Tear down plone.testing.z2.Startup in 0.003 seconds.
+  Tear down plone.testing.zca.LayerCleanup in 0.001 seconds.
+  Set up Testing.ZopeTestCase.layer.ZopeLite in 0.006 seconds.
+  Set up Products.PloneTestCase.layer.ZCML in 1.255 seconds.
+  Set up Products.PloneTestCase.layer.PloneSite in 2.103 seconds.
+  Set up collective.testcaselayer.ptc.PTCLayer in 0.011 seconds.
+  Set up plonetheme.sunburst.tests.base.Layer in 0.003 seconds.
+  Ran 3 tests with 0 failures, 0 errors and 0 skipped in 0.521 seconds.
+Tearing down left over layers:
+  Tear down plonetheme.sunburst.tests.base.Layer in 0.000 seconds.
+  Tear down collective.testcaselayer.ptc.PTCLayer in 0.000 seconds.
+  Tear down Products.PloneTestCase.layer.PloneSite in 0.080 seconds.
+  Tear down Products.PloneTestCase.layer.ZCML in 0.002 seconds.
+  Tear down Testing.ZopeTestCase.layer.ZopeLite in 0.000 seconds.
+Total: 62 tests, 0 failures, 0 errors and 0 skipped in 9.621 seconds.
+#### Finished tests for group PloneTestCase ####
+
+#### Running tests for group Theming ####
+Running plone.app.theming.testing.Theming:Functional tests:
+  Set up plone.testing.zca.LayerCleanup in 0.000 seconds.
+  Set up plone.testing.z2.Startup in 0.120 seconds.
+  Set up plone.app.testing.layers.PloneFixture in 3.854 seconds.
+  Set up plone.app.theming.testing.Theming in 0.225 seconds.
+  Set up plone.app.theming.testing.Theming:Functional in 0.000 seconds.
+  Ran 29 tests with 0 failures, 0 errors and 0 skipped in 2.020 seconds.
+Running plone.app.theming.testing.Theming:Integration tests:
+  Tear down plone.app.theming.testing.Theming:Functional in 0.000 seconds.
+  Set up plone.app.theming.testing.Theming:Integration in 0.000 seconds.
+  Ran 13 tests with 0 failures, 0 errors and 0 skipped in 0.036 seconds.
+Running plone.app.theming.testing.Theming:IntegrationWithCaching tests:
+  Tear down plone.app.theming.testing.Theming:Integration in 0.000 seconds.
+  Tear down plone.app.theming.testing.Theming in 0.003 seconds.
+  Set up plone.app.theming.testing.ThemingWithCaching in 0.306 seconds.
+  Set up plone.app.theming.testing.Theming:IntegrationWithCaching in 0.000 seconds.
+  Ran 3 tests with 0 failures, 0 errors and 0 skipped in 0.686 seconds.
+Running plone.resource.testing.plone.resource:DemoTraverser tests:
+  Tear down plone.app.theming.testing.Theming:IntegrationWithCaching in 0.000 seconds.
+  Tear down plone.app.theming.testing.ThemingWithCaching in 0.003 seconds.
+  Tear down plone.app.testing.layers.PloneFixture in 0.041 seconds.
+  Set up plone.testing.zca.ZCMLDirectives in 0.002 seconds.
+  Set up plone.testing.security.Checkers in 0.000 seconds.
+  Set up plone.testing.publisher.PublisherDirectives in 0.008 seconds.
+  Set up plone.resource.testing.DemoTraverser in 0.004 seconds.
+  Set up plone.resource.testing.plone.resource:DemoTraverser in 0.000 seconds.
+  Ran 28 tests with 0 failures, 0 errors and 0 skipped in 0.028 seconds.
+Running plone.resource.testing.plone.resource:Integration tests:
+  Tear down plone.resource.testing.plone.resource:DemoTraverser in 0.000 seconds.
+  Tear down plone.resource.testing.DemoTraverser in 0.000 seconds.
+  Tear down plone.testing.publisher.PublisherDirectives in 0.000 seconds.
+  Tear down plone.testing.zca.ZCMLDirectives in 0.000 seconds.
+  Tear down plone.testing.security.Checkers in 0.000 seconds.
+  Set up plone.app.testing.layers.PloneFixture in 2.986 seconds.
+  Set up plone.resource.testing.PloneResource in 0.151 seconds.
+  Set up plone.resource.testing.plone.resource:Integration in 0.000 seconds.
+  Ran 1 tests with 0 failures, 0 errors and 0 skipped in 0.005 seconds.
+Running plone.subrequest.testing.PloneSubrequest:Functional tests:
+  Tear down plone.resource.testing.plone.resource:Integration in 0.000 seconds.
+  Tear down plone.resource.testing.PloneResource in 0.003 seconds.
+  Tear down plone.app.testing.layers.PloneFixture in 0.043 seconds.
+  Set up plone.subrequest.testing.PLONE_SUBREQEST_FIXTURE in 0.012 seconds.
+  Set up plone.subrequest.testing.PloneSubrequest:Functional in 0.000 seconds.
+  Ran 4 tests with 0 failures, 0 errors and 0 skipped in 0.017 seconds.
+Running plone.subrequest.testing.PloneSubrequest:Integration tests:
+  Tear down plone.subrequest.testing.PloneSubrequest:Functional in 0.000 seconds.
+  Set up plone.subrequest.testing.PloneSubrequest:Integration in 0.000 seconds.
+  Ran 74 tests with 0 failures, 0 errors and 0 skipped in 0.047 seconds.
+Running plone.testing.zca.UnitTesting tests:
+  Tear down plone.subrequest.testing.PloneSubrequest:Integration in 0.000 seconds.
+  Tear down plone.subrequest.testing.PLONE_SUBREQEST_FIXTURE in 0.000 seconds.
+  Tear down plone.testing.z2.Startup in 0.005 seconds.
+  Tear down plone.testing.zca.LayerCleanup in 0.002 seconds.
+  Set up plone.testing.zca.UnitTesting in 0.000 seconds.
+  Ran 15 tests with 0 failures, 0 errors and 0 skipped in 0.057 seconds.
+Running zope.testrunner.layer.UnitTests tests:
+  Tear down plone.testing.zca.UnitTesting in 0.000 seconds.
+  Set up zope.testrunner.layer.UnitTests in 0.000 seconds.
+  Ran 264 tests with 0 failures, 0 errors and 0 skipped in 0.956 seconds.
+Tearing down left over layers:
+  Tear down zope.testrunner.layer.UnitTests in 0.000 seconds.
+Total: 431 tests, 0 failures, 0 errors and 0 skipped in 13.251 seconds.
+#### Finished tests for group Theming ####
+
+#### Running tests for group plone ####
+Running Products.PloneTestCase.layer.PloneSite tests:
+  Set up Testing.ZopeTestCase.layer.ZopeLite in 0.251 seconds.
+  Set up Products.PloneTestCase.layer.ZCML in 1.902 seconds.
+  Set up Products.PloneTestCase.layer.PloneSite in 2.281 seconds.
+  Ran 4 tests with 0 failures, 0 errors and 0 skipped in 0.385 seconds.
+Running plone.app.testing.bbb.PloneTestCase:Functional tests:
+  Tear down Products.PloneTestCase.layer.PloneSite in 0.076 seconds.
+  Tear down Products.PloneTestCase.layer.ZCML in 0.002 seconds.
+  Tear down Testing.ZopeTestCase.layer.ZopeLite in 0.000 seconds.
+  Set up plone.testing.zca.LayerCleanup in 0.000 seconds.
+  Set up plone.testing.z2.Startup in 0.040 seconds.
+  Set up plone.app.testing.layers.PloneFixture in 2.366 seconds.
+  Set up plone.app.testing.bbb.PloneTestCaseFixture in 0.175 seconds.
+  Set up plone.app.testing.bbb.PloneTestCase:Functional in 0.000 seconds.
+  Ran 1 tests with 0 failures, 0 errors and 0 skipped in 0.020 seconds.
+Running plone.browserlayer.testing.PloneBrowserlayer:Functional tests:
+  Tear down plone.app.testing.bbb.PloneTestCase:Functional in 0.000 seconds.
+  Tear down plone.app.testing.bbb.PloneTestCaseFixture in 0.007 seconds.
+  Set up plone.browserlayer.testing.PloneBrowserlayerLayer in 0.017 seconds.
+  Set up plone.browserlayer.testing.PloneBrowserlayer:Functional in 0.000 seconds.
+  Ran 1 tests with 0 failures, 0 errors and 0 skipped in 0.291 seconds.
+Running plone.theme.testing.PloneTheme:Functional tests:
+  Tear down plone.browserlayer.testing.PloneBrowserlayer:Functional in 0.000 seconds.
+  Tear down plone.browserlayer.testing.PloneBrowserlayerLayer in 0.003 seconds.
+  Set up plone.theme.testing.PloneThemeLayer in 0.017 seconds.
+  Set up plone.theme.testing.PloneTheme:Functional in 0.000 seconds.
+  Ran 1 tests with 0 failures, 0 errors and 0 skipped in 0.034 seconds.
+Running plone.theme.testing.PloneTheme:Integration tests:
+  Tear down plone.theme.testing.PloneTheme:Functional in 0.000 seconds.
+  Set up plone.theme.testing.PloneTheme:Integration in 0.000 seconds.
+  Ran 3 tests with 0 failures, 0 errors and 0 skipped in 0.011 seconds.
+Running zope.testrunner.layer.UnitTests tests:
+  Tear down plone.theme.testing.PloneTheme:Integration in 0.000 seconds.
+  Tear down plone.theme.testing.PloneThemeLayer in 0.002 seconds.
+  Tear down plone.app.testing.layers.PloneFixture in 0.039 seconds.
+  Tear down plone.testing.z2.Startup in 0.003 seconds.
+  Tear down plone.testing.zca.LayerCleanup in 0.002 seconds.
+  Set up zope.testrunner.layer.UnitTests in 0.000 seconds.
+  Ran 300 tests with 0 failures, 0 errors and 0 skipped in 5.660 seconds.
+Tearing down left over layers:
+  Tear down zope.testrunner.layer.UnitTests in 0.000 seconds.
+Total: 310 tests, 0 failures, 0 errors and 0 skipped in 14.789 seconds.
+#### Finished tests for group plone ####
+
+#### Running tests for group plone_app_testing ####
+Running archetypes.querywidget.tests.base.ArchetypesQueryWidget:Integration tests:
+  Set up plone.testing.zca.LayerCleanup in 0.000 seconds.
+  Set up plone.testing.z2.Startup in 0.088 seconds.
+  Set up plone.app.testing.layers.PloneFixture in 3.119 seconds.
+  Set up archetypes.querywidget.tests.base.ArchetypesQueryWidgetLayer in 0.194 seconds.
+  Set up archetypes.querywidget.tests.base.ArchetypesQueryWidget:Integration in 0.000 seconds.
+  Ran 3 tests with 0 failures, 0 errors and 0 skipped in 0.628 seconds.
+Running plone.app.caching.testing.PloneAppCaching:Functional tests:
+  Tear down archetypes.querywidget.tests.base.ArchetypesQueryWidget:Integration in 0.000 seconds.
+  Tear down archetypes.querywidget.tests.base.ArchetypesQueryWidgetLayer in 0.003 seconds.
+  Set up plone.app.caching.testing.PloneAppCaching in 0.155 seconds.
+  Set up plone.app.caching.testing.PloneAppCaching:Functional in 0.000 seconds.
+  Ran 17 tests with 0 failures, 0 errors and 0 skipped in 6.579 seconds.
+Running plone.app.collection.testing.PloneAppCollectionLayer:Robot tests:
+  Tear down plone.app.caching.testing.PloneAppCaching:Functional in 0.000 seconds.
+  Tear down plone.app.caching.testing.PloneAppCaching in 0.004 seconds.
+  Set up plone.app.collection.testing.PloneAppCollectionLayer in 0.157 seconds.
+  Set up plone.app.robotframework.remote.RemoteLibraryBundle:RobotRemote in 0.003 seconds.
+  Set up plone.testing.z2.ZServer in 0.501 seconds.
+  Set up plone.app.collection.testing.PloneAppCollectionLayer:Robot in 0.000 seconds.
+  Ran 3 tests with 0 failures, 0 errors and 0 skipped in 17.984 seconds.
+Running plone.app.collection.tests.base.PACollection:Functional tests:
+  Tear down plone.app.collection.testing.PloneAppCollectionLayer:Robot in 0.000 seconds.
+  Tear down plone.app.robotframework.remote.RemoteLibraryBundle:RobotRemote in 0.003 seconds.
+  Tear down plone.testing.z2.ZServer in 4.989 seconds.
+  Tear down plone.app.collection.testing.PloneAppCollectionLayer in 0.003 seconds.
+  Set up plone.app.collection.tests.base.PACollection in 0.230 seconds.
+  Set up plone.app.collection.tests.base.PACollection:Functional in 0.000 seconds.
+  Ran 15 tests with 0 failures, 0 errors and 0 skipped in 1.051 seconds.
+Running plone.app.contentlisting.tests.base.ContentListing:Functional tests:
+  Tear down plone.app.collection.tests.base.PACollection:Functional in 0.000 seconds.
+  Tear down plone.app.collection.tests.base.PACollection in 0.003 seconds.
+  Set up plone.app.contentlisting.tests.base.ContentListingLayer in 0.017 seconds.
+  Set up plone.app.contentlisting.tests.base.ContentListing:Functional in 0.000 seconds.
+  Ran 42 tests with 0 failures, 0 errors and 0 skipped in 4.606 seconds.
+Running plone.app.discussion.testing.PloneAppDiscussion:Functional tests:
+  Tear down plone.app.contentlisting.tests.base.ContentListing:Functional in 0.000 seconds.
+  Tear down plone.app.contentlisting.tests.base.ContentListingLayer in 0.002 seconds.
+  Set up plone.app.discussion.testing.PloneAppDiscussion in 0.157 seconds.
+  Set up plone.app.discussion.testing.PloneAppDiscussion:Functional in 0.000 seconds.
+  Ran 2 tests with 0 failures, 0 errors and 0 skipped in 8.051 seconds.
+Running plone.app.discussion.testing.PloneAppDiscussion:Integration tests:
+  Tear down plone.app.discussion.testing.PloneAppDiscussion:Functional in 0.000 seconds.
+  Set up plone.app.discussion.testing.PloneAppDiscussion:Integration in 0.000 seconds.
+  Ran 191 tests with 0 failures, 0 errors and 0 skipped in 10.151 seconds.
+Running plone.app.querystring.testing.PloneAppQuerystringLayer:Integration tests:
+  Tear down plone.app.discussion.testing.PloneAppDiscussion:Integration in 0.000 seconds.
+  Tear down plone.app.discussion.testing.PloneAppDiscussion in 0.004 seconds.
+  Set up plone.app.querystring.testing.PloneAppQuerystringLayer Could not install product plone.app.querystring
+in 0.268 seconds.
+  Set up plone.app.querystring.testing.PloneAppQuerystringLayer:Integration in 0.000 seconds.
+  Ran 14 tests with 0 failures, 0 errors and 0 skipped in 0.233 seconds.
+Running plone.app.querystring.testing.PloneAppQuerystringTestProfileLayer:Integration tests:
+  Tear down plone.app.querystring.testing.PloneAppQuerystringLayer:Integration in 0.000 seconds.
+  Tear down plone.app.querystring.testing.PloneAppQuerystringLayer in 0.003 seconds.
+  Set up plone.app.querystring.testing.PloneAppQuerystringTestProfileLayer in 0.162 seconds.
+  Set up plone.app.querystring.testing.PloneAppQuerystringTestProfileLayer:Integration in 0.000 seconds.
+  Ran 13 tests with 0 failures, 0 errors and 0 skipped in 0.433 seconds.
+Running plone.app.querystring.testing.UninstalledPloneAppQuerystringLayer:Integration tests:
+  Tear down plone.app.querystring.testing.PloneAppQuerystringTestProfileLayer:Integration in 0.000 seconds.
+  Tear down plone.app.querystring.testing.PloneAppQuerystringTestProfileLayer in 0.004 seconds.
+  Set up plone.app.querystring.testing.PloneSandboxLayer in 0.018 seconds.
+  Set up plone.app.querystring.testing.UninstalledPloneAppQuerystringLayer:Integration in 0.000 seconds.
+  Ran 24 tests with 0 failures, 0 errors and 0 skipped in 0.052 seconds.
+Running plone.app.registry.testing.plone.app.registry:Integration tests:
+  Tear down plone.app.querystring.testing.UninstalledPloneAppQuerystringLayer:Integration in 0.000 seconds.
+  Tear down plone.app.querystring.testing.PloneSandboxLayer in 0.003 seconds.
+  Set up plone.app.registry.testing.PloneAppRegistry in 0.122 seconds.
+  Set up plone.app.registry.testing.plone.app.registry:Integration in 0.000 seconds.
+  Ran 2 tests with 0 failures, 0 errors and 0 skipped in 0.006 seconds.
+Running plone.app.search.tests.base.Search:Integration tests:
+  Tear down plone.app.registry.testing.plone.app.registry:Integration in 0.000 seconds.
+  Tear down plone.app.registry.testing.PloneAppRegistry in 0.003 seconds.
+  Set up plone.app.search.tests.base.SearchLayer in 1.811 seconds.
+  Set up plone.app.search.tests.base.Search:Integration in 0.000 seconds.
+  Ran 9 tests with 0 failures, 0 errors and 0 skipped in 0.156 seconds.
+Running plone.app.testing.bbb.PloneTestCase:Functional tests:
+  Tear down plone.app.search.tests.base.Search:Integration in 0.000 seconds.
+  Tear down plone.app.search.tests.base.SearchLayer in 0.003 seconds.
+  Set up plone.app.testing.bbb.PloneTestCaseFixture in 0.209 seconds.
+  Set up plone.app.testing.bbb.PloneTestCase:Functional in 0.000 seconds.
+  Ran 21 tests with 0 failures, 0 errors and 0 skipped in 4.515 seconds.
+Running plone.app.upgrade.v43.tests.PloneAppCachingUpgrade:Integration tests:
+  Tear down plone.app.testing.bbb.PloneTestCase:Functional in 0.000 seconds.
+  Tear down plone.app.testing.bbb.PloneTestCaseFixture in 0.007 seconds.
+  Set up plone.app.upgrade.v43.tests.PloneAppCachingUpgrade in 0.042 seconds.
+  Set up plone.app.upgrade.v43.tests.PloneAppCachingUpgrade:Integration in 0.000 seconds.
+  Ran 1 tests with 0 failures, 0 errors and 0 skipped in 0.157 seconds.
+Running plone.app.uuid.testing.plone.app.uuid:Functional tests:
+  Tear down plone.app.upgrade.v43.tests.PloneAppCachingUpgrade:Integration in 0.000 seconds.
+  Tear down plone.app.upgrade.v43.tests.PloneAppCachingUpgrade in 0.003 seconds.
+  Set up plone.app.uuid.testing.PloneAppUUID in 0.017 seconds.
+  Set up plone.app.uuid.testing.plone.app.uuid:Functional in 0.000 seconds.
+  Ran 3 tests with 0 failures, 0 errors and 0 skipped in 0.210 seconds.
+Running plone.app.uuid.testing.plone.app.uuid:Integration tests:
+  Tear down plone.app.uuid.testing.plone.app.uuid:Functional in 0.000 seconds.
+  Set up plone.app.uuid.testing.plone.app.uuid:Integration in 0.000 seconds.
+  Ran 5 tests with 0 failures, 0 errors and 0 skipped in 0.138 seconds.
+Running plone.testing.zca.UnitTesting tests:
+  Tear down plone.app.uuid.testing.plone.app.uuid:Integration in 0.000 seconds.
+  Tear down plone.app.uuid.testing.PloneAppUUID in 0.003 seconds.
+  Tear down plone.app.testing.layers.PloneFixture in 0.041 seconds.
+  Tear down plone.testing.z2.Startup in 0.003 seconds.
+  Tear down plone.testing.zca.LayerCleanup in 0.004 seconds.
+  Set up plone.testing.zca.UnitTesting in 0.000 seconds.
+  Ran 212 tests with 0 failures, 0 errors and 0 skipped in 0.534 seconds.
+Running zope.testrunner.layer.UnitTests tests:
+  Tear down plone.testing.zca.UnitTesting in 0.000 seconds.
+  Set up zope.testrunner.layer.UnitTests in 0.000 seconds.
+  Ran 42 tests with 0 failures, 0 errors and 0 skipped in 44.830 seconds.
+Tearing down left over layers:
+  Tear down zope.testrunner.layer.UnitTests in 0.000 seconds.
+Total: 619 tests, 0 failures, 0 errors and 0 skipped in 1 minutes 56.701 seconds.
+#### Finished tests for group plone_app_testing ####
+
+#### Running tests for group portlets ####
+Running Products.PloneTestCase.layer.PloneSite tests:
+  Set up Testing.ZopeTestCase.layer.ZopeLite in 0.241 seconds.
+  Set up Products.PloneTestCase.layer.ZCML in 1.876 seconds.
+  Set up Products.PloneTestCase.layer.PloneSite in 2.129 seconds.
+  Ran 169 tests with 0 failures, 0 errors and 0 skipped in 8.964 seconds.
+Running plone.app.portlets.tests.layer.PlonePortlets tests:
+  Set up plone.app.portlets.tests.layer.PlonePortlets in 0.000 seconds.
+  Ran 2 tests with 0 failures, 0 errors and 0 skipped in 1.484 seconds.
+Running plone.app.portlets.tests.test_configuration.TestPortletZCMLLayer tests:
+  Tear down plone.app.portlets.tests.layer.PlonePortlets in 0.000 seconds.
+  Set up plone.app.portlets.tests.test_configuration.TestPortletZCMLLayer in 0.007 seconds.
+  Ran 18 tests with 0 failures, 0 errors and 0 skipped in 8.383 seconds.
+Running plone.app.portlets.tests.test_z3cforms.z3cPortletZCMLLayer tests:
+  Tear down plone.app.portlets.tests.test_configuration.TestPortletZCMLLayer in 0.000 seconds.
+  Set up plone.app.portlets.tests.test_z3cforms.z3cPortletZCMLLayer in 0.008 seconds.
+  Ran 4 tests with 0 failures, 0 errors and 0 skipped in 1.588 seconds.
+Running plone.portlet.collection.testing.PlonePortletCollection:Functional tests:
+  Tear down plone.app.portlets.tests.test_z3cforms.z3cPortletZCMLLayer in 0.000 seconds.
+  Tear down Products.PloneTestCase.layer.PloneSite in 0.084 seconds.
+  Tear down Products.PloneTestCase.layer.ZCML in 0.003 seconds.
+  Tear down Testing.ZopeTestCase.layer.ZopeLite in 0.000 seconds.
+  Set up plone.testing.zca.LayerCleanup in 0.000 seconds.
+  Set up plone.testing.z2.Startup in 0.040 seconds.
+  Set up plone.app.testing.layers.PloneFixture in 2.404 seconds.
+  Set up plone.portlet.collection.testing.PlonePortletCollection in 0.134 seconds.
+  Set up plone.portlet.collection.testing.PlonePortletCollection:Functional in 0.000 seconds.
+  Ran 1 tests with 0 failures, 0 errors and 0 skipped in 1.925 seconds.
+Running plone.portlet.collection.testing.PlonePortletCollection:Integration tests:
+  Tear down plone.portlet.collection.testing.PlonePortletCollection:Functional in 0.000 seconds.
+  Set up plone.portlet.collection.testing.PlonePortletCollection:Integration in 0.000 seconds.
+  Ran 12 tests with 0 failures, 0 errors and 0 skipped in 0.534 seconds.
+Running zope.testrunner.layer.UnitTests tests:
+  Tear down plone.portlet.collection.testing.PlonePortletCollection:Integration in 0.000 seconds.
+  Tear down plone.portlet.collection.testing.PlonePortletCollection in 0.004 seconds.
+  Tear down plone.app.testing.layers.PloneFixture in 0.041 seconds.
+  Tear down plone.testing.z2.Startup in 0.003 seconds.
+  Tear down plone.testing.zca.LayerCleanup in 0.003 seconds.
+  Set up zope.testrunner.layer.UnitTests in 0.000 seconds.
+  Ran 5 tests with 0 failures, 0 errors and 0 skipped in 0.083 seconds.
+Tearing down left over layers:
+  Tear down zope.testrunner.layer.UnitTests in 0.000 seconds.
+Total: 211 tests, 0 failures, 0 errors and 0 skipped in 31.377 seconds.
+#### Finished tests for group portlets ####
+
+#### Running tests for Products.CMFDynamicViewFTI ####
+Running Products.CMFDynamicViewFTI.tests.CMFDVFTITestCase.CMFDynamicViewFTI Testing:Functional tests:
+  Set up plone.testing.zca.LayerCleanup in 0.000 seconds.
+  Set up plone.testing.z2.Startup in 0.113 seconds.
+  Set up plone.app.testing.layers.PloneFixture in 3.886 seconds.
+  Set up plone.app.testing.bbb.PloneTestCaseFixture in 0.192 seconds.
+  Set up Products.CMFDynamicViewFTI.tests.CMFDVFTITestCase.PloneTestCaseFixture in 0.135 seconds.
+  Set up Products.CMFDynamicViewFTI.tests.CMFDVFTITestCase.CMFDynamicViewFTI Testing:Functional in 0.000 seconds.
+  Ran 34 tests with 0 failures, 0 errors and 0 skipped in 0.709 seconds.
+Tearing down left over layers:
+  Tear down Products.CMFDynamicViewFTI.tests.CMFDVFTITestCase.CMFDynamicViewFTI Testing:Functional in 0.000 seconds.
+  Tear down Products.CMFDynamicViewFTI.tests.CMFDVFTITestCase.PloneTestCaseFixture in 0.002 seconds.
+  Tear down plone.app.testing.bbb.PloneTestCaseFixture in 0.005 seconds.
+  Tear down plone.app.testing.layers.PloneFixture in 0.035 seconds.
+  Tear down plone.testing.z2.Startup in 0.003 seconds.
+  Tear down plone.testing.zca.LayerCleanup in 0.001 seconds.
+#### Finished tests for Products.CMFDynamicViewFTI ####
+
+#### Running tests for Products.ExtendedPathIndex ####
+Running zope.testrunner.layer.UnitTests tests:
+  Set up zope.testrunner.layer.UnitTests in 0.000 seconds.
+  Ran 26 tests with 0 failures, 0 errors and 0 skipped in 0.097 seconds.
+Tearing down left over layers:
+  Tear down zope.testrunner.layer.UnitTests in 0.000 seconds.
+#### Finished tests for Products.ExtendedPathIndex ####
+
+#### Running tests for Products.Marshall ####
+Running plone.app.testing.bbb.PloneTestCase:Functional tests:
+  Set up plone.testing.zca.LayerCleanup in 0.000 seconds.
+  Set up plone.testing.z2.Startup in 0.115 seconds.
+  Set up plone.app.testing.layers.PloneFixture in 3.899 seconds.
+  Set up plone.app.testing.bbb.PloneTestCaseFixture in 0.193 seconds.
+  Set up plone.app.testing.bbb.PloneTestCase:Functional in 0.000 seconds.
+  Ran 14 tests with 0 failures, 0 errors and 0 skipped in 0.753 seconds.
+Tearing down left over layers:
+  Tear down plone.app.testing.bbb.PloneTestCase:Functional in 0.000 seconds.
+  Tear down plone.app.testing.bbb.PloneTestCaseFixture in 0.006 seconds.
+  Tear down plone.app.testing.layers.PloneFixture in 0.036 seconds.
+  Tear down plone.testing.z2.Startup in 0.003 seconds.
+  Tear down plone.testing.zca.LayerCleanup in 0.001 seconds.
+#### Finished tests for Products.Marshall ####
+
+#### Running tests for Products.PasswordResetTool ####
+Running Products.PasswordResetTool.tests.test_doctests.PloneTestCase:Functional tests:
+  Set up plone.testing.zca.LayerCleanup in 0.000 seconds.
+  Set up plone.testing.z2.Startup in 0.099 seconds.
+  Set up plone.app.testing.layers.PloneFixture in 3.729 seconds.
+  Set up Products.PasswordResetTool.tests.test_doctests.MockMailFixture in 0.014 seconds.
+  Set up Products.PasswordResetTool.tests.test_doctests.PloneTestCase:Functional in 0.000 seconds.
+  Ran 2 tests with 0 failures, 0 errors and 0 skipped in 1.976 seconds.
+Tearing down left over layers:
+  Tear down Products.PasswordResetTool.tests.test_doctests.PloneTestCase:Functional in 0.000 seconds.
+  Tear down Products.PasswordResetTool.tests.test_doctests.MockMailFixture in 0.004 seconds.
+  Tear down plone.app.testing.layers.PloneFixture in 0.040 seconds.
+  Tear down plone.testing.z2.Startup in 0.003 seconds.
+  Tear down plone.testing.zca.LayerCleanup in 0.002 seconds.
+#### Finished tests for Products.PasswordResetTool ####
+
+#### Running tests for Products.ResourceRegistries ####
+Running Products.PloneTestCase.layer.PloneSite tests:
+  Set up Testing.ZopeTestCase.layer.ZopeLite in 0.254 seconds.
+  Set up Products.PloneTestCase.layer.ZCML in 1.901 seconds.
+  Set up Products.PloneTestCase.layer.PloneSite in 2.207 seconds.
+  Ran 265 tests with 0 failures, 0 errors and 0 skipped in 9.972 seconds.
+Running zope.testrunner.layer.UnitTests tests:
+  Tear down Products.PloneTestCase.layer.PloneSite in 0.083 seconds.
+  Tear down Products.PloneTestCase.layer.ZCML in 0.002 seconds.
+  Tear down Testing.ZopeTestCase.layer.ZopeLite in 0.000 seconds.
+  Set up zope.testrunner.layer.UnitTests in 0.000 seconds.
+  Ran 62 tests with 0 failures, 0 errors and 0 skipped in 0.009 seconds.
+Tearing down left over layers:
+  Tear down zope.testrunner.layer.UnitTests in 0.000 seconds.
+Total: 327 tests, 0 failures, 0 errors and 0 skipped in 14.785 seconds.
+#### Finished tests for Products.ResourceRegistries ####
+
+#### Running tests for Products.Sessions ####
+Total: 0 tests, 0 failures, 0 errors and 0 skipped in 0.000 seconds.
+#### Finished tests for Products.Sessions ####
+
+#### Running tests for Products.TemporaryFolder ####
+Total: 0 tests, 0 failures, 0 errors and 0 skipped in 0.000 seconds.
+#### Finished tests for Products.TemporaryFolder ####
+
+#### Running tests for Products.contentmigration ####
+Running Products.contentmigration.tests.layer.PloneContentMigrationTestCase:Functional tests:
+  Set up plone.testing.zca.LayerCleanup in 0.000 seconds.
+  Set up plone.testing.z2.Startup in 0.081 seconds.
+  Set up plone.app.testing.layers.PloneFixture in 3.929 seconds.
+  Set up plone.app.testing.bbb.PloneTestCaseFixture in 0.196 seconds.
+  Set up Products.contentmigration.tests.layer.PloneTestCaseFixture in 0.138 seconds.
+  Set up Products.contentmigration.tests.layer.PloneContentMigrationTestCase:Functional in 0.000 seconds.
+  Ran 14 tests with 0 failures, 0 errors and 0 skipped in 1.991 seconds.
+Tearing down left over layers:
+  Tear down Products.contentmigration.tests.layer.PloneContentMigrationTestCase:Functional in 0.000 seconds.
+  Tear down Products.contentmigration.tests.layer.PloneTestCaseFixture in 0.006 seconds.
+  Tear down plone.app.testing.bbb.PloneTestCaseFixture in 0.002 seconds.
+  Tear down plone.app.testing.layers.PloneFixture in 0.035 seconds.
+  Tear down plone.testing.z2.Startup in 0.003 seconds.
+  Tear down plone.testing.zca.LayerCleanup in 0.001 seconds.
+#### Finished tests for Products.contentmigration ####
+
+#### Running tests for Products.i18ntestcase ####
+Total: 0 tests, 0 failures, 0 errors and 0 skipped in 0.000 seconds.
+#### Finished tests for Products.i18ntestcase ####
+
+#### Running tests for ZServer ####
+Total: 0 tests, 0 failures, 0 errors and 0 skipped in 0.000 seconds.
+#### Finished tests for ZServer ####
+
+#### Running tests for archetypes.referencebrowserwidget ####
+Running archetypes.referencebrowserwidget.tests.base.layer tests:
+  Set up Testing.ZopeTestCase.layer.ZopeLite in 0.000 seconds.
+  Set up Products.PloneTestCase.layer.ZCML in 1.239 seconds.
+  Set up Products.PloneTestCase.layer.PloneSite in 2.307 seconds.
+  Set up archetypes.referencebrowserwidget.tests.base.layer in 0.000 seconds.
+  Ran 41 tests with 0 failures, 0 errors and 0 skipped in 4.524 seconds.
+Running zope.testrunner.layer.UnitTests tests:
+  Tear down archetypes.referencebrowserwidget.tests.base.layer in 0.000 seconds.
+  Tear down Products.PloneTestCase.layer.PloneSite in 0.081 seconds.
+  Tear down Products.PloneTestCase.layer.ZCML in 0.004 seconds.
+  Tear down Testing.ZopeTestCase.layer.ZopeLite in 0.000 seconds.
+  Set up zope.testrunner.layer.UnitTests in 0.000 seconds.
+  Ran 5 tests with 0 failures, 0 errors and 0 skipped in 0.001 seconds.
+Tearing down left over layers:
+  Tear down zope.testrunner.layer.UnitTests in 0.000 seconds.
+Total: 46 tests, 0 failures, 0 errors and 0 skipped in 8.513 seconds.
+#### Finished tests for archetypes.referencebrowserwidget ####
+
+#### Running tests for archetypes.schemaextender ####
+Running plone.app.testing.bbb.PloneTestCase:Functional tests:
+  Set up plone.testing.zca.LayerCleanup in 0.000 seconds.
+  Set up plone.testing.z2.Startup in 0.090 seconds.
+  Set up plone.app.testing.layers.PloneFixture in 3.758 seconds.
+  Set up plone.app.testing.bbb.PloneTestCaseFixture in 0.193 seconds.
+  Set up plone.app.testing.bbb.PloneTestCase:Functional in 0.000 seconds.
+  Ran 5 tests with 0 failures, 0 errors and 0 skipped in 1.389 seconds.
+Running zope.testrunner.layer.UnitTests tests:
+  Tear down plone.app.testing.bbb.PloneTestCase:Functional in 0.000 seconds.
+  Tear down plone.app.testing.bbb.PloneTestCaseFixture in 0.006 seconds.
+  Tear down plone.app.testing.layers.PloneFixture in 0.036 seconds.
+  Tear down plone.testing.z2.Startup in 0.003 seconds.
+  Tear down plone.testing.zca.LayerCleanup in 0.003 seconds.
+  Set up zope.testrunner.layer.UnitTests in 0.000 seconds.
+  Ran 19 tests with 0 failures, 0 errors and 0 skipped in 0.006 seconds.
+Tearing down left over layers:
+  Tear down zope.testrunner.layer.UnitTests in 0.000 seconds.
+Total: 24 tests, 0 failures, 0 errors and 0 skipped in 5.847 seconds.
+#### Finished tests for archetypes.schemaextender ####
+
+#### Running tests for collective.monkeypatcher ####
+Running zope.testrunner.layer.UnitTests tests:
+  Set up zope.testrunner.layer.UnitTests in 0.000 seconds.
+  Ran 5 tests with 0 failures, 0 errors and 0 skipped in 0.021 seconds.
+Tearing down left over layers:
+  Tear down zope.testrunner.layer.UnitTests in 0.000 seconds.
+#### Finished tests for collective.monkeypatcher ####
+
+#### Running tests for five.intid ####
+Running Testing.ZopeTestCase.layer.ZopeLite tests:
+  Set up Testing.ZopeTestCase.layer.ZopeLite in 0.016 seconds.
+  Ran 1 tests with 0 failures, 0 errors and 0 skipped in 0.156 seconds.
+Tearing down left over layers:
+  Tear down Testing.ZopeTestCase.layer.ZopeLite in 0.000 seconds.
+#### Finished tests for five.intid ####
+
+#### Running tests for persistent ####
+Total: 0 tests, 0 failures, 0 errors and 0 skipped in 0.000 seconds.
+#### Finished tests for persistent ####
+
+#### Running tests for plone.app.blob ####
+***********************************************
+WARNING: LinguaPlone not found. Skipping tests.
+***********************************************
+***********************************************
+WARNING: LinguaPlone not found. Skipping tests.
+***********************************************
+Running plone.app.blob.tests.layer.Blob Replacement:Functional tests:
+  Set up plone.testing.zca.LayerCleanup in 0.000 seconds.
+  Set up plone.testing.z2.Startup in 0.089 seconds.
+  Set up plone.app.testing.layers.PloneFixture in 3.707 seconds.
+  Set up plone.app.testing.bbb.PloneTestCaseFixture in 0.192 seconds.
+  Set up plone.app.blob.tests.layer.BlobFixture in 0.108 seconds.
+  Set up plone.app.blob.tests.layer.BlobReplacementFixture in 0.284 seconds.
+  Set up plone.app.blob.tests.layer.Blob Replacement:Functional in 0.000 seconds.
+  Ran 46 tests with 0 failures, 0 errors and 0 skipped in 6.101 seconds.
+Running plone.app.blob.tests.layer.Blob:Functional tests:
+  Tear down plone.app.blob.tests.layer.Blob Replacement:Functional in 0.000 seconds.
+  Tear down plone.app.blob.tests.layer.BlobReplacementFixture in 0.015 seconds.
+  Set up plone.app.blob.tests.layer.Blob:Functional in 0.000 seconds.
+  Ran 28 tests with 0 failures, 0 errors and 0 skipped in 3.335 seconds.
+Running zope.testrunner.layer.UnitTests tests:
+  Tear down plone.app.blob.tests.layer.Blob:Functional in 0.000 seconds.
+  Tear down plone.app.blob.tests.layer.BlobFixture in 0.003 seconds.
+  Tear down plone.app.testing.bbb.PloneTestCaseFixture in 0.005 seconds.
+  Tear down plone.app.testing.layers.PloneFixture in 0.035 seconds.
+  Tear down plone.testing.z2.Startup in 0.003 seconds.
+  Tear down plone.testing.zca.LayerCleanup in 0.003 seconds.
+  Set up zope.testrunner.layer.UnitTests in 0.000 seconds.
+  Ran 2 tests with 0 failures, 0 errors and 0 skipped in 0.001 seconds.
+Tearing down left over layers:
+  Tear down zope.testrunner.layer.UnitTests in 0.000 seconds.
+Total: 76 tests, 0 failures, 0 errors and 0 skipped in 14.476 seconds.
+#### Finished tests for plone.app.blob ####
+
+#### Running tests for plone.app.dexterity ####
+Running plone.app.dexterity.testing.dexterity:Functional tests:
+  Set up plone.testing.zca.LayerCleanup in 0.000 seconds.
+  Set up plone.testing.z2.Startup in 0.097 seconds.
+  Set up plone.app.testing.layers.PloneFixture in 3.731 seconds.
+  Set up plone.app.dexterity.testing.DexterityFixture in 0.442 seconds.
+  Set up plone.app.dexterity.testing.dexterity:Functional in 0.000 seconds.
+  Ran 14 tests with 0 failures, 0 errors and 0 skipped in 10.247 seconds.
+Running plone.app.dexterity.testing.dexterity:Integration tests:
+  Tear down plone.app.dexterity.testing.dexterity:Functional in 0.000 seconds.
+  Set up plone.app.dexterity.testing.dexterity:Integration in 0.000 seconds.
+  Ran 35 tests with 0 failures, 0 errors and 0 skipped in 2.804 seconds.
+Running zope.testrunner.layer.UnitTests tests:
+  Tear down plone.app.dexterity.testing.dexterity:Integration in 0.000 seconds.
+  Tear down plone.app.dexterity.testing.DexterityFixture in 0.004 seconds.
+  Tear down plone.app.testing.layers.PloneFixture in 0.042 seconds.
+  Tear down plone.testing.z2.Startup in 0.003 seconds.
+  Tear down plone.testing.zca.LayerCleanup in 0.002 seconds.
+  Set up zope.testrunner.layer.UnitTests in 0.000 seconds.
+  Ran 12 tests with 0 failures, 0 errors and 0 skipped in 0.002 seconds.
+Tearing down left over layers:
+  Tear down zope.testrunner.layer.UnitTests in 0.000 seconds.
+Total: 61 tests, 0 failures, 0 errors and 0 skipped in 17.979 seconds.
+#### Finished tests for plone.app.dexterity ####
+
+#### Running tests for plone.app.folder ####
+Running Testing.ZopeTestCase.layer.ZopeLite tests:
+  Set up Testing.ZopeTestCase.layer.ZopeLite in 0.034 seconds.
+  Ran 2 tests with 0 failures, 0 errors and 0 skipped in 0.005 seconds.
+Running plone.app.folder.tests.layer.plone.app.folder testing:Integration tests:
+  Tear down Testing.ZopeTestCase.layer.ZopeLite in 0.000 seconds.
+  Set up plone.testing.zca.LayerCleanup in 0.000 seconds.
+  Set up plone.testing.z2.Startup in 0.069 seconds.
+  Set up plone.app.testing.layers.PloneFixture in 3.722 seconds.
+  Set up plone.app.testing.bbb.PloneTestCaseFixture in 0.183 seconds.
+  Set up plone.app.testing.bbb.PloneTestCase:Functional in 0.000 seconds.
+  Set up plone.app.folder.tests.layer.IntegrationFixture in 0.011 seconds.
+  Set up plone.app.folder.tests.layer.plone.app.folder testing:Integration in 0.000 seconds.
+  Ran 27 tests with 0 failures, 0 errors and 0 skipped in 3.045 seconds.
+Running plone.app.folder.tests.layer.plone.app.folder testing:Partial ordering integration tests:
+  Tear down plone.app.folder.tests.layer.plone.app.folder testing:Integration in 0.000 seconds.
+  Tear down plone.app.folder.tests.layer.IntegrationFixture in 0.002 seconds.
+  Set up plone.app.folder.tests.layer.PartialOrderingIntegrationFixture in 0.014 seconds.
+  Set up plone.app.folder.tests.layer.plone.app.folder testing:Partial ordering integration in 0.000 seconds.
+  Ran 3 tests with 0 failures, 0 errors and 0 skipped in 0.151 seconds.
+Tearing down left over layers:
+  Tear down plone.app.folder.tests.layer.plone.app.folder testing:Partial ordering integration in 0.000 seconds.
+  Tear down plone.app.folder.tests.layer.PartialOrderingIntegrationFixture in 0.002 seconds.
+  Tear down plone.app.testing.bbb.PloneTestCase:Functional in 0.000 seconds.
+  Tear down plone.app.testing.bbb.PloneTestCaseFixture in 0.006 seconds.
+  Tear down plone.app.testing.layers.PloneFixture in 0.036 seconds.
+  Tear down plone.testing.z2.Startup in 0.002 seconds.
+  Tear down plone.testing.zca.LayerCleanup in 0.001 seconds.
+Total: 32 tests, 0 failures, 0 errors and 0 skipped in 7.672 seconds.
+#### Finished tests for plone.app.folder ####
+
+#### Running tests for plone.app.imaging ####
+Running plone.app.imaging.testing.ImagingLayer tests:
+  Set up Testing.ZopeTestCase.layer.ZopeLite in 0.265 seconds.
+  Set up Products.PloneTestCase.layer.ZCML in 1.903 seconds.
+  Set up Products.PloneTestCase.layer.PloneSite in 2.101 seconds.
+  Set up collective.testcaselayer.ptc.PTCLayer in 0.011 seconds.
+  Set up plone.app.imaging.testing.ImagingLayer in 0.131 seconds.
+  Ran 56 tests with 0 failures, 0 errors and 0 skipped in 5.104 seconds.
+Running zope.testrunner.layer.UnitTests tests:
+  Tear down plone.app.imaging.testing.ImagingLayer in 0.000 seconds.
+  Tear down collective.testcaselayer.ptc.PTCLayer in 0.000 seconds.
+  Tear down Products.PloneTestCase.layer.PloneSite in 0.080 seconds.
+  Tear down Products.PloneTestCase.layer.ZCML in 0.003 seconds.
+  Tear down Testing.ZopeTestCase.layer.ZopeLite in 0.000 seconds.
+  Set up zope.testrunner.layer.UnitTests in 0.000 seconds.
+  Ran 7 tests with 0 failures, 0 errors and 0 skipped in 0.001 seconds.
+Tearing down left over layers:
+  Tear down zope.testrunner.layer.UnitTests in 0.000 seconds.
+Total: 63 tests, 0 failures, 0 errors and 0 skipped in 9.976 seconds.
+#### Finished tests for plone.app.imaging ####
+
+#### Running tests for plone.app.jquery ####
+Total: 0 tests, 0 failures, 0 errors and 0 skipped in 0.000 seconds.
+#### Finished tests for plone.app.jquery ####
+
+#### Running tests for plone.app.linkintegrity ####
+Running Products.PloneTestCase.layer.PloneSite tests:
+  Set up Testing.ZopeTestCase.layer.ZopeLite in 0.233 seconds.
+  Set up Products.PloneTestCase.layer.ZCML in 1.904 seconds.
+  Set up Products.PloneTestCase.layer.PloneSite in 2.095 seconds.
+  Ran 8 tests with 0 failures, 0 errors and 0 skipped in 1.121 seconds.
+Running plone.app.linkintegrity.tests.layer.PloneLinkintegrity tests:
+  Set up collective.testcaselayer.ptc.PTCLayer in 0.017 seconds.
+  Set up plone.app.linkintegrity.tests.layer.PloneLinkintegrity in 0.457 seconds.
+  Ran 35 tests with 0 failures, 0 errors and 0 skipped in 22.357 seconds.
+Running zope.testrunner.layer.UnitTests tests:
+  Tear down plone.app.linkintegrity.tests.layer.PloneLinkintegrity in 0.000 seconds.
+  Tear down collective.testcaselayer.ptc.PTCLayer in 0.000 seconds.
+  Tear down Products.PloneTestCase.layer.PloneSite in 0.088 seconds.
+  Tear down Products.PloneTestCase.layer.ZCML in 0.003 seconds.
+  Tear down Testing.ZopeTestCase.layer.ZopeLite in 0.000 seconds.
+  Set up zope.testrunner.layer.UnitTests in 0.000 seconds.
+  Ran 4 tests with 0 failures, 0 errors and 0 skipped in 0.001 seconds.
+Tearing down left over layers:
+  Tear down zope.testrunner.layer.UnitTests in 0.000 seconds.
+Total: 47 tests, 0 failures, 0 errors and 0 skipped in 28.963 seconds.
+#### Finished tests for plone.app.linkintegrity ####
+
+#### Running tests for plone.app.locales ####
+Total: 0 tests, 0 failures, 0 errors and 0 skipped in 0.000 seconds.
+#### Finished tests for plone.app.locales ####
+
+#### Running tests for plone.app.users ####
+Running Products.PloneTestCase.layer.PloneSite tests:
+  Set up Testing.ZopeTestCase.layer.ZopeLite in 0.210 seconds.
+  Set up Products.PloneTestCase.layer.ZCML in 1.932 seconds.
+  Set up Products.PloneTestCase.layer.PloneSite in 2.143 seconds.
+  Ran 12 tests with 0 failures, 0 errors and 0 skipped in 5.536 seconds.
+Running zope.testrunner.layer.UnitTests tests:
+  Tear down Products.PloneTestCase.layer.PloneSite in 0.077 seconds.
+  Tear down Products.PloneTestCase.layer.ZCML in 0.003 seconds.
+  Tear down Testing.ZopeTestCase.layer.ZopeLite in 0.000 seconds.
+  Set up zope.testrunner.layer.UnitTests in 0.000 seconds.
+  Ran 3 tests with 0 failures, 0 errors and 0 skipped in 0.001 seconds.
+Tearing down left over layers:
+  Tear down zope.testrunner.layer.UnitTests in 0.000 seconds.
+Total: 15 tests, 0 failures, 0 errors and 0 skipped in 10.293 seconds.
+#### Finished tests for plone.app.users ####
+
+#### Running tests for plone.app.viewletmanager ####
+Running plone.app.viewletmanager.testing.PloneAppViewletmanagerLayer:Integration tests:
+  Set up plone.testing.zca.LayerCleanup in 0.000 seconds.
+  Set up plone.testing.z2.Startup in 0.089 seconds.
+  Set up plone.app.testing.layers.PloneFixture in 3.596 seconds.
+  Set up plone.app.viewletmanager.testing.PloneAppViewletmanagerLayer in 0.000 seconds.
+  Set up plone.app.viewletmanager.testing.PloneAppViewletmanagerLayer:Integration in 0.000 seconds.
+  Ran 17 tests with 0 failures, 0 errors and 0 skipped in 0.065 seconds.
+Running zope.testrunner.layer.UnitTests tests:
+  Tear down plone.app.viewletmanager.testing.PloneAppViewletmanagerLayer:Integration in 0.000 seconds.
+  Tear down plone.app.viewletmanager.testing.PloneAppViewletmanagerLayer in 0.000 seconds.
+  Tear down plone.app.testing.layers.PloneFixture in 0.035 seconds.
+  Tear down plone.testing.z2.Startup in 0.003 seconds.
+  Tear down plone.testing.zca.LayerCleanup in 0.001 seconds.
+  Set up zope.testrunner.layer.UnitTests in 0.000 seconds.
+  Ran 2 tests with 0 failures, 0 errors and 0 skipped in 0.044 seconds.
+Tearing down left over layers:
+  Tear down zope.testrunner.layer.UnitTests in 0.000 seconds.
+Total: 19 tests, 0 failures, 0 errors and 0 skipped in 4.107 seconds.
+#### Finished tests for plone.app.viewletmanager ####
+
+#### Running tests for plone.caching ####
+Running plone.caching.testing.ImplicitRulesetRegistryUnitTestingLayer tests:
+  Set up plone.testing.zca.UnitTesting in 0.000 seconds.
+  Set up plone.caching.testing.ImplicitRulesetRegistryUnitTestingLayer in 0.000 seconds.
+  Ran 48 tests with 0 failures, 0 errors and 0 skipped in 0.029 seconds.
+Running zope.testrunner.layer.UnitTests tests:
+  Tear down plone.caching.testing.ImplicitRulesetRegistryUnitTestingLayer in 0.000 seconds.
+  Tear down plone.testing.zca.UnitTesting in 0.000 seconds.
+  Set up zope.testrunner.layer.UnitTests in 0.000 seconds.
+  Ran 9 tests with 0 failures, 0 errors and 0 skipped in 0.003 seconds.
+Tearing down left over layers:
+  Tear down zope.testrunner.layer.UnitTests in 0.000 seconds.
+Total: 57 tests, 0 failures, 0 errors and 0 skipped in 0.070 seconds.
+#### Finished tests for plone.caching ####
+
+#### Running tests for plone.formwidget.autocomplete ####
+Running plone.formwidget.autocomplete.tests.ZCMLLayer tests:
+  Set up Testing.ZopeTestCase.layer.ZopeLite in 0.016 seconds.
+  Set up Products.PloneTestCase.layer.ZCML in 0.061 seconds.
+  Set up plone.formwidget.autocomplete.tests.ZCMLLayer in 0.036 seconds.
+  Ran 1 tests with 0 failures, 0 errors and 0 skipped in 0.210 seconds.
+Tearing down left over layers:
+  Tear down plone.formwidget.autocomplete.tests.ZCMLLayer in 0.000 seconds.
+  Tear down Products.PloneTestCase.layer.ZCML in 0.000 seconds.
+  Tear down Testing.ZopeTestCase.layer.ZopeLite in 0.000 seconds.
+#### Finished tests for plone.formwidget.autocomplete ####
+
+#### Running tests for plone.formwidget.contenttree ####
+Running plone.formwidget.contenttree.testing.plone.formwidget.contenttree:Integration tests:
+  Set up plone.testing.zca.LayerCleanup in 0.000 seconds.
+  Set up plone.testing.z2.Startup in 0.092 seconds.
+  Set up plone.app.testing.layers.PloneFixture in 4.308 seconds.
+  Set up plone.formwidget.contenttree.testing.ContentTreeLayer in 0.192 seconds.
+  Set up plone.formwidget.contenttree.testing.plone.formwidget.contenttree:Integration in 0.000 seconds.
+  Ran 3 tests with 0 failures, 0 errors and 0 skipped in 0.013 seconds.
+Tearing down left over layers:
+  Tear down plone.formwidget.contenttree.testing.plone.formwidget.contenttree:Integration in 0.000 seconds.
+  Tear down plone.formwidget.contenttree.testing.ContentTreeLayer in 0.003 seconds.
+  Tear down plone.app.testing.layers.PloneFixture in 0.050 seconds.
+  Tear down plone.testing.z2.Startup in 0.003 seconds.
+  Tear down plone.testing.zca.LayerCleanup in 0.001 seconds.
+#### Finished tests for plone.formwidget.contenttree ####
+
+#### Running tests for plone.outputfilters ####
+Running plone.outputfilters.tests.base.layer tests:
+  Set up Testing.ZopeTestCase.layer.ZopeLite in 0.273 seconds.
+  Set up Products.PloneTestCase.layer.ZCML in 2.046 seconds.
+  Set up Products.PloneTestCase.layer.PloneSite in 2.292 seconds.
+  Set up plone.outputfilters.tests.base.layer in 0.000 seconds.
+  Ran 52 tests with 0 failures, 0 errors and 0 skipped in 5.002 seconds.
+Running zope.testrunner.layer.UnitTests tests:
+  Tear down plone.outputfilters.tests.base.layer in 0.000 seconds.
+  Tear down Products.PloneTestCase.layer.PloneSite in 0.080 seconds.
+  Tear down Products.PloneTestCase.layer.ZCML in 0.002 seconds.
+  Tear down Testing.ZopeTestCase.layer.ZopeLite in 0.000 seconds.
+  Set up zope.testrunner.layer.UnitTests in 0.000 seconds.
+  Ran 4 tests with 0 failures, 0 errors and 0 skipped in 0.000 seconds.
+Tearing down left over layers:
+  Tear down zope.testrunner.layer.UnitTests in 0.000 seconds.
+Total: 56 tests, 0 failures, 0 errors and 0 skipped in 10.062 seconds.
+#### Finished tests for plone.outputfilters ####
+
+#### Running tests for plone.resourceeditor ####
+Running plone.resourceeditor.testing.plone.resourceeditor:Integration tests:
+  Set up plone.testing.zca.LayerCleanup in 0.000 seconds.
+  Set up plone.testing.z2.Startup in 0.116 seconds.
+  Set up plone.app.testing.layers.PloneFixture in 4.439 seconds.
+  Set up plone.resourceeditor.testing.PloneResourceEditor in 0.164 seconds.
+  Set up plone.resourceeditor.testing.plone.resourceeditor:Integration in 0.000 seconds.
+  Ran 23 tests with 0 failures, 0 errors and 0 skipped in 0.041 seconds.
+Tearing down left over layers:
+  Tear down plone.resourceeditor.testing.plone.resourceeditor:Integration in 0.000 seconds.
+  Tear down plone.resourceeditor.testing.PloneResourceEditor in 0.002 seconds.
+  Tear down plone.app.testing.layers.PloneFixture in 0.032 seconds.
+  Tear down plone.testing.z2.Startup in 0.003 seconds.
+  Tear down plone.testing.zca.LayerCleanup in 0.001 seconds.
+#### Finished tests for plone.resourceeditor ####
+
+
+Total time elapsed: 877.608 seconds
+
+Grand total: 129 packages, 0 failures
+
+Xvfb stopping
+Recording test results
+Robot results publisher started...
+-Parsing output xml:
+Done!
+-Copying log files to build dir:
+Done!
+-Assigning results to build:
+Done!
+-Checking thresholds:
+Done!
+Done publishing Robot results.
+Started calculate disk usage of build
+Finished Calculation of disk usage of build in 0 seconds
+Started calculate disk usage of workspace
+Finished Calculation of disk usage of workspace in 0 seconds
+No emails were triggered.
+Finished: SUCCESS

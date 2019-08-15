@@ -1,0 +1,7 @@
+[workspace] Running shell script
++ ls -lh
+total 16K
+-rwxr-xr-x 1 adildsw adildsw  855 Jul 20 16:25 Jenkinsfile
+-rw-r--r-- 1 adildsw adildsw 1.1K Jul 20 16:25 LICENSE
+-rwxr-xr-x 1 adildsw adildsw  572 Jul 20 16:25 pom.xml
+drwxr-xr-x 4 adildsw adildsw 4.0K Jul 20 16:25 src

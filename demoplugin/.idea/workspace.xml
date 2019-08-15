@@ -1,0 +1,523 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="6914aabe-615b-4435-b73f-356db6aaa977" name="Default" comment="" />
+    <ignored path="$PROJECT_DIR$/target/" />
+    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
+    <option name="TRACKING_ENABLED" value="true" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileEditorManager">
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
+      <file leaf-file-name="LogCapturePublisher.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/io/jenkins/plugins/demoplugin/LogCapturePublisher.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state>
+              <caret selection-end-column="38" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="KryptoUtil.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/io/jenkins/plugins/demoplugin/KryptoUtil.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="30">
+              <caret line="95" column="4" lean-forward="true" selection-start-line="95" selection-start-column="4" selection-end-line="116" selection-end-column="5" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="XmlDigitalSignatureGenerator.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/io/jenkins/plugins/demoplugin/XmlDigitalSignatureGenerator.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="-1140">
+              <caret line="2" column="48" selection-start-line="2" selection-start-column="48" selection-end-line="2" selection-end-column="48" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Key.java" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/main/java/io/jenkins/plugins/demoplugin/Key.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="113">
+              <caret line="9" column="29" selection-start-line="9" selection-start-column="29" selection-end-line="9" selection-end-column="29" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="XmlDigitalSignatureVerifier.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/io/jenkins/plugins/demoplugin/XmlDigitalSignatureVerifier.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="15">
+              <caret line="1" lean-forward="true" selection-start-line="1" selection-end-line="2" selection-end-column="48" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+    </leaf>
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
+  <component name="FindInProjectRecents">
+    <findStrings>
+      <find>isPipeline</find>
+    </findStrings>
+  </component>
+  <component name="IdeDocumentHistory">
+    <option name="CHANGED_PATHS">
+      <list>
+        <option value="$PROJECT_DIR$/src/main/java/io/jenkins/plugins/demoplugin/RootURL.java" />
+        <option value="$PROJECT_DIR$/src/main/java/io/jenkins/plugins/demoplugin/MetaCapBuilder.java" />
+        <option value="$PROJECT_DIR$/src/main/resources/io/jenkins/plugins/demoplugin/MetaCapBuilder/config.jelly" />
+        <option value="$PROJECT_DIR$/src/main/resources/io/jenkins/plugins/demoplugin/MessageBuilder/config.jelly" />
+        <option value="$PROJECT_DIR$/src/main/resources/io/jenkins/plugins/demoplugin/HelloWorldPublisher/config.jelly" />
+        <option value="$PROJECT_DIR$/src/main/java/io/jenkins/plugins/demoplugin/HelloWorldPublisher.java" />
+        <option value="$PROJECT_DIR$/src/main/java/io/jenkins/plugins/demoplugin/MessageBuilder.java" />
+        <option value="$PROJECT_DIR$/src/main/resources/io/jenkins/plugins/demoplugin/GitCommitCapturePublisher/config.jelly" />
+        <option value="$PROJECT_DIR$/src/main/java/io/jenkins/plugins/demoplugin/PipelineJobStruct.java" />
+        <option value="$PROJECT_DIR$/src/main/java/io/jenkins/plugins/demoplugin/GitCommitCapturePublisher.java" />
+        <option value="$PROJECT_DIR$/src/main/java/io/jenkins/plugins/demoplugin/NonPipelineXMLParser.java" />
+        <option value="$PROJECT_DIR$/src/main/java/io/jenkins/plugins/demoplugin/LogParser.java" />
+        <option value="$PROJECT_DIR$/src/main/java/io/jenkins/plugins/demoplugin/NonPipelineXMLBuilder.java" />
+        <option value="$PROJECT_DIR$/src/main/java/io/jenkins/plugins/demoplugin/PipelineXMLBuilder.java" />
+        <option value="$PROJECT_DIR$/src/main/java/io/jenkins/plugins/demoplugin/LogCapturePublisher.java" />
+        <option value="$PROJECT_DIR$/src/main/java/io/jenkins/plugins/demoplugin/RSADigitalSigner.java" />
+        <option value="$PROJECT_DIR$/src/main/java/io/jenkins/plugins/demoplugin/KryptoUtil.java" />
+        <option value="$PROJECT_DIR$/src/main/java/io/jenkins/plugins/demoplugin/XmlDigitalSignatureVerifier.java" />
+        <option value="$PROJECT_DIR$/src/main/java/io/jenkins/plugins/demoplugin/XmlDigitalSignatureGenerator.java" />
+        <option value="$PROJECT_DIR$/src/main/java/io/jenkins/plugins/demoplugin/PrivateKey.java" />
+        <option value="$PROJECT_DIR$/src/main/java/io/jenkins/plugins/demoplugin/Key.java" />
+      </list>
+    </option>
+  </component>
+  <component name="ProjectFrameBounds" extendedState="6">
+    <option name="x" value="145" />
+    <option name="y" value="82" />
+    <option name="width" value="1201" />
+    <option name="height" value="621" />
+  </component>
+  <component name="ProjectView">
+    <navigator proportions="" version="1">
+      <foldersAlwaysOnTop value="true" />
+    </navigator>
+    <panes>
+      <pane id="ProjectPane">
+        <subPane>
+          <expand>
+            <path>
+              <item name="demoplugin" type="b2602c69:ProjectViewProjectNode" />
+              <item name="demoplugin" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="demoplugin" type="b2602c69:ProjectViewProjectNode" />
+              <item name="demoplugin" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="demoplugin" type="b2602c69:ProjectViewProjectNode" />
+              <item name="demoplugin" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="demoplugin" type="b2602c69:ProjectViewProjectNode" />
+              <item name="demoplugin" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="demoplugin" type="b2602c69:ProjectViewProjectNode" />
+              <item name="demoplugin" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="demoplugin" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="demoplugin" type="b2602c69:ProjectViewProjectNode" />
+              <item name="demoplugin" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="resources" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="demoplugin" type="b2602c69:ProjectViewProjectNode" />
+              <item name="demoplugin" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="resources" type="462c0819:PsiDirectoryNode" />
+              <item name="GitCommitCapturePublisher" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="demoplugin" type="b2602c69:ProjectViewProjectNode" />
+              <item name="demoplugin" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="test" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="demoplugin" type="b2602c69:ProjectViewProjectNode" />
+              <item name="demoplugin" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="test" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+            </path>
+          </expand>
+          <select />
+        </subPane>
+      </pane>
+      <pane id="Scope" />
+      <pane id="PackagesPane" />
+      <pane id="AndroidView" />
+    </panes>
+  </component>
+  <component name="PropertiesComponent">
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="settings.editor.selected.configurable" value="editor.preferences.fonts.default" />
+  </component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/src/main/resources/io/jenkins/plugins/demoplugin/GitCommitCapturePublisher" />
+    </key>
+  </component>
+  <component name="RunDashboard">
+    <option name="ruleStates">
+      <list>
+        <RuleState>
+          <option name="name" value="ConfigurationTypeDashboardGroupingRule" />
+        </RuleState>
+        <RuleState>
+          <option name="name" value="StatusDashboardGroupingRule" />
+        </RuleState>
+      </list>
+    </option>
+  </component>
+  <component name="RunManager" selected="Application.Key">
+    <configuration name="Key" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="io.jenkins.plugins.demoplugin.Key" />
+      <module name="demoplugin" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="io.jenkins.plugins.demoplugin.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+    </configuration>
+    <configuration name="LogParserMain" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="io.jenkins.plugins.demoplugin.LogParserMain" />
+      <module name="demoplugin" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="io.jenkins.plugins.demoplugin.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+    </configuration>
+    <configuration name="RSADigitalSigner" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="io.jenkins.plugins.demoplugin.RSADigitalSigner" />
+      <module name="demoplugin" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="io.jenkins.plugins.demoplugin.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+    </configuration>
+    <configuration default="true" type="Application" factoryName="Application">
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+    </configuration>
+    <configuration default="true" type="JUnit" factoryName="JUnit">
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="PACKAGE_NAME" />
+      <option name="MAIN_CLASS_NAME" />
+      <option name="METHOD_NAME" />
+      <option name="TEST_OBJECT" value="class" />
+      <option name="VM_PARAMETERS" value="-ea" />
+      <option name="PARAMETERS" />
+      <option name="WORKING_DIRECTORY" value="%MODULE_WORKING_DIR%" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <option name="TEST_SEARCH_SCOPE">
+        <value defaultName="singleModule" />
+      </option>
+      <patterns />
+    </configuration>
+    <configuration default="true" type="TestNG" factoryName="TestNG">
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="SUITE_NAME" />
+      <option name="PACKAGE_NAME" />
+      <option name="MAIN_CLASS_NAME" />
+      <option name="METHOD_NAME" />
+      <option name="GROUP_NAME" />
+      <option name="TEST_OBJECT" value="CLASS" />
+      <option name="VM_PARAMETERS" value="-ea" />
+      <option name="PARAMETERS" />
+      <option name="WORKING_DIRECTORY" value="%MODULE_WORKING_DIR%" />
+      <option name="OUTPUT_DIRECTORY" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <option name="TEST_SEARCH_SCOPE">
+        <value defaultName="singleModule" />
+      </option>
+      <option name="USE_DEFAULT_REPORTERS" value="false" />
+      <option name="PROPERTIES_FILE" />
+      <properties />
+      <listeners />
+    </configuration>
+    <list>
+      <item itemvalue="Application.LogParserMain" />
+      <item itemvalue="Application.RSADigitalSigner" />
+      <item itemvalue="Application.Key" />
+    </list>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Application.Key" />
+        <item itemvalue="Application.RSADigitalSigner" />
+        <item itemvalue="Application.LogParserMain" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="6914aabe-615b-4435-b73f-356db6aaa977" name="Default" comment="" />
+      <created>1530642553135</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1530642553135</updated>
+    </task>
+    <servers />
+  </component>
+  <component name="ToolWindowManager">
+    <frame x="47" y="34" width="1319" height="734" extended-state="6" />
+    <editor active="true" />
+    <layout>
+      <window_info anchor="right" id="Palette" order="3" />
+      <window_info anchor="bottom" id="TODO" order="6" />
+      <window_info anchor="bottom" id="Messages" order="7" weight="0.32857144" />
+      <window_info anchor="right" id="Palette&#9;" order="4" />
+      <window_info id="Image Layers" order="1" />
+      <window_info anchor="right" id="Capture Analysis" order="5" />
+      <window_info anchor="bottom" id="Event Log" order="9" side_tool="true" />
+      <window_info anchor="right" id="Maven Projects" order="6" />
+      <window_info anchor="bottom" id="Version Control" order="7" show_stripe_button="false" />
+      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.32857144" />
+      <window_info anchor="bottom" id="Terminal" order="8" />
+      <window_info id="Capture Tool" order="2" />
+      <window_info id="Designer" order="3" />
+      <window_info content_ui="combo" id="Project" order="6" visible="true" weight="0.26686883" />
+      <window_info id="Structure" order="0" side_tool="true" weight="0.25" />
+      <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
+      <window_info id="UI Designer" order="4" />
+      <window_info anchor="right" id="Theme Preview" order="7" />
+      <window_info id="Favorites" order="5" side_tool="true" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
+      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
+      <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
+      <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
+      <window_info anchor="bottom" id="Message" order="0" />
+      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
+      <window_info anchor="bottom" id="Find" order="1" weight="0.32857144" />
+    </layout>
+    <layout-to-restore>
+      <window_info anchor="right" id="Palette" order="3" />
+      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
+      <window_info anchor="right" id="Capture Analysis" order="5" />
+      <window_info anchor="bottom" id="Run" order="2" />
+      <window_info anchor="right" id="Theme Preview" order="7" />
+      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
+      <window_info active="true" content_ui="combo" id="Project" order="6" visible="true" weight="0.26686883" />
+      <window_info id="Structure" order="0" side_tool="true" weight="0.25" />
+      <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
+      <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
+      <window_info anchor="bottom" id="TODO" order="6" />
+      <window_info id="Image Layers" order="1" />
+      <window_info id="Designer" order="3" />
+      <window_info id="UI Designer" order="4" />
+      <window_info anchor="bottom" id="Find" order="1" weight="0.32857144" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
+      <window_info anchor="right" id="Palette&#9;" order="4" />
+      <window_info anchor="bottom" id="Terminal" order="8" />
+      <window_info anchor="bottom" id="Event Log" order="9" side_tool="true" />
+      <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
+      <window_info anchor="bottom" id="Version Control" order="7" show_stripe_button="false" />
+      <window_info id="Capture Tool" order="2" />
+      <window_info anchor="bottom" id="Message" order="0" />
+      <window_info anchor="right" id="Maven Projects" order="6" />
+      <window_info id="Favorites" order="5" side_tool="true" />
+    </layout-to-restore>
+  </component>
+  <component name="VcsContentAnnotationSettings">
+    <option name="myLimit" value="2678400000" />
+  </component>
+  <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/src/main/resources/io/jenkins/plugins/demoplugin/MessageBuilder/config.jelly" />
+    <entry file="file://$PROJECT_DIR$/src/main/java/io/jenkins/plugins/demoplugin/HelloWorldBuilder.java" />
+    <entry file="file://$PROJECT_DIR$/src/main/java/io/jenkins/plugins/demoplugin/GitCommitCapturePublisher.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="600">
+          <caret line="40" column="5" lean-forward="true" selection-start-line="40" selection-start-column="5" selection-end-line="40" selection-end-column="5" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/io/jenkins/plugins/demoplugin/MessageBuilder.java" />
+    <entry file="file://$PROJECT_DIR$/src/main/java/io/jenkins/plugins/demoplugin/HelloWorldPublisher.java" />
+    <entry file="file://$PROJECT_DIR$/src/main/java/io/jenkins/plugins/demoplugin/HelloWorldBuilder.java" />
+    <entry file="file://$PROJECT_DIR$/src/main/resources/io/jenkins/plugins/demoplugin/MessageBuilder/config.jelly" />
+    <entry file="file://$PROJECT_DIR$/src/main/resources/io/jenkins/plugins/demoplugin/HelloWorldBuilder/config.jelly" />
+    <entry file="file://$PROJECT_DIR$/src/main/resources/io/jenkins/plugins/demoplugin/HelloWorldBuilder/config_fr.properties" />
+    <entry file="file://$PROJECT_DIR$/src/main/resources/io/jenkins/plugins/demoplugin/HelloWorldPublisher/config.jelly" />
+    <entry file="file://$PROJECT_DIR$/src/main/java/io/jenkins/plugins/demoplugin/MessageBuilder.java" />
+    <entry file="file://$PROJECT_DIR$/src/main/java/io/jenkins/plugins/demoplugin/HelloWorldBuilder.java" />
+    <entry file="file://$PROJECT_DIR$/src/main/resources/io/jenkins/plugins/demoplugin/MessageBuilder/config.jelly" />
+    <entry file="file://$PROJECT_DIR$/src/main/resources/io/jenkins/plugins/demoplugin/HelloWorldBuilder/config.jelly" />
+    <entry file="file://$PROJECT_DIR$/src/main/resources/io/jenkins/plugins/demoplugin/HelloWorldBuilder/config_fr.properties" />
+    <entry file="file://$PROJECT_DIR$/src/main/java/io/jenkins/plugins/demoplugin/MessageBuilder.java" />
+    <entry file="file://$PROJECT_DIR$/src/main/resources/io/jenkins/plugins/demoplugin/MessageBuilder/config.jelly" />
+    <entry file="file://$PROJECT_DIR$/src/main/resources/io/jenkins/plugins/demoplugin/HelloWorldBuilder/config.jelly" />
+    <entry file="file://$PROJECT_DIR$/src/main/resources/io/jenkins/plugins/demoplugin/HelloWorldBuilder/config_fr.properties" />
+    <entry file="file://$PROJECT_DIR$/src/main/java/io/jenkins/plugins/demoplugin/HelloWorldBuilder.java" />
+    <entry file="file://$PROJECT_DIR$/src/main/java/io/jenkins/plugins/demoplugin/MessageBuilder.java" />
+    <entry file="file://$PROJECT_DIR$/src/main/resources/io/jenkins/plugins/demoplugin/MessageBuilder/config.jelly" />
+    <entry file="file://$PROJECT_DIR$/src/main/resources/io/jenkins/plugins/demoplugin/HelloWorldBuilder/config.jelly" />
+    <entry file="file://$PROJECT_DIR$/src/main/resources/io/jenkins/plugins/demoplugin/HelloWorldBuilder/config_fr.properties" />
+    <entry file="file://$PROJECT_DIR$/src/main/java/io/jenkins/plugins/demoplugin/HelloWorldBuilder.java" />
+    <entry file="file://$PROJECT_DIR$/src/main/resources/index.jelly">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/io/jenkins/plugins/demoplugin/MetaCapBuilder/config.jelly" />
+    <entry file="file://$PROJECT_DIR$/src/main/resources/io/jenkins/plugins/demoplugin/HelloWorldBuilder/config.properties" />
+    <entry file="file://$PROJECT_DIR$/src/main/resources/io/jenkins/plugins/demoplugin/HelloWorldBuilder/config_de.properties" />
+    <entry file="file://$PROJECT_DIR$/src/main/resources/io/jenkins/plugins/demoplugin/HelloWorldBuilder/help-name.html" />
+    <entry file="file://$PROJECT_DIR$/src/main/resources/io/jenkins/plugins/demoplugin/HelloWorldBuilder/config_fr.properties" />
+    <entry file="file://$PROJECT_DIR$/src/main/java/io/jenkins/plugins/demoplugin/MetaCapBuilder.java" />
+    <entry file="file://$PROJECT_DIR$/src/main/java/io/jenkins/plugins/demoplugin/HelloWorldPublisher.java" />
+    <entry file="file://$PROJECT_DIR$/src/main/java/io/jenkins/plugins/demoplugin/MessageBuilder.java" />
+    <entry file="file://$PROJECT_DIR$/src/main/resources/io/jenkins/plugins/demoplugin/HelloWorldBuilder/config.jelly" />
+    <entry file="file://$PROJECT_DIR$/src/main/java/io/jenkins/plugins/demoplugin/HelloWorldBuilder.java" />
+    <entry file="file://$PROJECT_DIR$/src/main/resources/io/jenkins/plugins/demoplugin/HelloWorldPublisher/config.jelly" />
+    <entry file="file://$PROJECT_DIR$/src/main/resources/io/jenkins/plugins/demoplugin/MessageBuilder/config.jelly" />
+    <entry file="file://$PROJECT_DIR$/src/main/java/io/jenkins/plugins/demoplugin/PipelineJobStruct.java" />
+    <entry file="file://$PROJECT_DIR$/src/main/java/io/jenkins/plugins/demoplugin/RootURL.java" />
+    <entry file="file://$PROJECT_DIR$/src/main/java/io/jenkins/plugins/demoplugin/GitCommitCapturePublisher.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-375">
+          <caret line="61" column="47" selection-start-line="61" selection-start-column="47" selection-end-line="61" selection-end-column="47" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/io/jenkins/plugins/demoplugin/GitCommitCapturePublisher/config.jelly">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="195">
+          <caret line="13" column="56" selection-start-line="13" selection-start-column="32" selection-end-line="13" selection-end-column="56" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/io/jenkins/plugins/demoplugin/LogParser.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="560">
+          <caret line="137" column="3" selection-start-line="137" selection-start-column="3" selection-end-line="137" selection-end-column="3" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/io/jenkins/plugins/demoplugin/PipelineXMLBuilder.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="380">
+          <caret line="309" column="24" lean-forward="true" selection-start-line="309" selection-start-column="24" selection-end-line="309" selection-end-column="24" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/io/jenkins/plugins/demoplugin/RSADigitalSigner.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="743">
+          <caret line="51" column="27" selection-start-line="51" selection-start-column="27" selection-end-line="51" selection-end-column="27" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/io/jenkins/plugins/demoplugin/LogCapturePublisher.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret selection-end-column="38" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/io/jenkins/plugins/demoplugin/NonPipelineXMLBuilder.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="246">
+          <caret line="240" column="20" lean-forward="true" selection-start-line="240" selection-start-column="20" selection-end-line="241" selection-end-column="62" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/io/jenkins/plugins/demoplugin/XmlDigitalSignatureVerifier.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="15">
+          <caret line="1" lean-forward="true" selection-start-line="1" selection-end-line="2" selection-end-column="48" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/io/jenkins/plugins/demoplugin/XmlDigitalSignatureGenerator.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-1140">
+          <caret line="2" column="48" selection-start-line="2" selection-start-column="48" selection-end-line="2" selection-end-column="48" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/io/jenkins/plugins/demoplugin/KryptoUtil.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="30">
+          <caret line="95" column="4" lean-forward="true" selection-start-line="95" selection-start-column="4" selection-end-line="116" selection-end-column="5" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/io/jenkins/plugins/demoplugin/Key.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="113">
+          <caret line="9" column="29" selection-start-line="9" selection-start-column="29" selection-end-line="9" selection-end-column="29" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+  </component>
+</project>

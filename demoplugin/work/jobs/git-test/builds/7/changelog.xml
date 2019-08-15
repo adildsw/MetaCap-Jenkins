@@ -1,0 +1,12 @@
+commit 3363e58bdb4997e532b9802c75366fe460bc2dae
+tree adae52f4dae8cd95dc166125c577193288d979be
+parent e41c447b8c88b3f5ccecb5fa64455680434239a4
+author AdilDSW <adildsw@gmail.com> 2018-07-23 08:56:02 -0400
+committer AdilDSW <adildsw@gmail.com> 2018-07-23 08:56:02 -0400
+
+    modified Jenkinsfile and .gitignore
+
+
+
+:100644 100644 32858aad3c383ed1ff0a0f9bdf231d54a00c9e88 72855c550ebfe4588729a8c7e78c6f15e7127b63 M	.gitignore
+:100755 100755 8dc9b280175ec970f44a1961cbb2736526e4610d e73a66bb433fd671ee1ebc6dd7eda8d96e94a0ce M	Jenkinsfile

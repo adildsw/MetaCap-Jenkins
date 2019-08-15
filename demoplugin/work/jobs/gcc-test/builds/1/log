@@ -1,0 +1,8 @@
+Started by user unknown or anonymous
+Building in workspace /home/adildsw/jenkins-plugins/demoplugin/work/jobs/gcc-test/workspace
+[workspace] $ /bin/sh -xe /tmp/jenkins6616862503097454816.sh
++ g++
+g++: fatal error: no input files
+compilation terminated.
+Build step 'Execute shell' marked build as failure
+Finished: FAILURE

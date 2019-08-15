@@ -1,0 +1,1 @@
+ignore%2Ftesting-ci-issues-cliff-frontend-1.0

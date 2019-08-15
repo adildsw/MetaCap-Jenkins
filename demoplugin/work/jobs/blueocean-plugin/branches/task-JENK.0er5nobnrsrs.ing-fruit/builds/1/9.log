@@ -1,0 +1,31 @@
+Cloning the remote Git repository
+Cloning with configured refspecs honoured and without tags
+Cloning repository https://github.com/adildsw/blueocean-plugin.git
+ > git init /home/adildsw/jenkins-plugins/demoplugin/work/jobs/blueocean-plugin/branches/task-JENK.0er5nobnrsrs.ing-fruit/workspace # timeout=10
+Fetching upstream changes from https://github.com/adildsw/blueocean-plugin.git
+ > git --version # timeout=10
+using GIT_ASKPASS to set credentials GitHub Access Token
+ > git fetch --no-tags --progress https://github.com/adildsw/blueocean-plugin.git +refs/heads/task/JENKINS-51513-rundetails-low-hanging-fruit:refs/remotes/origin/task/JENKINS-51513-rundetails-low-hanging-fruit
+ > git config remote.origin.url https://github.com/adildsw/blueocean-plugin.git # timeout=10
+ > git config --add remote.origin.fetch +refs/heads/task/JENKINS-51513-rundetails-low-hanging-fruit:refs/remotes/origin/task/JENKINS-51513-rundetails-low-hanging-fruit # timeout=10
+ > git config remote.origin.url https://github.com/adildsw/blueocean-plugin.git # timeout=10
+Cleaning workspace
+ > git rev-parse --verify HEAD # timeout=10
+No valid HEAD. Skipping the resetting
+ > git clean -fdx # timeout=10
+Fetching without tags
+Fetching upstream changes from https://github.com/adildsw/blueocean-plugin.git
+using GIT_ASKPASS to set credentials GitHub Access Token
+ > git fetch --no-tags --progress https://github.com/adildsw/blueocean-plugin.git +refs/heads/task/JENKINS-51513-rundetails-low-hanging-fruit:refs/remotes/origin/task/JENKINS-51513-rundetails-low-hanging-fruit
+Checking out Revision 64206f3d88637c31e87d909c9142f89b57f40154 (task/JENKINS-51513-rundetails-low-hanging-fruit)
+ > git config core.sparsecheckout # timeout=10
+ > git checkout -f 64206f3d88637c31e87d909c9142f89b57f40154
+ > git branch -a -v --no-abbrev # timeout=10
+ > git checkout -b task/JENKINS-51513-rundetails-low-hanging-fruit 64206f3d88637c31e87d909c9142f89b57f40154
+Commit message: "task/JENKINS-51513-rundetails-low-hanging-fruit * Fix some issues I missed building a part at a time"
+First time build. Skipping changelog.
+Cleaning workspace
+ > git rev-parse --verify HEAD # timeout=10
+Resetting working tree
+ > git reset --hard # timeout=10
+ > git clean -fdx # timeout=10

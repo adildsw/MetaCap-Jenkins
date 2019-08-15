@@ -1,0 +1,31 @@
+Started by user [8mha:////4CTvuOCgjO1qzQ9gXmRmoRGqLG4fiYopxFZSfX2RsNK2AAAAmR+LCAAAAAAAAP9b85aBtbiIQTGjNKU4P08vOT+vOD8nVc83PyU1x6OyILUoJzMv2y+/JJUBAhiZGBgqihhk0NSjKDWzXb3RdlLBUSYGJk8GtpzUvPSSDB8G5tKinBIGIZ+sxLJE/ZzEvHT94JKizLx0a6BxUmjGOUNodHsLgAzuEgZe/dLi1CL9xJTMnJTicgA3hk/gwgAAAA==[0mAdil Rahman
+[Fri Jul 20 12:19:02 EDT 2018] Starting branch indexing...
+[8mha:////4MEeRRC4m50kjpoz4ARn8+rj5N/KPNHHqo/BD8iwgMY0AAAAhB+LCAAAAAAAAP9b85aBtbiIwSa/KF0vKzUvOzOvODlTryCnNB3I0kvPLMkoTYpPKkrMS86IL84vLUpO1XPPLPEoTXLOzyvOz0n1yy9JZYAARiYGRi8GzpLM3NTiksTcgooiBqmM0pTi/Dy9ZIhiPayaGCoKgHTKjppjMgDEKRVBjgAAAA==[0mConnecting to https://api.github.com using adildsw/****** (GitHub Access Token)
+[8mha:////4L4lwWNFXuvp1nnowfpGM5HyR4zadgw+YpwFsbWYsrAdAAAAhB+LCAAAAAAAAP9b85aBtbiIwSa/KF0vKzUvOzOvODlTryCnNB3I0kvPLMkoTYpPKkrMS86IL84vLUpO1XPPLPEoTXLOzyvOz0n1yy9JZYAARiYGRi8GzpLM3NTiksTcgooiBqmM0pTi/Dy9ZIhiPayaGCoKgHTKjprjWgAcjbSXjgAAAA==[0mConnecting to https://api.github.com using adildsw/****** (GitHub Access Token)
+Examining [8mha:////4MQ1XE+NNXbhvrw+PDZAyMHqTO/pzgnEC6reXeqs3t2TAAAApR+LCAAAAAAAAP9b85aBtbiIQSajNKU4P08vOT+vOD8nVc+jsiC1KCczL9svvyTVzHb1RttJBUeZGJg8GdhyUvPSSzJ8GJhLi3JKGIR8shLLEvVzEvPS9YNLijLz0q0rihik0IxzhtAgwxgggJGJgaGiAMgQKmFQzSgpKSi20tdPzyzJKE0C6srVT0zJzEkpLtfPSs3Lzswr1svMBwDNN8m3qgAAAA==[0madildsw/jenkins.io
+
+  Checking branches...
+
+  Getting remote branches...
+
+    Checking branch [8mha:////4HNCi3NAYnQTxAoEHEe0O47/9IKvmgKnT1uRJL4aCO3GAAAAsB+LCAAAAAAAAP9djDEOAUEUhp8VolaKK9hXSBRkKw3JRuMEw77MDOPNZOYt6xquQeMQjuMOVnS+5v+a/3u8oZcijE1dJc/53nPyjvLVNVB0lo8bLzQr7s/iFl4ZZGvoO2ItpoRuHZ3AsDyos0KnWONWomW9aCKM/nLL335j8KOTATShlYHA1IiENEfUVky9a18nVJV1VbrggfhoOeXWo0Qi1GYSlKb0AWqzhH+4AAAA[0mgh-pages
+      ‘Jenkinsfile’ not found
+    Does not meet criteria
+
+    Checking branch [8mha:////4FiQT7sMc6ZdlbIV/ODuQ5/5hH5ARM4AoHYx6xx9ZPFDAAAArh+LCAAAAAAAAP9djLENwjAQRY8gMgAlYoacaChAqWhAimiYwJCTY+KcLfsCYQ3WgIYhGIcdCErHa/5r/nt+YBIDzKu2jI6zk+PoLGXbm6dgDdd7J7TMH6/87t8JJDtILbGWqoBxG6zAtDiri0KrWONBgmG97gLM/nKbYX8xGBglAJ3vJRVYVCI+rhC1kao99q8GVWlsGa94Jq4Nx8w4lECEjYpC4QtT3SQStgAAAA==[0mmaster
+      ‘Jenkinsfile’ found
+    Met criteria
+Scheduled build for branch: master
+
+  2 branches were processed
+
+  Checking pull-requests...
+
+  Getting remote pull requests...
+
+  0 pull requests were processed
+
+Finished examining adildsw/jenkins.io
+
+[Fri Jul 20 12:19:03 EDT 2018] Finished branch indexing. Indexing took 0.97 sec
+Finished: SUCCESS

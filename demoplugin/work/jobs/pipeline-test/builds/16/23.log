@@ -1,0 +1,11 @@
+*****MetaCap in Action*****
+Started by user unknown or anonymous
+Running in Durability level: MAX_SURVIVABILITY
+Running on [8mha:////4Mym/ya3LOVhm8uMaWm8ATecf+Mvdj4/pCxJadMVRHbDAAAAnh+LCAAAAAAAAP9b85aBtbiIQTGjNKU4P08vOT+vOD8nVc83PyU1x6OyILUoJzMv2y+/JJUBAhiZGBgqihhk0NSjKDWzXb3RdlLBUSYGJk8GtpzUvPSSDB8G5tKinBIGIZ+sxLJE/ZzEvHT94JKizLx0a6BxUmjGOUNodHsLgAz2EgZh/eT83ILSktQifY3cxGIgrakPAHib2iPIAAAA[0mJenkins in /home/adildsw/jenkins-plugins/demoplugin/work/jobs/pipeline-test/workspace
+Build Process Started
+Fri Jul 20 14:28:27 EDT 2018
+Deployed
+/home/adildsw/jenkins-plugins/demoplugin/work/jobs/pipeline-test/workspace@tmp/durable-1db7777b/script.sh: 2: /home/adildsw/jenkins-plugins/demoplugin/work/jobs/pipeline-test/workspace@tmp/durable-1db7777b/script.sh: Finalized!: not found
+
+getActions: 3
+getResult: FAILURE

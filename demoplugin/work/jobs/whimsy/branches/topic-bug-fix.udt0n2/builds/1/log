@@ -1,0 +1,128 @@
+Branch indexing
+[8mha:////4FfokGN0tKXZl8L99YN8yT5qDIbSYC4ngTwCl2rU9i/TAAAAhB+LCAAAAAAAAP9b85aBtbiIwSa/KF0vKzUvOzOvODlTryCnNB3I0kvPLMkoTYpPKkrMS86IL84vLUpO1XPPLPEoTXLOzyvOz0n1yy9JZYAARiYGRi8GzpLM3NTiksTcgooiBqmM0pTi/Dy9ZIhiPayaGCoKgHTKzrjseAChDhw2jgAAAA==[0mConnecting to https://api.github.com using adildsw/****** (GitHub Access Token)
+Obtained Jenkinsfile from 0df42dbdfed557029211cc9492cf29696f66ae7e
+Running in Durability level: MAX_SURVIVABILITY
+[8mha:////4O0i3euN0jWdK0TB8IigbEbS7P6iyj90hLcA5VmH/cQjAAAAaB+LCAAAAAAAAP9b85aBtbiIwTG/KF0vKzUvOzOvODlTryCnNB3I0ivPL8pOy8kv18vKT9JLzs8rzs9J1QuHCgaV5jlDhPzyS1IZIICRiYGhoohBKqM0pTg/D64Hh8ICAFt0h+h/AAAA[0m[Pipeline] node
+Running on [8mha:////4Mym/ya3LOVhm8uMaWm8ATecf+Mvdj4/pCxJadMVRHbDAAAAnh+LCAAAAAAAAP9b85aBtbiIQTGjNKU4P08vOT+vOD8nVc83PyU1x6OyILUoJzMv2y+/JJUBAhiZGBgqihhk0NSjKDWzXb3RdlLBUSYGJk8GtpzUvPSSDB8G5tKinBIGIZ+sxLJE/ZzEvHT94JKizLx0a6BxUmjGOUNodHsLgAz2EgZh/eT83ILSktQifY3cxGIgrakPAHib2iPIAAAA[0mJenkins in /home/adildsw/jenkins-plugins/demoplugin/work/jobs/whimsy/branches/topic-bug-fix.udt0n2/workspace
+[8mha:////4O0i3euN0jWdK0TB8IigbEbS7P6iyj90hLcA5VmH/cQjAAAAaB+LCAAAAAAAAP9b85aBtbiIwTG/KF0vKzUvOzOvODlTryCnNB3I0ivPL8pOy8kv18vKT9JLzs8rzs9J1QuHCgaV5jlDhPzyS1IZIICRiYGhoohBKqM0pTg/D64Hh8ICAFt0h+h/AAAA[0m[Pipeline] {
+[8mha:////4O0i3euN0jWdK0TB8IigbEbS7P6iyj90hLcA5VmH/cQjAAAAaB+LCAAAAAAAAP9b85aBtbiIwTG/KF0vKzUvOzOvODlTryCnNB3I0ivPL8pOy8kv18vKT9JLzs8rzs9J1QuHCgaV5jlDhPzyS1IZIICRiYGhoohBKqM0pTg/D64Hh8ICAFt0h+h/AAAA[0m[Pipeline] stage
+[8mha:////4O0i3euN0jWdK0TB8IigbEbS7P6iyj90hLcA5VmH/cQjAAAAaB+LCAAAAAAAAP9b85aBtbiIwTG/KF0vKzUvOzOvODlTryCnNB3I0ivPL8pOy8kv18vKT9JLzs8rzs9J1QuHCgaV5jlDhPzyS1IZIICRiYGhoohBKqM0pTg/D64Hh8ICAFt0h+h/AAAA[0m[Pipeline] { (Declarative: Checkout SCM)
+[8mha:////4O0i3euN0jWdK0TB8IigbEbS7P6iyj90hLcA5VmH/cQjAAAAaB+LCAAAAAAAAP9b85aBtbiIwTG/KF0vKzUvOzOvODlTryCnNB3I0ivPL8pOy8kv18vKT9JLzs8rzs9J1QuHCgaV5jlDhPzyS1IZIICRiYGhoohBKqM0pTg/D64Hh8ICAFt0h+h/AAAA[0m[Pipeline] checkout
+Cloning the remote Git repository
+Cloning with configured refspecs honoured and without tags
+Cloning repository https://github.com/adildsw/whimsy.git
+ > git init /home/adildsw/jenkins-plugins/demoplugin/work/jobs/whimsy/branches/topic-bug-fix.udt0n2/workspace # timeout=10
+Fetching upstream changes from https://github.com/adildsw/whimsy.git
+ > git --version # timeout=10
+using GIT_ASKPASS to set credentials GitHub Access Token
+ > git fetch --no-tags --progress https://github.com/adildsw/whimsy.git +refs/heads/topic/bug-fix:refs/remotes/origin/topic/bug-fix
+ > git config remote.origin.url https://github.com/adildsw/whimsy.git # timeout=10
+ > git config --add remote.origin.fetch +refs/heads/topic/bug-fix:refs/remotes/origin/topic/bug-fix # timeout=10
+ > git config remote.origin.url https://github.com/adildsw/whimsy.git # timeout=10
+Cleaning workspace
+ > git rev-parse --verify HEAD # timeout=10
+No valid HEAD. Skipping the resetting
+ > git clean -fdx # timeout=10
+Fetching without tags
+Fetching upstream changes from https://github.com/adildsw/whimsy.git
+using GIT_ASKPASS to set credentials GitHub Access Token
+ > git fetch --no-tags --progress https://github.com/adildsw/whimsy.git +refs/heads/topic/bug-fix:refs/remotes/origin/topic/bug-fix
+Checking out Revision 0df42dbdfed557029211cc9492cf29696f66ae7e (topic/bug-fix)
+ > git config core.sparsecheckout # timeout=10
+ > git checkout -f 0df42dbdfed557029211cc9492cf29696f66ae7e
+ > git branch -a -v --no-abbrev # timeout=10
+ > git checkout -b topic/bug-fix 0df42dbdfed557029211cc9492cf29696f66ae7e
+Commit message: "Updated Jenkinsfile"
+First time build. Skipping changelog.
+Cleaning workspace
+ > git rev-parse --verify HEAD # timeout=10
+Resetting working tree
+ > git reset --hard # timeout=10
+ > git clean -fdx # timeout=10
+[8mha:////4O0i3euN0jWdK0TB8IigbEbS7P6iyj90hLcA5VmH/cQjAAAAaB+LCAAAAAAAAP9b85aBtbiIwTG/KF0vKzUvOzOvODlTryCnNB3I0ivPL8pOy8kv18vKT9JLzs8rzs9J1QuHCgaV5jlDhPzyS1IZIICRiYGhoohBKqM0pTg/D64Hh8ICAFt0h+h/AAAA[0m[Pipeline] }
+[8mha:////4O0i3euN0jWdK0TB8IigbEbS7P6iyj90hLcA5VmH/cQjAAAAaB+LCAAAAAAAAP9b85aBtbiIwTG/KF0vKzUvOzOvODlTryCnNB3I0ivPL8pOy8kv18vKT9JLzs8rzs9J1QuHCgaV5jlDhPzyS1IZIICRiYGhoohBKqM0pTg/D64Hh8ICAFt0h+h/AAAA[0m[Pipeline] // stage
+[8mha:////4O0i3euN0jWdK0TB8IigbEbS7P6iyj90hLcA5VmH/cQjAAAAaB+LCAAAAAAAAP9b85aBtbiIwTG/KF0vKzUvOzOvODlTryCnNB3I0ivPL8pOy8kv18vKT9JLzs8rzs9J1QuHCgaV5jlDhPzyS1IZIICRiYGhoohBKqM0pTg/D64Hh8ICAFt0h+h/AAAA[0m[Pipeline] withEnv
+[8mha:////4O0i3euN0jWdK0TB8IigbEbS7P6iyj90hLcA5VmH/cQjAAAAaB+LCAAAAAAAAP9b85aBtbiIwTG/KF0vKzUvOzOvODlTryCnNB3I0ivPL8pOy8kv18vKT9JLzs8rzs9J1QuHCgaV5jlDhPzyS1IZIICRiYGhoohBKqM0pTg/D64Hh8ICAFt0h+h/AAAA[0m[Pipeline] {
+[8mha:////4O0i3euN0jWdK0TB8IigbEbS7P6iyj90hLcA5VmH/cQjAAAAaB+LCAAAAAAAAP9b85aBtbiIwTG/KF0vKzUvOzOvODlTryCnNB3I0ivPL8pOy8kv18vKT9JLzs8rzs9J1QuHCgaV5jlDhPzyS1IZIICRiYGhoohBKqM0pTg/D64Hh8ICAFt0h+h/AAAA[0m[Pipeline] withEnv
+[8mha:////4O0i3euN0jWdK0TB8IigbEbS7P6iyj90hLcA5VmH/cQjAAAAaB+LCAAAAAAAAP9b85aBtbiIwTG/KF0vKzUvOzOvODlTryCnNB3I0ivPL8pOy8kv18vKT9JLzs8rzs9J1QuHCgaV5jlDhPzyS1IZIICRiYGhoohBKqM0pTg/D64Hh8ICAFt0h+h/AAAA[0m[Pipeline] {
+[8mha:////4O0i3euN0jWdK0TB8IigbEbS7P6iyj90hLcA5VmH/cQjAAAAaB+LCAAAAAAAAP9b85aBtbiIwTG/KF0vKzUvOzOvODlTryCnNB3I0ivPL8pOy8kv18vKT9JLzs8rzs9J1QuHCgaV5jlDhPzyS1IZIICRiYGhoohBKqM0pTg/D64Hh8ICAFt0h+h/AAAA[0m[Pipeline] stage
+[8mha:////4O0i3euN0jWdK0TB8IigbEbS7P6iyj90hLcA5VmH/cQjAAAAaB+LCAAAAAAAAP9b85aBtbiIwTG/KF0vKzUvOzOvODlTryCnNB3I0ivPL8pOy8kv18vKT9JLzs8rzs9J1QuHCgaV5jlDhPzyS1IZIICRiYGhoohBKqM0pTg/D64Hh8ICAFt0h+h/AAAA[0m[Pipeline] { (Build)
+[8mha:////4O0i3euN0jWdK0TB8IigbEbS7P6iyj90hLcA5VmH/cQjAAAAaB+LCAAAAAAAAP9b85aBtbiIwTG/KF0vKzUvOzOvODlTryCnNB3I0ivPL8pOy8kv18vKT9JLzs8rzs9J1QuHCgaV5jlDhPzyS1IZIICRiYGhoohBKqM0pTg/D64Hh8ICAFt0h+h/AAAA[0m[Pipeline] sh
+[workspace] Running shell script
++ ls -lh
+total 16K
+-rwxr-xr-x 1 adildsw adildsw  855 Jul 20 16:25 Jenkinsfile
+-rw-r--r-- 1 adildsw adildsw 1.1K Jul 20 16:25 LICENSE
+-rwxr-xr-x 1 adildsw adildsw  572 Jul 20 16:25 pom.xml
+drwxr-xr-x 4 adildsw adildsw 4.0K Jul 20 16:25 src
+[8mha:////4O0i3euN0jWdK0TB8IigbEbS7P6iyj90hLcA5VmH/cQjAAAAaB+LCAAAAAAAAP9b85aBtbiIwTG/KF0vKzUvOzOvODlTryCnNB3I0ivPL8pOy8kv18vKT9JLzs8rzs9J1QuHCgaV5jlDhPzyS1IZIICRiYGhoohBKqM0pTg/D64Hh8ICAFt0h+h/AAAA[0m[Pipeline] }
+[8mha:////4O0i3euN0jWdK0TB8IigbEbS7P6iyj90hLcA5VmH/cQjAAAAaB+LCAAAAAAAAP9b85aBtbiIwTG/KF0vKzUvOzOvODlTryCnNB3I0ivPL8pOy8kv18vKT9JLzs8rzs9J1QuHCgaV5jlDhPzyS1IZIICRiYGhoohBKqM0pTg/D64Hh8ICAFt0h+h/AAAA[0m[Pipeline] // stage
+[8mha:////4O0i3euN0jWdK0TB8IigbEbS7P6iyj90hLcA5VmH/cQjAAAAaB+LCAAAAAAAAP9b85aBtbiIwTG/KF0vKzUvOzOvODlTryCnNB3I0ivPL8pOy8kv18vKT9JLzs8rzs9J1QuHCgaV5jlDhPzyS1IZIICRiYGhoohBKqM0pTg/D64Hh8ICAFt0h+h/AAAA[0m[Pipeline] stage
+[8mha:////4O0i3euN0jWdK0TB8IigbEbS7P6iyj90hLcA5VmH/cQjAAAAaB+LCAAAAAAAAP9b85aBtbiIwTG/KF0vKzUvOzOvODlTryCnNB3I0ivPL8pOy8kv18vKT9JLzs8rzs9J1QuHCgaV5jlDhPzyS1IZIICRiYGhoohBKqM0pTg/D64Hh8ICAFt0h+h/AAAA[0m[Pipeline] { (Browser Tests)
+[8mha:////4O0i3euN0jWdK0TB8IigbEbS7P6iyj90hLcA5VmH/cQjAAAAaB+LCAAAAAAAAP9b85aBtbiIwTG/KF0vKzUvOzOvODlTryCnNB3I0ivPL8pOy8kv18vKT9JLzs8rzs9J1QuHCgaV5jlDhPzyS1IZIICRiYGhoohBKqM0pTg/D64Hh8ICAFt0h+h/AAAA[0m[Pipeline] parallel
+[8mha:////4O0i3euN0jWdK0TB8IigbEbS7P6iyj90hLcA5VmH/cQjAAAAaB+LCAAAAAAAAP9b85aBtbiIwTG/KF0vKzUvOzOvODlTryCnNB3I0ivPL8pOy8kv18vKT9JLzs8rzs9J1QuHCgaV5jlDhPzyS1IZIICRiYGhoohBKqM0pTg/D64Hh8ICAFt0h+h/AAAA[0m[Pipeline] [Firefox] { (Branch: Firefox)
+[8mha:////4O0i3euN0jWdK0TB8IigbEbS7P6iyj90hLcA5VmH/cQjAAAAaB+LCAAAAAAAAP9b85aBtbiIwTG/KF0vKzUvOzOvODlTryCnNB3I0ivPL8pOy8kv18vKT9JLzs8rzs9J1QuHCgaV5jlDhPzyS1IZIICRiYGhoohBKqM0pTg/D64Hh8ICAFt0h+h/AAAA[0m[Pipeline] [Safari] { (Branch: Safari)
+[8mha:////4O0i3euN0jWdK0TB8IigbEbS7P6iyj90hLcA5VmH/cQjAAAAaB+LCAAAAAAAAP9b85aBtbiIwTG/KF0vKzUvOzOvODlTryCnNB3I0ivPL8pOy8kv18vKT9JLzs8rzs9J1QuHCgaV5jlDhPzyS1IZIICRiYGhoohBKqM0pTg/D64Hh8ICAFt0h+h/AAAA[0m[Pipeline] [Chrome] { (Branch: Chrome)
+[8mha:////4O0i3euN0jWdK0TB8IigbEbS7P6iyj90hLcA5VmH/cQjAAAAaB+LCAAAAAAAAP9b85aBtbiIwTG/KF0vKzUvOzOvODlTryCnNB3I0ivPL8pOy8kv18vKT9JLzs8rzs9J1QuHCgaV5jlDhPzyS1IZIICRiYGhoohBKqM0pTg/D64Hh8ICAFt0h+h/AAAA[0m[Pipeline] [Internet Explorer] { (Branch: Internet Explorer)
+[8mha:////4O0i3euN0jWdK0TB8IigbEbS7P6iyj90hLcA5VmH/cQjAAAAaB+LCAAAAAAAAP9b85aBtbiIwTG/KF0vKzUvOzOvODlTryCnNB3I0ivPL8pOy8kv18vKT9JLzs8rzs9J1QuHCgaV5jlDhPzyS1IZIICRiYGhoohBKqM0pTg/D64Hh8ICAFt0h+h/AAAA[0m[Pipeline] [Firefox] sh
+[Firefox] [workspace] Running shell script
+[Firefox] + echo setting up selenium environment
+[Firefox] setting up selenium environment
+[8mha:////4O0i3euN0jWdK0TB8IigbEbS7P6iyj90hLcA5VmH/cQjAAAAaB+LCAAAAAAAAP9b85aBtbiIwTG/KF0vKzUvOzOvODlTryCnNB3I0ivPL8pOy8kv18vKT9JLzs8rzs9J1QuHCgaV5jlDhPzyS1IZIICRiYGhoohBKqM0pTg/D64Hh8ICAFt0h+h/AAAA[0m[Pipeline] [Safari] sh
+[Safari] [workspace] Running shell script
+[Safari] + echo setting up selenium environment
+[Safari] setting up selenium environment
+[8mha:////4O0i3euN0jWdK0TB8IigbEbS7P6iyj90hLcA5VmH/cQjAAAAaB+LCAAAAAAAAP9b85aBtbiIwTG/KF0vKzUvOzOvODlTryCnNB3I0ivPL8pOy8kv18vKT9JLzs8rzs9J1QuHCgaV5jlDhPzyS1IZIICRiYGhoohBKqM0pTg/D64Hh8ICAFt0h+h/AAAA[0m[Pipeline] [Chrome] sh
+[Chrome] [workspace] Running shell script
+[Chrome] + echo setting up selenium environment
+[Chrome] setting up selenium environment
+[8mha:////4O0i3euN0jWdK0TB8IigbEbS7P6iyj90hLcA5VmH/cQjAAAAaB+LCAAAAAAAAP9b85aBtbiIwTG/KF0vKzUvOzOvODlTryCnNB3I0ivPL8pOy8kv18vKT9JLzs8rzs9J1QuHCgaV5jlDhPzyS1IZIICRiYGhoohBKqM0pTg/D64Hh8ICAFt0h+h/AAAA[0m[Pipeline] [Internet Explorer] sh
+[Internet Explorer] [workspace] Running shell script
+[Internet Explorer] + echo setting up selenium environment
+[Internet Explorer] setting up selenium environment
+[8mha:////4O0i3euN0jWdK0TB8IigbEbS7P6iyj90hLcA5VmH/cQjAAAAaB+LCAAAAAAAAP9b85aBtbiIwTG/KF0vKzUvOzOvODlTryCnNB3I0ivPL8pOy8kv18vKT9JLzs8rzs9J1QuHCgaV5jlDhPzyS1IZIICRiYGhoohBKqM0pTg/D64Hh8ICAFt0h+h/AAAA[0m[Pipeline] [Firefox] sleep
+[Firefox] Sleeping for 2 sec
+[8mha:////4O0i3euN0jWdK0TB8IigbEbS7P6iyj90hLcA5VmH/cQjAAAAaB+LCAAAAAAAAP9b85aBtbiIwTG/KF0vKzUvOzOvODlTryCnNB3I0ivPL8pOy8kv18vKT9JLzs8rzs9J1QuHCgaV5jlDhPzyS1IZIICRiYGhoohBKqM0pTg/D64Hh8ICAFt0h+h/AAAA[0m[Pipeline] [Safari] }
+[8mha:////4O0i3euN0jWdK0TB8IigbEbS7P6iyj90hLcA5VmH/cQjAAAAaB+LCAAAAAAAAP9b85aBtbiIwTG/KF0vKzUvOzOvODlTryCnNB3I0ivPL8pOy8kv18vKT9JLzs8rzs9J1QuHCgaV5jlDhPzyS1IZIICRiYGhoohBKqM0pTg/D64Hh8ICAFt0h+h/AAAA[0m[Pipeline] [Chrome] sleep
+[Chrome] Sleeping for 3 sec
+[8mha:////4O0i3euN0jWdK0TB8IigbEbS7P6iyj90hLcA5VmH/cQjAAAAaB+LCAAAAAAAAP9b85aBtbiIwTG/KF0vKzUvOzOvODlTryCnNB3I0ivPL8pOy8kv18vKT9JLzs8rzs9J1QuHCgaV5jlDhPzyS1IZIICRiYGhoohBKqM0pTg/D64Hh8ICAFt0h+h/AAAA[0m[Pipeline] [Internet Explorer] }
+[8mha:////4O0i3euN0jWdK0TB8IigbEbS7P6iyj90hLcA5VmH/cQjAAAAaB+LCAAAAAAAAP9b85aBtbiIwTG/KF0vKzUvOzOvODlTryCnNB3I0ivPL8pOy8kv18vKT9JLzs8rzs9J1QuHCgaV5jlDhPzyS1IZIICRiYGhoohBKqM0pTg/D64Hh8ICAFt0h+h/AAAA[0m[Pipeline] [Firefox] }
+[8mha:////4O0i3euN0jWdK0TB8IigbEbS7P6iyj90hLcA5VmH/cQjAAAAaB+LCAAAAAAAAP9b85aBtbiIwTG/KF0vKzUvOzOvODlTryCnNB3I0ivPL8pOy8kv18vKT9JLzs8rzs9J1QuHCgaV5jlDhPzyS1IZIICRiYGhoohBKqM0pTg/D64Hh8ICAFt0h+h/AAAA[0m[Pipeline] [Chrome] }
+[8mha:////4O0i3euN0jWdK0TB8IigbEbS7P6iyj90hLcA5VmH/cQjAAAAaB+LCAAAAAAAAP9b85aBtbiIwTG/KF0vKzUvOzOvODlTryCnNB3I0ivPL8pOy8kv18vKT9JLzs8rzs9J1QuHCgaV5jlDhPzyS1IZIICRiYGhoohBKqM0pTg/D64Hh8ICAFt0h+h/AAAA[0m[Pipeline] // parallel
+[8mha:////4O0i3euN0jWdK0TB8IigbEbS7P6iyj90hLcA5VmH/cQjAAAAaB+LCAAAAAAAAP9b85aBtbiIwTG/KF0vKzUvOzOvODlTryCnNB3I0ivPL8pOy8kv18vKT9JLzs8rzs9J1QuHCgaV5jlDhPzyS1IZIICRiYGhoohBKqM0pTg/D64Hh8ICAFt0h+h/AAAA[0m[Pipeline] }
+[8mha:////4O0i3euN0jWdK0TB8IigbEbS7P6iyj90hLcA5VmH/cQjAAAAaB+LCAAAAAAAAP9b85aBtbiIwTG/KF0vKzUvOzOvODlTryCnNB3I0ivPL8pOy8kv18vKT9JLzs8rzs9J1QuHCgaV5jlDhPzyS1IZIICRiYGhoohBKqM0pTg/D64Hh8ICAFt0h+h/AAAA[0m[Pipeline] // stage
+[8mha:////4O0i3euN0jWdK0TB8IigbEbS7P6iyj90hLcA5VmH/cQjAAAAaB+LCAAAAAAAAP9b85aBtbiIwTG/KF0vKzUvOzOvODlTryCnNB3I0ivPL8pOy8kv18vKT9JLzs8rzs9J1QuHCgaV5jlDhPzyS1IZIICRiYGhoohBKqM0pTg/D64Hh8ICAFt0h+h/AAAA[0m[Pipeline] stage
+[8mha:////4O0i3euN0jWdK0TB8IigbEbS7P6iyj90hLcA5VmH/cQjAAAAaB+LCAAAAAAAAP9b85aBtbiIwTG/KF0vKzUvOzOvODlTryCnNB3I0ivPL8pOy8kv18vKT9JLzs8rzs9J1QuHCgaV5jlDhPzyS1IZIICRiYGhoohBKqM0pTg/D64Hh8ICAFt0h+h/AAAA[0m[Pipeline] { (Static Analysis)
+[8mha:////4O0i3euN0jWdK0TB8IigbEbS7P6iyj90hLcA5VmH/cQjAAAAaB+LCAAAAAAAAP9b85aBtbiIwTG/KF0vKzUvOzOvODlTryCnNB3I0ivPL8pOy8kv18vKT9JLzs8rzs9J1QuHCgaV5jlDhPzyS1IZIICRiYGhoohBKqM0pTg/D64Hh8ICAFt0h+h/AAAA[0m[Pipeline] sh
+[workspace] Running shell script
++ ls -l
+total 16
+-rwxr-xr-x 1 adildsw adildsw  855 Jul 20 16:25 Jenkinsfile
+-rw-r--r-- 1 adildsw adildsw 1076 Jul 20 16:25 LICENSE
+-rwxr-xr-x 1 adildsw adildsw  572 Jul 20 16:25 pom.xml
+drwxr-xr-x 4 adildsw adildsw 4096 Jul 20 16:25 src
+[8mha:////4O0i3euN0jWdK0TB8IigbEbS7P6iyj90hLcA5VmH/cQjAAAAaB+LCAAAAAAAAP9b85aBtbiIwTG/KF0vKzUvOzOvODlTryCnNB3I0ivPL8pOy8kv18vKT9JLzs8rzs9J1QuHCgaV5jlDhPzyS1IZIICRiYGhoohBKqM0pTg/D64Hh8ICAFt0h+h/AAAA[0m[Pipeline] }
+[8mha:////4O0i3euN0jWdK0TB8IigbEbS7P6iyj90hLcA5VmH/cQjAAAAaB+LCAAAAAAAAP9b85aBtbiIwTG/KF0vKzUvOzOvODlTryCnNB3I0ivPL8pOy8kv18vKT9JLzs8rzs9J1QuHCgaV5jlDhPzyS1IZIICRiYGhoohBKqM0pTg/D64Hh8ICAFt0h+h/AAAA[0m[Pipeline] // stage
+[8mha:////4O0i3euN0jWdK0TB8IigbEbS7P6iyj90hLcA5VmH/cQjAAAAaB+LCAAAAAAAAP9b85aBtbiIwTG/KF0vKzUvOzOvODlTryCnNB3I0ivPL8pOy8kv18vKT9JLzs8rzs9J1QuHCgaV5jlDhPzyS1IZIICRiYGhoohBKqM0pTg/D64Hh8ICAFt0h+h/AAAA[0m[Pipeline] stage
+[8mha:////4O0i3euN0jWdK0TB8IigbEbS7P6iyj90hLcA5VmH/cQjAAAAaB+LCAAAAAAAAP9b85aBtbiIwTG/KF0vKzUvOzOvODlTryCnNB3I0ivPL8pOy8kv18vKT9JLzs8rzs9J1QuHCgaV5jlDhPzyS1IZIICRiYGhoohBKqM0pTg/D64Hh8ICAFt0h+h/AAAA[0m[Pipeline] { (Deploy)
+[8mha:////4O0i3euN0jWdK0TB8IigbEbS7P6iyj90hLcA5VmH/cQjAAAAaB+LCAAAAAAAAP9b85aBtbiIwTG/KF0vKzUvOzOvODlTryCnNB3I0ivPL8pOy8kv18vKT9JLzs8rzs9J1QuHCgaV5jlDhPzyS1IZIICRiYGhoohBKqM0pTg/D64Hh8ICAFt0h+h/AAAA[0m[Pipeline] sh
+[workspace] Running shell script
++ ls -lh
+total 16K
+-rwxr-xr-x 1 adildsw adildsw  855 Jul 20 16:25 Jenkinsfile
+-rw-r--r-- 1 adildsw adildsw 1.1K Jul 20 16:25 LICENSE
+-rwxr-xr-x 1 adildsw adildsw  572 Jul 20 16:25 pom.xml
+drwxr-xr-x 4 adildsw adildsw 4.0K Jul 20 16:25 src
+[8mha:////4O0i3euN0jWdK0TB8IigbEbS7P6iyj90hLcA5VmH/cQjAAAAaB+LCAAAAAAAAP9b85aBtbiIwTG/KF0vKzUvOzOvODlTryCnNB3I0ivPL8pOy8kv18vKT9JLzs8rzs9J1QuHCgaV5jlDhPzyS1IZIICRiYGhoohBKqM0pTg/D64Hh8ICAFt0h+h/AAAA[0m[Pipeline] }
+[8mha:////4O0i3euN0jWdK0TB8IigbEbS7P6iyj90hLcA5VmH/cQjAAAAaB+LCAAAAAAAAP9b85aBtbiIwTG/KF0vKzUvOzOvODlTryCnNB3I0ivPL8pOy8kv18vKT9JLzs8rzs9J1QuHCgaV5jlDhPzyS1IZIICRiYGhoohBKqM0pTg/D64Hh8ICAFt0h+h/AAAA[0m[Pipeline] // stage
+[8mha:////4O0i3euN0jWdK0TB8IigbEbS7P6iyj90hLcA5VmH/cQjAAAAaB+LCAAAAAAAAP9b85aBtbiIwTG/KF0vKzUvOzOvODlTryCnNB3I0ivPL8pOy8kv18vKT9JLzs8rzs9J1QuHCgaV5jlDhPzyS1IZIICRiYGhoohBKqM0pTg/D64Hh8ICAFt0h+h/AAAA[0m[Pipeline] }
+[8mha:////4O0i3euN0jWdK0TB8IigbEbS7P6iyj90hLcA5VmH/cQjAAAAaB+LCAAAAAAAAP9b85aBtbiIwTG/KF0vKzUvOzOvODlTryCnNB3I0ivPL8pOy8kv18vKT9JLzs8rzs9J1QuHCgaV5jlDhPzyS1IZIICRiYGhoohBKqM0pTg/D64Hh8ICAFt0h+h/AAAA[0m[Pipeline] // withEnv
+[8mha:////4O0i3euN0jWdK0TB8IigbEbS7P6iyj90hLcA5VmH/cQjAAAAaB+LCAAAAAAAAP9b85aBtbiIwTG/KF0vKzUvOzOvODlTryCnNB3I0ivPL8pOy8kv18vKT9JLzs8rzs9J1QuHCgaV5jlDhPzyS1IZIICRiYGhoohBKqM0pTg/D64Hh8ICAFt0h+h/AAAA[0m[Pipeline] }
+[8mha:////4O0i3euN0jWdK0TB8IigbEbS7P6iyj90hLcA5VmH/cQjAAAAaB+LCAAAAAAAAP9b85aBtbiIwTG/KF0vKzUvOzOvODlTryCnNB3I0ivPL8pOy8kv18vKT9JLzs8rzs9J1QuHCgaV5jlDhPzyS1IZIICRiYGhoohBKqM0pTg/D64Hh8ICAFt0h+h/AAAA[0m[Pipeline] // withEnv
+[8mha:////4O0i3euN0jWdK0TB8IigbEbS7P6iyj90hLcA5VmH/cQjAAAAaB+LCAAAAAAAAP9b85aBtbiIwTG/KF0vKzUvOzOvODlTryCnNB3I0ivPL8pOy8kv18vKT9JLzs8rzs9J1QuHCgaV5jlDhPzyS1IZIICRiYGhoohBKqM0pTg/D64Hh8ICAFt0h+h/AAAA[0m[Pipeline] }
+[8mha:////4O0i3euN0jWdK0TB8IigbEbS7P6iyj90hLcA5VmH/cQjAAAAaB+LCAAAAAAAAP9b85aBtbiIwTG/KF0vKzUvOzOvODlTryCnNB3I0ivPL8pOy8kv18vKT9JLzs8rzs9J1QuHCgaV5jlDhPzyS1IZIICRiYGhoohBKqM0pTg/D64Hh8ICAFt0h+h/AAAA[0m[Pipeline] // node
+[8mha:////4O0i3euN0jWdK0TB8IigbEbS7P6iyj90hLcA5VmH/cQjAAAAaB+LCAAAAAAAAP9b85aBtbiIwTG/KF0vKzUvOzOvODlTryCnNB3I0ivPL8pOy8kv18vKT9JLzs8rzs9J1QuHCgaV5jlDhPzyS1IZIICRiYGhoohBKqM0pTg/D64Hh8ICAFt0h+h/AAAA[0m[Pipeline] End of Pipeline
+
+GitHub has been notified of this commit’s build result
+
+Finished: SUCCESS

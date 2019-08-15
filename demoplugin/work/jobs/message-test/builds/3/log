@@ -1,0 +1,7 @@
+Started by user unknown or anonymous
+Building in workspace /home/adildsw/jenkins-plugins/demoplugin/work/jobs/message-test/workspace
+Hey there! I can print things in the log now!
+[workspace] $ /bin/sh -xe /tmp/jenkins3786057370313300141.sh
++ echo Shell Echo
+Shell Echo
+Finished: SUCCESS

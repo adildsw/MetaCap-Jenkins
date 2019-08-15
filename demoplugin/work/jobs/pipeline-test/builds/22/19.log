@@ -1,0 +1,3 @@
+[workspace] Running shell script
++ echo success
+success

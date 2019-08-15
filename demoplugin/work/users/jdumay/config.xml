@@ -1,0 +1,116 @@
+<?xml version='1.1' encoding='UTF-8'?>
+<user>
+  <fullName>jdumay</fullName>
+  <properties>
+    <jenkins.security.ApiTokenProperty>
+      <tokenStore>
+        <tokenList/>
+      </tokenStore>
+    </jenkins.security.ApiTokenProperty>
+    <io.jenkins.blueocean.autofavorite.user.FavoritingUserProperty plugin="blueocean-autofavorite@1.2.2">
+      <autofavoriteEnabled>true</autofavoriteEnabled>
+    </io.jenkins.blueocean.autofavorite.user.FavoritingUserProperty>
+    <com.cloudbees.plugins.credentials.UserCredentialsProvider_-UserCredentialsProperty plugin="credentials@2.1.17">
+      <domainCredentialsMap class="hudson.util.CopyOnWriteMap$Hash"/>
+    </com.cloudbees.plugins.credentials.UserCredentialsProvider_-UserCredentialsProperty>
+    <hudson.plugins.favorite.user.FavoriteUserProperty plugin="favorite@2.3.2">
+      <data class="concurrent-hash-map">
+        <entry>
+          <string>blueocean-plugin/feature%2FJENKINS-49519</string>
+          <boolean>true</boolean>
+        </entry>
+        <entry>
+          <string>blueocean-plugin/topic%2Fjob-stats-analytics</string>
+          <boolean>true</boolean>
+        </entry>
+        <entry>
+          <string>blueocean-plugin/topic%2Fjackson</string>
+          <boolean>true</boolean>
+        </entry>
+        <entry>
+          <string>blueocean-plugin/topic%2Fgithub-issues</string>
+          <boolean>true</boolean>
+        </entry>
+        <entry>
+          <string>blueocean-plugin/topic%2Fpagables</string>
+          <boolean>true</boolean>
+        </entry>
+        <entry>
+          <string>blueocean-plugin/topic%2Ffix-jira-issue</string>
+          <boolean>true</boolean>
+        </entry>
+        <entry>
+          <string>blueocean-plugin/topic%2Fmove-test-factories</string>
+          <boolean>true</boolean>
+        </entry>
+        <entry>
+          <string>whimsy/updated-with-more-whimsy</string>
+          <boolean>true</boolean>
+        </entry>
+        <entry>
+          <string>blueocean-plugin/topic%2Fanalytics-creation</string>
+          <boolean>true</boolean>
+        </entry>
+        <entry>
+          <string>blueocean-plugin/topic%2Fmove-to-props</string>
+          <boolean>true</boolean>
+        </entry>
+        <entry>
+          <string>blueocean-plugin/hotfix%2FJENKINS-48392</string>
+          <boolean>true</boolean>
+        </entry>
+        <entry>
+          <string>blueocean-plugin/topic%2Fdependency-upgrade-xmas-2017</string>
+          <boolean>true</boolean>
+        </entry>
+        <entry>
+          <string>whimsy/master</string>
+          <boolean>true</boolean>
+        </entry>
+        <entry>
+          <string>blueocean-plugin/topic%2Fabort-cause</string>
+          <boolean>true</boolean>
+        </entry>
+        <entry>
+          <string>blueocean-plugin/graphql</string>
+          <boolean>true</boolean>
+        </entry>
+        <entry>
+          <string>blueocean-plugin/topic%2Fexport-timer</string>
+          <boolean>true</boolean>
+        </entry>
+        <entry>
+          <string>blueocean-plugin/topic%2Fremove-junit-class</string>
+          <boolean>true</boolean>
+        </entry>
+        <entry>
+          <string>blueocean-plugin/topic%2Fplugin-manager-rest</string>
+          <boolean>true</boolean>
+        </entry>
+      </data>
+    </hudson.plugins.favorite.user.FavoriteUserProperty>
+    <hudson.model.MyViewsProperty>
+      <views>
+        <hudson.model.AllView>
+          <owner class="hudson.model.MyViewsProperty" reference="../../.."/>
+          <name>all</name>
+          <filterExecutors>false</filterExecutors>
+          <filterQueue>false</filterQueue>
+          <properties class="hudson.model.View$PropertyList"/>
+        </hudson.model.AllView>
+      </views>
+    </hudson.model.MyViewsProperty>
+    <org.jenkinsci.plugins.displayurlapi.user.PreferredProviderUserProperty plugin="display-url-api@2.2.0">
+      <providerId>default</providerId>
+    </org.jenkinsci.plugins.displayurlapi.user.PreferredProviderUserProperty>
+    <hudson.model.PaneStatusProperties>
+      <collapsed/>
+    </hudson.model.PaneStatusProperties>
+    <hudson.search.UserSearchProperty>
+      <insensitiveSearch>true</insensitiveSearch>
+    </hudson.search.UserSearchProperty>
+    <hudson.tasks.Mailer_-UserProperty plugin="mailer@1.21">
+      <emailAddress>jdumay@cloudbees.com</emailAddress>
+    </hudson.tasks.Mailer_-UserProperty>
+  </properties>
+</user>

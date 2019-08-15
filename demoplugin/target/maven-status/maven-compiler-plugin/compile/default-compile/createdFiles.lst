@@ -1,0 +1,12 @@
+io/jenkins/plugins/demoplugin/LogCapturePublisher.class
+META-INF/annotations/hudson.Extension.txt
+io/jenkins/plugins/demoplugin/LogCapturePublisher$DescriptorImpl.class
+io/jenkins/plugins/demoplugin/GitCommitCapturePublisher.class
+io/jenkins/plugins/demoplugin/GitCommitCapturePublisher$DescriptorImpl.class
+io/jenkins/plugins/demoplugin/LogCapturePublisher.stapler
+io/jenkins/plugins/demoplugin/GitCommitCapturePublisher.stapler
+META-INF/annotations/org.kohsuke.accmod.Restricted
+META-INF/annotations/org.jenkinsci.Symbol
+io/jenkins/plugins/demoplugin/LogParser.class
+META-INF/annotations/hudson.Extension
+io/jenkins/plugins/demoplugin/Messages.class

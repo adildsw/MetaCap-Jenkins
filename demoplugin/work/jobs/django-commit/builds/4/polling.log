@@ -1,0 +1,9 @@
+Started on 10 Jul, 2018 12:02:00 AM
+Using strategy: Default
+[poll] Last Built Revision: Revision 7cdeb23ae7ef2d125276840ff298dbb9683959f2 (refs/remotes/origin/master)
+ > git --version # timeout=10
+ > git ls-remote -h https://github.com/adildsw/django.git # timeout=10
+Found 45 remote heads on https://github.com/adildsw/django.git
+[poll] Latest remote head revision on refs/heads/master is: 6dd0a88040b16b97f29f1bd826f45c3fd550a1a7
+Done. Took 11 sec
+Changes found

@@ -1,0 +1,1 @@
+bug%2FJENKINS-47446_rerun_button_not_receiving_translate_title

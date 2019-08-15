@@ -1,0 +1,8 @@
+Started on 6 Jul, 2018 9:27:00 PM
+Using strategy: Default
+ > git --version # timeout=10
+ > git ls-remote -h https://github.com/adildsw/git-trials.git # timeout=10
+Found 3 remote heads on https://github.com/adildsw/git-trials.git
+[poll] Latest remote head revision on refs/heads/master is: 7e0d004c728459aa988fcfee2d9447f4e5fb8fe6
+Done. Took 0.24 sec
+Changes found

@@ -1,0 +1,31 @@
+Cloning the remote Git repository
+Cloning with configured refspecs honoured and without tags
+Cloning repository https://github.com/adildsw/blueocean-plugin.git
+ > git init /home/adildsw/jenkins-plugins/demoplugin/work/jobs/blueocean-plugin/branches/feature-J.7unhlfbc7q9i.nd-drop-2/workspace # timeout=10
+Fetching upstream changes from https://github.com/adildsw/blueocean-plugin.git
+ > git --version # timeout=10
+using GIT_ASKPASS to set credentials GitHub Access Token
+ > git fetch --no-tags --progress https://github.com/adildsw/blueocean-plugin.git +refs/heads/feature/JENKINS-38323-editor-drag-and-drop-2:refs/remotes/origin/feature/JENKINS-38323-editor-drag-and-drop-2
+ > git config remote.origin.url https://github.com/adildsw/blueocean-plugin.git # timeout=10
+ > git config --add remote.origin.fetch +refs/heads/feature/JENKINS-38323-editor-drag-and-drop-2:refs/remotes/origin/feature/JENKINS-38323-editor-drag-and-drop-2 # timeout=10
+ > git config remote.origin.url https://github.com/adildsw/blueocean-plugin.git # timeout=10
+Cleaning workspace
+ > git rev-parse --verify HEAD # timeout=10
+No valid HEAD. Skipping the resetting
+ > git clean -fdx # timeout=10
+Fetching without tags
+Fetching upstream changes from https://github.com/adildsw/blueocean-plugin.git
+using GIT_ASKPASS to set credentials GitHub Access Token
+ > git fetch --no-tags --progress https://github.com/adildsw/blueocean-plugin.git +refs/heads/feature/JENKINS-38323-editor-drag-and-drop-2:refs/remotes/origin/feature/JENKINS-38323-editor-drag-and-drop-2
+Checking out Revision 6446eae0e96374290b6f439f55119b75d7e21491 (feature/JENKINS-38323-editor-drag-and-drop-2)
+ > git config core.sparsecheckout # timeout=10
+ > git checkout -f 6446eae0e96374290b6f439f55119b75d7e21491
+ > git branch -a -v --no-abbrev # timeout=10
+ > git checkout -b feature/JENKINS-38323-editor-drag-and-drop-2 6446eae0e96374290b6f439f55119b75d7e21491
+Commit message: "give the original step being dragged a different visual cue"
+First time build. Skipping changelog.
+Cleaning workspace
+ > git rev-parse --verify HEAD # timeout=10
+Resetting working tree
+ > git reset --hard # timeout=10
+ > git clean -fdx # timeout=10

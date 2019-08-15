@@ -1,0 +1,72 @@
+<?xml version='1.1' encoding='UTF-8'?>
+<user>
+  <fullName>contact</fullName>
+  <properties>
+    <jenkins.security.ApiTokenProperty>
+      <tokenStore>
+        <tokenList/>
+      </tokenStore>
+    </jenkins.security.ApiTokenProperty>
+    <io.jenkins.blueocean.autofavorite.user.FavoritingUserProperty plugin="blueocean-autofavorite@1.2.2">
+      <autofavoriteEnabled>true</autofavoriteEnabled>
+    </io.jenkins.blueocean.autofavorite.user.FavoritingUserProperty>
+    <com.cloudbees.plugins.credentials.UserCredentialsProvider_-UserCredentialsProperty plugin="credentials@2.1.17">
+      <domainCredentialsMap class="hudson.util.CopyOnWriteMap$Hash"/>
+    </com.cloudbees.plugins.credentials.UserCredentialsProvider_-UserCredentialsProperty>
+    <hudson.plugins.favorite.user.FavoriteUserProperty plugin="favorite@2.3.2">
+      <data class="concurrent-hash-map">
+        <entry>
+          <string>blueocean-plugin/task%2FJENKINS-46218_reorder_source_control_buttons</string>
+          <boolean>true</boolean>
+        </entry>
+        <entry>
+          <string>blueocean-plugin/bug%2FJENKINS-45334_go_to_classic_link_missing_in_invalid_input_param_fix</string>
+          <boolean>true</boolean>
+        </entry>
+        <entry>
+          <string>blueocean-plugin/release%2F1.4</string>
+          <boolean>true</boolean>
+        </entry>
+        <entry>
+          <string>blueocean-plugin/bug%2FJENKINS-47446_rerun_button_not_receiving_translate_title</string>
+          <boolean>true</boolean>
+        </entry>
+        <entry>
+          <string>blueocean-plugin/performance_remove_timeDuration_title</string>
+          <boolean>true</boolean>
+        </entry>
+        <entry>
+          <string>blueocean-plugin/master</string>
+          <boolean>true</boolean>
+        </entry>
+        <entry>
+          <string>blueocean-plugin/task%2FJENKINS-43746_update_step_heading_to_include_prallel</string>
+          <boolean>true</boolean>
+        </entry>
+      </data>
+    </hudson.plugins.favorite.user.FavoriteUserProperty>
+    <hudson.model.MyViewsProperty>
+      <views>
+        <hudson.model.AllView>
+          <owner class="hudson.model.MyViewsProperty" reference="../../.."/>
+          <name>all</name>
+          <filterExecutors>false</filterExecutors>
+          <filterQueue>false</filterQueue>
+          <properties class="hudson.model.View$PropertyList"/>
+        </hudson.model.AllView>
+      </views>
+    </hudson.model.MyViewsProperty>
+    <org.jenkinsci.plugins.displayurlapi.user.PreferredProviderUserProperty plugin="display-url-api@2.2.0">
+      <providerId>default</providerId>
+    </org.jenkinsci.plugins.displayurlapi.user.PreferredProviderUserProperty>
+    <hudson.model.PaneStatusProperties>
+      <collapsed/>
+    </hudson.model.PaneStatusProperties>
+    <hudson.search.UserSearchProperty>
+      <insensitiveSearch>true</insensitiveSearch>
+    </hudson.search.UserSearchProperty>
+    <hudson.tasks.Mailer_-UserProperty plugin="mailer@1.21">
+      <emailAddress>contact@nicupascu.ro</emailAddress>
+    </hudson.tasks.Mailer_-UserProperty>
+  </properties>
+</user>

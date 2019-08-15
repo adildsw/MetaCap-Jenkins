@@ -1,0 +1,5 @@
+
+getFullDisplayName: {BUILD_DISPLAY_NAME=#31, BUILD_ID=31, BUILD_NUMBER=31, BUILD_TAG=jenkins-pipeline-test-31, CLASSPATH=, HUDSON_HOME=/home/adildsw/jenkins-plugins/demoplugin/work, HUDSON_SERVER_COOKIE=893651974a77a5a7, JENKINS_HOME=/home/adildsw/jenkins-plugins/demoplugin/work, JENKINS_SERVER_COOKIE=893651974a77a5a7, JOB_BASE_NAME=pipeline-test, JOB_DISPLAY_URL=http://unconfigured-jenkins-location/job/pipeline-test/display/redirect, JOB_NAME=pipeline-test, RUN_CHANGES_DISPLAY_URL=http://unconfigured-jenkins-location/job/pipeline-test/31/display/redirect?page=changes, RUN_DISPLAY_URL=http://unconfigured-jenkins-location/job/pipeline-test/31/display/redirect}
+Is Pipeline: true
+Workspace Name: workspace
+FilePath: /home/adildsw/jenkins-plugins/demoplugin/work/jobs/pipeline-test/workspace

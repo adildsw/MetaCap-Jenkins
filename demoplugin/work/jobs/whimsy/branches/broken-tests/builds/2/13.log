@@ -1,0 +1,3 @@
+[workspace] Running shell script
++ docker pull maven
+/home/adildsw/jenkins-plugins/demoplugin/work/jobs/whimsy/branches/broken-tests/workspace@tmp/durable-f2d31936/script.sh: 2: /home/adildsw/jenkins-plugins/demoplugin/work/jobs/whimsy/branches/broken-tests/workspace@tmp/durable-f2d31936/script.sh: docker: not found

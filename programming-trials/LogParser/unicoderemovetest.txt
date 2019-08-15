@@ -1,0 +1,5 @@
+17:33:00 [Windows] [INFO] [21:33:00] Finished 'test' after 32 ms
+17:33:00 [Windows] [INFO] &#27;[1mpluginSetupWizard.js&#27;[0m
+17:33:00 [Windows] [INFO]   wizard shows ...
+17:33:00 [Windows] [ERROR] HTML5 localStorage not supported by this browser.
+17:33:01 [Windows] [INFO] &#27;[32m Passed&#27;[0m

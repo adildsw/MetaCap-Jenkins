@@ -1,0 +1,17 @@
+Manifest-Version: 1.0
+Built-By: adildsw
+Created-By: Apache Maven
+Build-Jdk: 1.8.0_171
+Extension-Name: demoplugin
+Specification-Title: TODO
+Implementation-Title: demoplugin
+Implementation-Version: 1.0-SNAPSHOT
+Group-Id: io.jenkins.plugins
+Short-Name: demoplugin
+Long-Name: TODO Plugin
+Plugin-Version: 1.0-SNAPSHOT (private-07/25/2018 22:25-adildsw)
+Hudson-Version: 2.130
+Jenkins-Version: 2.130
+Plugin-Dependencies: structs:1.7
+Plugin-Developers: 
+

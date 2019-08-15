@@ -1,0 +1,7 @@
+<?xml version='1.1' encoding='UTF-8'?>
+<jenkins.plugins.git.AbstractGitSCMSource_-SCMRevisionImpl plugin="git@3.9.1">
+  <head class="org.jenkinsci.plugins.github_branch_source.BranchSCMHead" plugin="github-branch-source@2.3.6">
+    <name>topic/trends-before-pagination</name>
+  </head>
+  <hash>68b91ccc26ae658c8933340ed4795c8e0b39bc03</hash>
+</jenkins.plugins.git.AbstractGitSCMSource_-SCMRevisionImpl>

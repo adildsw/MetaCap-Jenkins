@@ -1,0 +1,23 @@
+Manifest-Version: 1.0
+Archiver-Version: Plexus Archiver
+Created-By: Apache Maven
+Built-By: nicolas
+Build-Jdk: 1.8.0_131
+Extension-Name: docker-slaves
+Specification-Title: Uses Docker containers to run Jenkins build agents
+Implementation-Title: docker-slaves
+Implementation-Version: 1.0.7
+Plugin-Class: it.dockins.dockerslaves.DockerSlaves
+Group-Id: io.jenkins.plugins
+Short-Name: docker-slaves
+Long-Name: Docker Slaves Plugin
+Url: https://wiki.jenkins-ci.org/display/JENKINS/Docker+Slaves+Plugin
+Plugin-Version: 1.0.7
+Hudson-Version: 1.651.2
+Jenkins-Version: 1.651.2
+Plugin-Dependencies: workflow-support:2.2;resolution:=optional,docker-
+ commons:1.3.1,durable-task:1.12;resolution:=optional,workflow-step-ap
+ i:2.3;resolution:=optional
+Plugin-Developers: Nicolas De Loof:ndeloof:nicolas.deloof@gmail.com,Yo
+ ann Dubreuil:ydubreuil:yoann.dubreuil@gmail.com
+

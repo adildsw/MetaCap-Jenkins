@@ -1,0 +1,31 @@
+Cloning the remote Git repository
+Cloning with configured refspecs honoured and without tags
+Cloning repository https://github.com/adildsw/blueocean-plugin.git
+ > git init /home/adildsw/jenkins-plugins/demoplugin/work/jobs/blueocean-plugin/branches/JENKINS-47368-1-3.gmsmp8/workspace # timeout=10
+Fetching upstream changes from https://github.com/adildsw/blueocean-plugin.git
+ > git --version # timeout=10
+using GIT_ASKPASS to set credentials GitHub Access Token
+ > git fetch --no-tags --progress https://github.com/adildsw/blueocean-plugin.git +refs/heads/JENKINS-47368-1.3:refs/remotes/origin/JENKINS-47368-1.3
+ > git config remote.origin.url https://github.com/adildsw/blueocean-plugin.git # timeout=10
+ > git config --add remote.origin.fetch +refs/heads/JENKINS-47368-1.3:refs/remotes/origin/JENKINS-47368-1.3 # timeout=10
+ > git config remote.origin.url https://github.com/adildsw/blueocean-plugin.git # timeout=10
+Cleaning workspace
+ > git rev-parse --verify HEAD # timeout=10
+No valid HEAD. Skipping the resetting
+ > git clean -fdx # timeout=10
+Fetching without tags
+Fetching upstream changes from https://github.com/adildsw/blueocean-plugin.git
+using GIT_ASKPASS to set credentials GitHub Access Token
+ > git fetch --no-tags --progress https://github.com/adildsw/blueocean-plugin.git +refs/heads/JENKINS-47368-1.3:refs/remotes/origin/JENKINS-47368-1.3
+Checking out Revision a70a7035691313004b0ccd9cdc5ccec31c33abe4 (JENKINS-47368-1.3)
+ > git config core.sparsecheckout # timeout=10
+ > git checkout -f a70a7035691313004b0ccd9cdc5ccec31c33abe4
+ > git branch -a -v --no-abbrev # timeout=10
+ > git checkout -b JENKINS-47368-1.3 a70a7035691313004b0ccd9cdc5ccec31c33abe4
+Commit message: "[JENKINS-47368-1.3] Prevent NPE"
+First time build. Skipping changelog.
+Cleaning workspace
+ > git rev-parse --verify HEAD # timeout=10
+Resetting working tree
+ > git reset --hard # timeout=10
+ > git clean -fdx # timeout=10

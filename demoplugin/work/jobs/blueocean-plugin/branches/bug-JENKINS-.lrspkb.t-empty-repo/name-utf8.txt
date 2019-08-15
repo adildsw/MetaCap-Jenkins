@@ -1,0 +1,1 @@
+bug%2FJENKINS-46723-bitbucket-empty-repo

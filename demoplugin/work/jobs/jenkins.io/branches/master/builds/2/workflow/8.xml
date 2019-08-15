@@ -1,0 +1,80 @@
+<?xml version='1.1' encoding='UTF-8'?>
+<Tag plugin="workflow-support@2.19">
+  <node class="org.jenkinsci.plugins.workflow.graph.FlowEndNode" plugin="workflow-api@2.28">
+    <parentIds>
+      <string>7</string>
+    </parentIds>
+    <id>8</id>
+    <startId>2</startId>
+    <result>
+      <name>ABORTED</name>
+      <ordinal>4</ordinal>
+      <color>ABORTED</color>
+      <completeBuild>false</completeBuild>
+    </result>
+  </node>
+  <actions>
+    <wf.a.ErrorAction plugin="workflow-api@2.28">
+      <error class="javax.mail.MessagingException">
+        <detailMessage>Could not connect to SMTP host: localhost, port: 25</detailMessage>
+        <stackTrace>
+          <trace>com.sun.mail.smtp.SMTPTransport.openServer(SMTPTransport.java:1934)</trace>
+          <trace>com.sun.mail.smtp.SMTPTransport.protocolConnect(SMTPTransport.java:638)</trace>
+          <trace>javax.mail.Service.connect(Service.java:295)</trace>
+          <trace>javax.mail.Service.connect(Service.java:176)</trace>
+          <trace>javax.mail.Service.connect(Service.java:125)</trace>
+          <trace>javax.mail.Transport.send0(Transport.java:194)</trace>
+          <trace>javax.mail.Transport.send(Transport.java:124)</trace>
+          <trace>org.jenkinsci.plugins.workflow.steps.MailStep$MailStepExecution.run(MailStep.java:142)</trace>
+          <trace>org.jenkinsci.plugins.workflow.steps.MailStep$MailStepExecution.run(MailStep.java:128)</trace>
+          <trace>org.jenkinsci.plugins.workflow.steps.SynchronousNonBlockingStepExecution$1$1.call(SynchronousNonBlockingStepExecution.java:50)</trace>
+          <trace>hudson.security.ACL.impersonate(ACL.java:290)</trace>
+          <trace>org.jenkinsci.plugins.workflow.steps.SynchronousNonBlockingStepExecution$1.run(SynchronousNonBlockingStepExecution.java:47)</trace>
+          <trace>java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:511)</trace>
+          <trace>java.util.concurrent.FutureTask.run(FutureTask.java:266)</trace>
+          <trace>java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)</trace>
+          <trace>java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)</trace>
+          <trace>java.lang.Thread.run(Thread.java:748)</trace>
+        </stackTrace>
+        <suppressedExceptions class="java.util.Collections$UnmodifiableRandomAccessList" resolves-to="java.util.Collections$UnmodifiableList">
+          <c class="list"/>
+          <list reference="../c"/>
+        </suppressedExceptions>
+        <next class="java.net.ConnectException">
+          <detailMessage>Connection refused (Connection refused)</detailMessage>
+          <stackTrace>
+            <trace>java.net.PlainSocketImpl.socketConnect(Native Method)</trace>
+            <trace>java.net.AbstractPlainSocketImpl.doConnect(AbstractPlainSocketImpl.java:350)</trace>
+            <trace>java.net.AbstractPlainSocketImpl.connectToAddress(AbstractPlainSocketImpl.java:206)</trace>
+            <trace>java.net.AbstractPlainSocketImpl.connect(AbstractPlainSocketImpl.java:188)</trace>
+            <trace>java.net.SocksSocketImpl.connect(SocksSocketImpl.java:392)</trace>
+            <trace>java.net.Socket.connect(Socket.java:589)</trace>
+            <trace>com.sun.mail.util.SocketFetcher.createSocket(SocketFetcher.java:286)</trace>
+            <trace>com.sun.mail.util.SocketFetcher.getSocket(SocketFetcher.java:231)</trace>
+            <trace>com.sun.mail.smtp.SMTPTransport.openServer(SMTPTransport.java:1900)</trace>
+            <trace>com.sun.mail.smtp.SMTPTransport.protocolConnect(SMTPTransport.java:638)</trace>
+            <trace>javax.mail.Service.connect(Service.java:295)</trace>
+            <trace>javax.mail.Service.connect(Service.java:176)</trace>
+            <trace>javax.mail.Service.connect(Service.java:125)</trace>
+            <trace>javax.mail.Transport.send0(Transport.java:194)</trace>
+            <trace>javax.mail.Transport.send(Transport.java:124)</trace>
+            <trace>org.jenkinsci.plugins.workflow.steps.MailStep$MailStepExecution.run(MailStep.java:142)</trace>
+            <trace>org.jenkinsci.plugins.workflow.steps.MailStep$MailStepExecution.run(MailStep.java:128)</trace>
+            <trace>org.jenkinsci.plugins.workflow.steps.SynchronousNonBlockingStepExecution$1$1.call(SynchronousNonBlockingStepExecution.java:50)</trace>
+            <trace>hudson.security.ACL.impersonate(ACL.java:290)</trace>
+            <trace>org.jenkinsci.plugins.workflow.steps.SynchronousNonBlockingStepExecution$1.run(SynchronousNonBlockingStepExecution.java:47)</trace>
+            <trace>java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:511)</trace>
+            <trace>java.util.concurrent.FutureTask.run(FutureTask.java:266)</trace>
+            <trace>java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)</trace>
+            <trace>java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)</trace>
+            <trace>java.lang.Thread.run(Thread.java:748)</trace>
+          </stackTrace>
+          <suppressedExceptions class="java.util.Collections$UnmodifiableRandomAccessList" reference="../../suppressedExceptions"/>
+        </next>
+      </error>
+    </wf.a.ErrorAction>
+    <wf.a.TimingAction plugin="workflow-api@2.28">
+      <startTime>1532103720527</startTime>
+    </wf.a.TimingAction>
+  </actions>
+</Tag>

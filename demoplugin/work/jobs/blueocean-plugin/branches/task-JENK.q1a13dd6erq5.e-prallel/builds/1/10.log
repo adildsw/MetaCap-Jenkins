@@ -1,0 +1,5 @@
+[workspace] Running shell script
++ id -g adildsw
++ id -u adildsw
++ docker build -t blueocean_build_env --build-arg GID=1000 --build-arg UID=1000 -
+/home/adildsw/jenkins-plugins/demoplugin/work/jobs/blueocean-plugin/branches/task-JENK.q1a13dd6erq5.e-prallel/workspace@tmp/durable-48f3ba21/script.sh: 2: /home/adildsw/jenkins-plugins/demoplugin/work/jobs/blueocean-plugin/branches/task-JENK.q1a13dd6erq5.e-prallel/workspace@tmp/durable-48f3ba21/script.sh: docker: not found

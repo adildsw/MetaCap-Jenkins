@@ -1,0 +1,158 @@
+Started by user unknown or anonymous
+Building in workspace /home/adildsw/jenkins-plugins/demoplugin/work/jobs/log-test/workspace
+[workspace] $ /bin/sh -xe /tmp/jenkins719881085941994462.sh
++ echo test runs
+test runs
++ date
+Mon Jul 16 22:58:40 EDT 2018
++ echo finalising test runs
+finalising test runs
++ echo Done!
+Done!
+Started by user unknown or anonymous
+Building in workspace /home/adildsw/jenkins-plugins/demoplugin/work/jobs/log-test/workspace
+[workspace] $ /bin/sh -xe /tmp/jenkins719881085941994462.sh
++ echo test runs
+test runs
++ date
+Mon Jul 16 22:58:40 EDT 2018
++ echo finalising test runs
+finalising test runs
++ echo Done!
+Done!
+
+Started by user unknown or anonymous
+Building in workspace /home/adildsw/jenkins-plugins/demoplugin/work/jobs/log-test/workspace
+[workspace] $ /bin/sh -xe /tmp/jenkins719881085941994462.sh
++ echo test runs
+test runs
++ date
+Mon Jul 16 22:58:40 EDT 2018
++ echo finalising test runs
+finalising test runs
++ echo Done!
+Done!
+
+Started by user unknown or anonymous
+Building in workspace /home/adildsw/jenkins-plugins/demoplugin/work/jobs/log-test/workspace
+[workspace] $ /bin/sh -xe /tmp/jenkins719881085941994462.sh
++ echo test runs
+test runs
++ date
+Mon Jul 16 22:58:40 EDT 2018
++ echo finalising test runs
+finalising test runs
++ echo Done!
+Done!
+
+Started by user unknown or anonymous
+Building in workspace /home/adildsw/jenkins-plugins/demoplugin/work/jobs/log-test/workspace
+[workspace] $ /bin/sh -xe /tmp/jenkins719881085941994462.sh
++ echo test runs
+test runs
++ date
+Mon Jul 16 22:58:40 EDT 2018
++ echo finalising test runs
+finalising test runs
++ echo Done!
+Done!
+
+Started by user unknown or anonymous
+Building in workspace /home/adildsw/jenkins-plugins/demoplugin/work/jobs/log-test/workspace
+[workspace] $ /bin/sh -xe /tmp/jenkins719881085941994462.sh
++ echo test runs
+test runs
++ date
+Mon Jul 16 22:58:40 EDT 2018
++ echo finalising test runs
+finalising test runs
++ echo Done!
+Done!
+
+Started by user unknown or anonymous
+Building in workspace /home/adildsw/jenkins-plugins/demoplugin/work/jobs/log-test/workspace
+[workspace] $ /bin/sh -xe /tmp/jenkins719881085941994462.sh
++ echo test runs
+test runs
++ date
+Mon Jul 16 22:58:40 EDT 2018
++ echo finalising test runs
+finalising test runs
++ echo Done!
+Done!
+
+Started by user unknown or anonymous
+Building in workspace /home/adildsw/jenkins-plugins/demoplugin/work/jobs/log-test/workspace
+[workspace] $ /bin/sh -xe /tmp/jenkins719881085941994462.sh
++ echo test runs
+test runs
++ date
+Mon Jul 16 22:58:40 EDT 2018
++ echo finalising test runs
+finalising test runs
++ echo Done!
+Done!
+
+Started by user unknown or anonymous
+Building in workspace /home/adildsw/jenkins-plugins/demoplugin/work/jobs/log-test/workspace
+[workspace] $ /bin/sh -xe /tmp/jenkins719881085941994462.sh
++ echo test runs
+test runs
++ date
+Mon Jul 16 22:58:40 EDT 2018
++ echo finalising test runs
+finalising test runs
++ echo Done!
+Done!
+
+Started by user unknown or anonymous
+Building in workspace /home/adildsw/jenkins-plugins/demoplugin/work/jobs/log-test/workspace
+[workspace] $ /bin/sh -xe /tmp/jenkins719881085941994462.sh
++ echo test runs
+test runs
++ date
+Mon Jul 16 22:58:40 EDT 2018
++ echo finalising test runs
+finalising test runs
++ echo Done!
+Done!
+
+Started by user unknown or anonymous
+Building in workspace /home/adildsw/jenkins-plugins/demoplugin/work/jobs/log-test/workspace
+[workspace] $ /bin/sh -xe /tmp/jenkins719881085941994462.sh
++ echo test runs
+test runs
++ date
+Mon Jul 16 22:58:40 EDT 2018
++ echo finalising test runs
+finalising test runs
++ echo Done!
+Done!
+
+Started by user unknown or anonymous
+Building in workspace /home/adildsw/jenkins-plugins/demoplugin/work/jobs/log-test/workspace
+[workspace] $ /bin/sh -xe /tmp/jenkins719881085941994462.sh
++ echo test runs
+test runs
++ date
+Mon Jul 16 22:58:40 EDT 2018
++ echo finalising test runs
+finalising test runs
++ echo Done!
+Done!
+
+ERROR: Build step failed with exception
+java.lang.NullPointerException
+	at io.jenkins.plugins.demoplugin.LogCapturePublisher.perform(LogCapturePublisher.java:33)
+	at hudson.tasks.BuildStepCompatibilityLayer.perform(BuildStepCompatibilityLayer.java:85)
+	at hudson.tasks.BuildStepMonitor$3.perform(BuildStepMonitor.java:45)
+	at hudson.model.AbstractBuild$AbstractBuildExecution.perform(AbstractBuild.java:744)
+	at hudson.model.AbstractBuild$AbstractBuildExecution.performAllBuildSteps(AbstractBuild.java:690)
+	at hudson.model.Build$BuildExecution.post2(Build.java:186)
+	at hudson.model.AbstractBuild$AbstractBuildExecution.post(AbstractBuild.java:635)
+	at hudson.model.Run.execute(Run.java:1840)
+	at hudson.model.FreeStyleBuild.run(FreeStyleBuild.java:43)
+	at hudson.model.ResourceController.execute(ResourceController.java:97)
+	at hudson.model.Executor.run(Executor.java:429)
+Build step 'Log Capturer' marked build as failure
+Finished: FAILURE

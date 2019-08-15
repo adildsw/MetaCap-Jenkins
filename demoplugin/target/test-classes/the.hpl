@@ -1,0 +1,13 @@
+Manifest-Version: 1.0
+Group-Id: io.jenkins.plugins
+Short-Name: demoplugin
+Long-Name: TODO Plugin
+Plugin-Version: 1.0-SNAPSHOT (private-07/25/2018 22:23-adildsw)
+Hudson-Version: 2.130
+Jenkins-Version: 2.130
+Plugin-Dependencies: structs:1.7
+Plugin-Developers: 
+Libraries: /home/adildsw/jenkins-plugins/demoplugin/src/main/resources
+ ,/home/adildsw/jenkins-plugins/demoplugin/target/classes
+Resource-Path: /home/adildsw/jenkins-plugins/demoplugin/src/main/webapp
+

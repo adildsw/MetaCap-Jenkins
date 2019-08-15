@@ -1,0 +1,31 @@
+Manifest-Version: 1.0
+Archiver-Version: Plexus Archiver
+Created-By: Apache Maven
+Built-By: root
+Build-Jdk: 1.8.0_121
+Extension-Name: blueocean-pipeline-api-impl
+Specification-Title: The Jenkins Plugins Parent POM Project
+Implementation-Title: blueocean-pipeline-api-impl
+Implementation-Version: 1.6.2
+Group-Id: io.jenkins.blueocean
+Short-Name: blueocean-pipeline-api-impl
+Long-Name: Pipeline implementation for Blue Ocean
+Url: https://wiki.jenkins-ci.org/display/JENKINS/Blue+Ocean+Plugin
+Plugin-Version: 1.6.2
+Hudson-Version: 2.107.2
+Jenkins-Version: 2.107.2
+Plugin-Dependencies: blueocean-pipeline-scm-api:1.6.2,blueocean-rest-i
+ mpl:1.6.2,workflow-api:2.25,workflow-cps:2.46,workflow-durable-task-s
+ tep:2.18,workflow-job:2.17,workflow-multibranch:2.17,workflow-step-ap
+ i:2.14,workflow-support:2.18,branch-api:2.0.18,credentials:2.1.16,git
+ :3.8.0,github-branch-source:2.3.2,htmlpublisher:1.14,pipeline-build-s
+ tep:2.7,pipeline-graph-analysis:1.6,pipeline-input-step:2.8,pipeline-
+ stage-step:2.3,plain-credentials:1.4,scm-api:2.2.6,pipeline-model-def
+ inition:1.2.9
+Plugin-Developers: Thorsten Iberian Sumurai:scherler:,Cliff Meyers:cli
+ ffmeyers:,Tom Fennelly:tfennelly:,Vivek Pandey:vivek:,Kohsuke:kohsuke
+ :,Josh McDonald:sophistifunk:,Ivan Meredith:imeredith:,Michael Neale:
+ michaelneale:,Keith Zantow:kzantow:,James Dumay:i386:,Marc:marcesher:
+ ,Paul Dragoonis:dragoonis:,Ivan Santos:pragmaticivan:,Peter Dave Hell
+ o:PeterDaveHello:,Alexandru Somai:alexsomai:
+

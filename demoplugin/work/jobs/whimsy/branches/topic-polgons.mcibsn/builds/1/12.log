@@ -1,0 +1,3 @@
+[workspace] Running shell script
++ docker inspect -f . maven
+/home/adildsw/jenkins-plugins/demoplugin/work/jobs/whimsy/branches/topic-polgons.mcibsn/workspace@tmp/durable-4b68e628/script.sh: 2: /home/adildsw/jenkins-plugins/demoplugin/work/jobs/whimsy/branches/topic-polgons.mcibsn/workspace@tmp/durable-4b68e628/script.sh: docker: not found

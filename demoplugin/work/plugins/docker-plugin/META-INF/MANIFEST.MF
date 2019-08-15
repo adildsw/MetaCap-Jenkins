@@ -1,0 +1,27 @@
+Manifest-Version: 1.0
+Archiver-Version: Plexus Archiver
+Created-By: Apache Maven
+Built-By: nicolas
+Build-Jdk: 1.8.0_162
+Extension-Name: docker-plugin
+Specification-Title: Provide Cloud Provisioning and other Docker featu
+ res
+Implementation-Title: docker-plugin
+Implementation-Version: 1.1.4
+Group-Id: io.jenkins.docker
+Short-Name: docker-plugin
+Long-Name: Docker plugin
+Url: http://wiki.jenkins-ci.org/display/JENKINS/Docker+Plugin
+Compatible-Since-Version: 0.17
+Plugin-Version: 1.1.4
+Hudson-Version: 2.60.3
+Jenkins-Version: 2.60.3
+Plugin-Dependencies: workflow-api:2.23.1;resolution:=optional,workflow
+ -cps:2.41;resolution:=optional,workflow-durable-task-step:2.17;resolu
+ tion:=optional,workflow-step-api:2.14;resolution:=optional,workflow-s
+ upport:2.16;resolution:=optional,apache-httpcomponents-client-4-api:4
+ .5.3-2.0,bouncycastle-api:2.16.2,docker-commons:1.9,docker-java-api:3
+ .0.14,durable-task:1.16,script-security:1.36;resolution:=optional,ssh
+ -slaves:1.22,token-macro:2.3
+Plugin-Developers: Nicolas De Loof:ndeloof:
+

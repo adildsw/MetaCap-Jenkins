@@ -1,0 +1,63 @@
+Running tests for io.jenkins.plugins:demoplugin:1.0-SNAPSHOT
+Jul 25, 2018 10:23:46 PM org.eclipse.jetty.util.log.Log initialized
+INFO: Logging initialized @6333ms to org.eclipse.jetty.util.log.Slf4jLog
+Jul 25, 2018 10:24:08 PM org.jvnet.hudson.test.WarExploder explode
+INFO: Picking up existing exploded jenkins.war at /home/adildsw/jenkins-plugins/demoplugin/target/jenkins-for-test
+Jul 25, 2018 10:24:13 PM org.eclipse.jetty.server.handler.ContextHandler setContextPath
+WARNING: Empty contextPath
+Jul 25, 2018 10:24:15 PM org.eclipse.jetty.server.Server doStart
+INFO: jetty-9.4.5.v20170502
+Jul 25, 2018 10:24:19 PM org.eclipse.jetty.webapp.StandardDescriptorProcessor visitServlet
+INFO: NO JSP Support for /, did not find org.eclipse.jetty.jsp.JettyJspServlet
+Jul 25, 2018 10:24:19 PM org.eclipse.jetty.server.session.DefaultSessionIdManager doStart
+INFO: DefaultSessionIdManager workerName=node0
+Jul 25, 2018 10:24:19 PM org.eclipse.jetty.server.session.DefaultSessionIdManager doStart
+INFO: No SessionScavenger set, using defaults
+Jul 25, 2018 10:24:19 PM org.eclipse.jetty.server.session.HouseKeeper startScavenging
+INFO: Scavenging every 600000ms
+Jul 25, 2018 10:24:20 PM org.eclipse.jetty.server.handler.ContextHandler doStart
+INFO: Started o.e.j.w.WebAppContext@319988b0{/,file:///home/adildsw/jenkins-plugins/demoplugin/target/jenkins-for-test/,AVAILABLE}{/home/adildsw/jenkins-plugins/demoplugin/target/jenkins-for-test}
+Jul 25, 2018 10:24:22 PM org.eclipse.jetty.server.AbstractConnector doStart
+INFO: Started ServerConnector@55795845{HTTP/1.1,[http/1.1]}{localhost:40991}
+Jul 25, 2018 10:24:23 PM org.eclipse.jetty.server.Server doStart
+INFO: Started @43452ms
+Jul 25, 2018 10:24:29 PM jenkins.InitReactorRunner$1 onAttained
+INFO: Started initialization
+Jul 25, 2018 10:24:42 PM jenkins.InitReactorRunner$1 onAttained
+INFO: Listed all plugins
+Jul 25, 2018 10:25:06 PM jenkins.InitReactorRunner$1 onAttained
+INFO: Prepared all plugins
+Jul 25, 2018 10:25:06 PM jenkins.InitReactorRunner$1 onAttained
+INFO: Started all plugins
+Jul 25, 2018 10:25:06 PM jenkins.InitReactorRunner$1 onAttained
+INFO: Augmented all extensions
+Jul 25, 2018 10:25:19 PM jenkins.InitReactorRunner$1 onAttained
+INFO: Loaded all jobs
+Jul 25, 2018 10:25:23 PM jenkins.InitReactorRunner$1 onAttained
+INFO: Completed initialization
+Jul 25, 2018 10:25:23 PM org.eclipse.jetty.server.Server doStart
+INFO: jetty-9.4.5.v20170502
+Jul 25, 2018 10:25:23 PM org.eclipse.jetty.server.session.DefaultSessionIdManager doStart
+INFO: DefaultSessionIdManager workerName=node0
+Jul 25, 2018 10:25:23 PM org.eclipse.jetty.server.session.DefaultSessionIdManager doStart
+INFO: No SessionScavenger set, using defaults
+Jul 25, 2018 10:25:23 PM org.eclipse.jetty.server.session.HouseKeeper startScavenging
+INFO: Scavenging every 600000ms
+Jul 25, 2018 10:25:23 PM org.eclipse.jetty.server.handler.ContextHandler doStart
+INFO: Started o.e.j.s.ServletContextHandler@22fa55b2{/,null,AVAILABLE}
+Jul 25, 2018 10:25:23 PM org.eclipse.jetty.server.AbstractConnector doStart
+INFO: Started ServerConnector@405325cf{HTTP/1.1,[http/1.1]}{0.0.0.0:35921}
+Jul 25, 2018 10:25:23 PM org.eclipse.jetty.server.Server doStart
+INFO: Started @104267ms
+Jul 25, 2018 10:25:34 PM org.eclipse.jetty.server.AbstractConnector doStop
+INFO: Stopped ServerConnector@55795845{HTTP/1.1,[http/1.1]}{localhost:0}
+Jul 25, 2018 10:25:34 PM org.eclipse.jetty.server.session.HouseKeeper stopScavenging
+INFO: Stopped scavenging
+Jul 25, 2018 10:25:34 PM org.eclipse.jetty.server.handler.ContextHandler doStop
+INFO: Stopped o.e.j.w.WebAppContext@319988b0{/,file:///home/adildsw/jenkins-plugins/demoplugin/target/jenkins-for-test/,UNAVAILABLE}{/home/adildsw/jenkins-plugins/demoplugin/target/jenkins-for-test}
+Jul 25, 2018 10:25:34 PM jenkins.model.Jenkins cleanUp
+INFO: Stopping Jenkins
+WARN: The method class org.apache.commons.logging.impl.SLF4JLogFactory#release() was invoked.
+WARN: Please see http://www.slf4j.org/codes.html#release for an explanation.
+Jul 25, 2018 10:25:34 PM jenkins.model.Jenkins cleanUp
+INFO: Jenkins stopped

@@ -1,0 +1,31 @@
+Cloning the remote Git repository
+Cloning with configured refspecs honoured and without tags
+Cloning repository https://github.com/adildsw/blueocean-plugin.git
+ > git init /home/adildsw/jenkins-plugins/demoplugin/work/jobs/blueocean-plugin/branches/testing-lint-fail.l5g7h2/workspace # timeout=10
+Fetching upstream changes from https://github.com/adildsw/blueocean-plugin.git
+ > git --version # timeout=10
+using GIT_ASKPASS to set credentials GitHub Access Token
+ > git fetch --no-tags --progress https://github.com/adildsw/blueocean-plugin.git +refs/heads/testing/lint-fail:refs/remotes/origin/testing/lint-fail
+ > git config remote.origin.url https://github.com/adildsw/blueocean-plugin.git # timeout=10
+ > git config --add remote.origin.fetch +refs/heads/testing/lint-fail:refs/remotes/origin/testing/lint-fail # timeout=10
+ > git config remote.origin.url https://github.com/adildsw/blueocean-plugin.git # timeout=10
+Cleaning workspace
+ > git rev-parse --verify HEAD # timeout=10
+No valid HEAD. Skipping the resetting
+ > git clean -fdx # timeout=10
+Fetching without tags
+Fetching upstream changes from https://github.com/adildsw/blueocean-plugin.git
+using GIT_ASKPASS to set credentials GitHub Access Token
+ > git fetch --no-tags --progress https://github.com/adildsw/blueocean-plugin.git +refs/heads/testing/lint-fail:refs/remotes/origin/testing/lint-fail
+Checking out Revision 44af481985872e0f6b9e9cff5b45ea61c8b83810 (testing/lint-fail)
+ > git config core.sparsecheckout # timeout=10
+ > git checkout -f 44af481985872e0f6b9e9cff5b45ea61c8b83810
+ > git branch -a -v --no-abbrev # timeout=10
+ > git checkout -b testing/lint-fail 44af481985872e0f6b9e9cff5b45ea61c8b83810
+Commit message: "deliberately put a fail in to check lint"
+First time build. Skipping changelog.
+Cleaning workspace
+ > git rev-parse --verify HEAD # timeout=10
+Resetting working tree
+ > git reset --hard # timeout=10
+ > git clean -fdx # timeout=10

@@ -1,0 +1,46 @@
+<?xml version='1.1' encoding='UTF-8'?>
+<Tag plugin="workflow-support@2.19">
+  <node class="cps.n.StepEndNode" plugin="workflow-cps@2.54">
+    <parentIds>
+      <string>4</string>
+    </parentIds>
+    <id>5</id>
+    <startId>4</startId>
+  </node>
+  <actions>
+    <wf.a.TimingAction plugin="workflow-api@2.28">
+      <startTime>1532103720055</startTime>
+    </wf.a.TimingAction>
+    <wf.a.ErrorAction plugin="workflow-api@2.28">
+      <error class="hudson.AbortException">
+        <detailMessage>Queue task was cancelled</detailMessage>
+        <stackTrace>
+          <trace>org.jenkinsci.plugins.workflow.support.steps.ExecutorStepExecution$CancelledItemListener.onLeft(ExecutorStepExecution.java:216)</trace>
+          <trace>hudson.model.Queue$LeftItem.enter(Queue.java:2759)</trace>
+          <trace>hudson.model.Queue$Item.cancel(Queue.java:2347)</trace>
+          <trace>hudson.model.Queue.cancel(Queue.java:750)</trace>
+          <trace>org.jenkinsci.plugins.workflow.support.steps.ExecutorStepExecution.stop(ExecutorStepExecution.java:133)</trace>
+          <trace>org.jenkinsci.plugins.workflow.cps.CpsThread.stop(CpsThread.java:296)</trace>
+          <trace>org.jenkinsci.plugins.workflow.cps.CpsFlowExecution$6.onSuccess(CpsFlowExecution.java:1139)</trace>
+          <trace>org.jenkinsci.plugins.workflow.cps.CpsFlowExecution$6.onSuccess(CpsFlowExecution.java:1128)</trace>
+          <trace>org.jenkinsci.plugins.workflow.cps.CpsFlowExecution$4$1.run(CpsFlowExecution.java:906)</trace>
+          <trace>org.jenkinsci.plugins.workflow.cps.CpsVmExecutorService$1.run(CpsVmExecutorService.java:35)</trace>
+          <trace>java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:511)</trace>
+          <trace>java.util.concurrent.FutureTask.run(FutureTask.java:266)</trace>
+          <trace>hudson.remoting.SingleLaneExecutorService$1.run(SingleLaneExecutorService.java:131)</trace>
+          <trace>jenkins.util.ContextResettingExecutorService$1.run(ContextResettingExecutorService.java:28)</trace>
+          <trace>jenkins.security.ImpersonatingExecutorService$1.run(ImpersonatingExecutorService.java:59)</trace>
+          <trace>java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:511)</trace>
+          <trace>java.util.concurrent.FutureTask.run(FutureTask.java:266)</trace>
+          <trace>java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)</trace>
+          <trace>java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)</trace>
+          <trace>java.lang.Thread.run(Thread.java:748)</trace>
+        </stackTrace>
+        <suppressedExceptions class="java.util.Collections$UnmodifiableRandomAccessList" resolves-to="java.util.Collections$UnmodifiableList">
+          <c class="list"/>
+          <list reference="../c"/>
+        </suppressedExceptions>
+      </error>
+    </wf.a.ErrorAction>
+  </actions>
+</Tag>

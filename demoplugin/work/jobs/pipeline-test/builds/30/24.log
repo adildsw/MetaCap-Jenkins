@@ -1,0 +1,5 @@
+
+getFullDisplayName: [hudson.model.CauseAction@74b9fed1, org.jenkinsci.plugins.workflow.libs.LibrariesAction@32dc8544, org.jenkinsci.plugins.pipeline.modeldefinition.actions.ExecutionModelAction@6032ef07, hudson.plugins.timestamper.action.TimestampsAction@79b7bfeb, io.jenkins.blueocean.service.embedded.BlueOceanUrlAction@394e4009, org.jenkinsci.plugins.displayurlapi.actions.RunDisplayAction@11f8a77, org.jenkinsci.plugins.pipeline.modeldefinition.actions.RestartDeclarativePipelineAction@6823d469, org.jenkinsci.plugins.workflow.cps.CpsThreadDumpAction@2caf6661, org.jenkinsci.plugins.workflow.cps.PauseUnpauseAction@672a25f5, org.jenkinsci.plugins.workflow.cps.replay.ReplayAction@1a1b4755, org.jenkinsci.plugins.workflow.job.views.FlowGraphAction@6c6d48e3, org.jenkinsci.plugins.workflow.job.views.FlowGraphTableAction@3ba6b761, org.jenkinsci.plugins.workflow.job.views.GraphVizAction@d15386d]
+Is Pipeline: true
+Workspace Name: workspace
+FilePath: /home/adildsw/jenkins-plugins/demoplugin/work/jobs/pipeline-test/workspace

@@ -1,0 +1,49 @@
+<?xml version='1.1' encoding='UTF-8'?>
+<Tag plugin="workflow-support@2.19">
+  <node class="cps.n.StepAtomNode" plugin="workflow-cps@2.54">
+    <parentIds>
+      <string>2</string>
+    </parentIds>
+    <id>3</id>
+    <descriptorId>org.jenkinsci.plugins.workflow.multibranch.JobPropertyStep</descriptorId>
+  </node>
+  <actions>
+    <wf.a.TimingAction plugin="workflow-api@2.28">
+      <startTime>1531378737298</startTime>
+    </wf.a.TimingAction>
+    <s.a.LogActionImpl>
+      <charset>UTF-8</charset>
+    </s.a.LogActionImpl>
+    <cps.a.ArgumentsActionImpl plugin="workflow-cps@2.54">
+      <arguments>
+        <entry>
+          <string>properties</string>
+          <list>
+            <org.jenkinsci.plugins.structs.describable.UninstantiatedDescribable plugin="structs@1.14">
+              <symbol>buildDiscarder</symbol>
+              <arguments class="linked-hash-map">
+                <entry>
+                  <string>&lt;anonymous&gt;</string>
+                  <org.jenkinsci.plugins.structs.describable.UninstantiatedDescribable>
+                    <symbol>logRotator</symbol>
+                    <arguments class="linked-hash-map">
+                      <entry>
+                        <string>artifactNumToKeepStr</string>
+                        <string>20</string>
+                      </entry>
+                      <entry>
+                        <string>numToKeepStr</string>
+                        <string>20</string>
+                      </entry>
+                    </arguments>
+                  </org.jenkinsci.plugins.structs.describable.UninstantiatedDescribable>
+                </entry>
+              </arguments>
+            </org.jenkinsci.plugins.structs.describable.UninstantiatedDescribable>
+          </list>
+        </entry>
+      </arguments>
+      <isUnmodifiedBySanitization>true</isUnmodifiedBySanitization>
+    </cps.a.ArgumentsActionImpl>
+  </actions>
+</Tag>

@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<Metadata>
+<Build>
+<JOB_NAME>non-pipeline-test</JOB_NAME>
+<BUILD_NUMBER>7</BUILD_NUMBER>
+<BUILD_DISPLAY_NAME>#7</BUILD_DISPLAY_NAME>
+<BUILD_TAG>jenkins-non-pipeline-test-7</BUILD_TAG>
+<BUILD_DURATION>0.42 sec</BUILD_DURATION>
+<BUILD_DATE>Mon Jul 23 12:09:46 EDT 2018</BUILD_DATE>
+</Build>
+<Build_Details>
+<Init-Trigger>
+<log>Started by user unknown or anonymous
+Building in workspace /home/adildsw/jenkins-plugins/demoplugin/work/jobs/non-pipeline-test/workspace
+</log>
+</Init-Trigger>
+<workspace dir="workspace">[workspace] $ /bin/sh -xe /tmp/jenkins6186799976183132519.sh<command>+ echo this is the initiation<log>this is the initiation
+</log>
+</command>
+<command>+ echo this is the build step<log>this is the build step
+</log>
+</command>
+</workspace>
+<workspace dir="workspace">[workspace] $ /bin/sh -xe /tmp/jenkins8859779835916419367.sh<command>+ echo now displaying build initiation date<log>now displaying build initiation date
+</log>
+</command>
+<command>+ date<log>Mon Jul 23 12:09:46 EDT 2018
+</log>
+</command>
+<command>+ echo<log>
+</log>
+</command>
+</workspace>
+<workspace dir="workspace">[workspace] $ /bin/sh -xe /tmp/jenkins3382015930718327689.sh<command>+ echo initiating finalizing stage<log>initiating finalizing stage
+</log>
+</command>
+<command>+ echo archiving artifacts<log>archiving artifacts
+</log>
+</command>
+<command>+ echo finalizing<log>finalizing
+</log>
+</command>
+<command>+ echo success<log>success
+</log>
+</command>
+</workspace>
+</Build_Details>
+</Metadata>

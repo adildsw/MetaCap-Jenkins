@@ -1,0 +1,7 @@
+Started by user unknown or anonymous
+Building in workspace /home/adildsw/jenkins-plugins/demoplugin/work/jobs/publisher-test/workspace
+[workspace] $ /bin/sh -xe /tmp/jenkins2508511862838788317.sh
++ echo Publisher Test
+Publisher Test
+Hello, Ad
+Finished: SUCCESS

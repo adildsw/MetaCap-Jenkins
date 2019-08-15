@@ -1,0 +1,42 @@
+Started by user unknown or anonymous
+Building in workspace /home/adildsw/jenkins-plugins/demoplugin/work/jobs/non-pipeline-test/workspace
+[workspace] $ /bin/sh -xe /tmp/jenkins501167711867682297.sh
++ echo this is the initiation
+this is the initiation
++ echo this is the build step
+this is the build step
+[workspace] $ /bin/sh -xe /tmp/jenkins8407811627866083653.sh
++ echo now displaying build initiation date
+now displaying build initiation date
++ date
+Mon Jul 23 12:05:32 EDT 2018
++ echo
+
+[workspace] $ /bin/sh -xe /tmp/jenkins2550025929505610063.sh
++ echo initiating finalizing stage
+initiating finalizing stage
++ echo archiving artifacts
+archiving artifacts
++ echo finalizing
+finalizing
++ echo success
+success
+[workspace] $ dir -a
+Path: /home/adildsw/jenkins-plugins/demoplugin/work/jobs/non-pipeline-test/workspace
+org.w3c.dom.DOMException: INVALID_CHARACTER_ERR: An invalid or illegal XML character is specified. 
+	at com.sun.org.apache.xerces.internal.dom.CoreDocumentImpl.createElement(CoreDocumentImpl.java:665)
+	at io.jenkins.plugins.demoplugin.NonPipelineXMLBuilder.populateXML(NonPipelineXMLBuilder.java:209)
+	at io.jenkins.plugins.demoplugin.NonPipelineXMLBuilder.publishXML(NonPipelineXMLBuilder.java:298)
+	at io.jenkins.plugins.demoplugin.LogCapturePublisher.perform(LogCapturePublisher.java:131)
+	at hudson.tasks.BuildStepCompatibilityLayer.perform(BuildStepCompatibilityLayer.java:81)
+	at hudson.tasks.BuildStepMonitor$3.perform(BuildStepMonitor.java:45)
+	at hudson.model.AbstractBuild$AbstractBuildExecution.perform(AbstractBuild.java:744)
+	at hudson.model.AbstractBuild$AbstractBuildExecution.performAllBuildSteps(AbstractBuild.java:690)
+	at hudson.model.Build$BuildExecution.post2(Build.java:186)
+	at hudson.model.AbstractBuild$AbstractBuildExecution.post(AbstractBuild.java:635)
+	at hudson.model.Run.execute(Run.java:1840)
+	at hudson.model.FreeStyleBuild.run(FreeStyleBuild.java:43)
+	at hudson.model.ResourceController.execute(ResourceController.java:97)
+	at hudson.model.Executor.run(Executor.java:429)
+
+Finished: SUCCESS

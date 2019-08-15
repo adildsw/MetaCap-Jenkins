@@ -1,0 +1,26 @@
+Manifest-Version: 1.0
+Archiver-Version: Plexus Archiver
+Created-By: Apache Maven
+Built-By: amuniz
+Build-Jdk: 1.8.0_151
+Extension-Name: cloudbees-bitbucket-branch-source
+Specification-Title: Discover and build Bitbucket Cloud and Bitbucket 
+ Server pull requests and branches and send status
+     notifications with the build result.
+Implementation-Title: cloudbees-bitbucket-branch-source
+Implementation-Version: 2.2.12
+Group-Id: org.jenkins-ci.plugins
+Short-Name: cloudbees-bitbucket-branch-source
+Long-Name: Bitbucket Branch Source Plugin
+Url: https://wiki.jenkins.io/display/JENKINS/Bitbucket+Branch+Source+P
+ lugin
+Compatible-Since-Version: 2.0.0
+Plugin-Version: 2.2.12
+Hudson-Version: 1.642.3
+Jenkins-Version: 1.642.3
+Plugin-Dependencies: apache-httpcomponents-client-4-api:4.5.3-2.0,disp
+ lay-url-api:0.2,git:3.6.0,handy-uri-templates-2-api:2.1.6-1.0,mercuri
+ al:2.0,scm-api:2.2.0,structs:1.10
+Plugin-Developers: Antonio Muniz:amuniz:,Bobby Sandell:rsandell:,Vivek
+  Pandey:vivek:
+

@@ -1,0 +1,70 @@
+<?xml version='1.1' encoding='UTF-8'?>
+<flow-definition plugin="workflow-job@2.22">
+  <actions/>
+  <keepDependencies>false</keepDependencies>
+  <properties>
+    <org.jenkinsci.plugins.workflow.multibranch.BranchJobProperty plugin="workflow-multibranch@2.20">
+      <branch plugin="branch-api@2.0.20">
+        <sourceId>blueocean</sourceId>
+        <head class="org.jenkinsci.plugins.github_branch_source.BranchSCMHead" plugin="github-branch-source@2.3.6">
+          <name>JENKINS-46656_bitbucket-connect</name>
+        </head>
+        <scm class="hudson.plugins.git.GitSCM" plugin="git@3.9.1">
+          <configVersion>2</configVersion>
+          <userRemoteConfigs>
+            <hudson.plugins.git.UserRemoteConfig>
+              <name>origin</name>
+              <refspec>+refs/heads/JENKINS-46656_bitbucket-connect:refs/remotes/origin/JENKINS-46656_bitbucket-connect</refspec>
+              <url>https://github.com/adildsw/blueocean-plugin.git</url>
+              <credentialsId>github</credentialsId>
+            </hudson.plugins.git.UserRemoteConfig>
+          </userRemoteConfigs>
+          <branches class="singleton-list">
+            <hudson.plugins.git.BranchSpec>
+              <name>JENKINS-46656_bitbucket-connect</name>
+            </hudson.plugins.git.BranchSpec>
+          </branches>
+          <doGenerateSubmoduleConfigurations>false</doGenerateSubmoduleConfigurations>
+          <browser class="hudson.plugins.git.browser.GithubWeb">
+            <url>https://github.com/adildsw/blueocean-plugin</url>
+          </browser>
+          <submoduleCfg class="empty-list"/>
+          <extensions>
+            <hudson.plugins.git.extensions.impl.CleanBeforeCheckout/>
+            <hudson.plugins.git.extensions.impl.CleanCheckout/>
+            <hudson.plugins.git.extensions.impl.LocalBranch>
+              <localBranch>**</localBranch>
+            </hudson.plugins.git.extensions.impl.LocalBranch>
+            <jenkins.plugins.git.GitSCMSourceDefaults>
+              <includeTags>false</includeTags>
+            </jenkins.plugins.git.GitSCMSourceDefaults>
+          </extensions>
+        </scm>
+        <properties/>
+        <actions>
+          <org.jenkinsci.plugins.github__branch__source.GitHubLink plugin="github-branch-source@2.3.6">
+            <iconClassName>icon-github-branch</iconClassName>
+            <url>https://github.com/adildsw/blueocean-plugin/tree/JENKINS-46656_bitbucket-connect</url>
+          </org.jenkinsci.plugins.github__branch__source.GitHubLink>
+          <jenkins.scm.api.metadata.ObjectMetadataAction plugin="scm-api@2.2.7">
+            <objectDisplayName>JENKINS-46656_bitbucket-connect</objectDisplayName>
+            <objectUrl>https://github.com/adildsw/blueocean-plugin/tree/JENKINS-46656_bitbucket-connect</objectUrl>
+          </jenkins.scm.api.metadata.ObjectMetadataAction>
+        </actions>
+      </branch>
+    </org.jenkinsci.plugins.workflow.multibranch.BranchJobProperty>
+    <jenkins.model.BuildDiscarderProperty>
+      <strategy class="hudson.tasks.LogRotator">
+        <daysToKeep>-1</daysToKeep>
+        <numToKeep>20</numToKeep>
+        <artifactDaysToKeep>-1</artifactDaysToKeep>
+        <artifactNumToKeep>20</artifactNumToKeep>
+      </strategy>
+    </jenkins.model.BuildDiscarderProperty>
+  </properties>
+  <definition class="org.jenkinsci.plugins.workflow.multibranch.SCMBinder" plugin="workflow-multibranch@2.20">
+    <scriptPath>Jenkinsfile</scriptPath>
+  </definition>
+  <triggers/>
+  <disabled>false</disabled>
+</flow-definition>

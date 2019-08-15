@@ -1,0 +1,7 @@
+<?xml version='1.1' encoding='UTF-8'?>
+<jenkins.plugins.git.AbstractGitSCMSource_-SCMRevisionImpl plugin="git@3.9.1">
+  <head class="org.jenkinsci.plugins.github_branch_source.BranchSCMHead" plugin="github-branch-source@2.3.6">
+    <name>performance_remove_timeDuration_title</name>
+  </head>
+  <hash>33e4651b0e50986a40988bf45033ec23619eb4af</hash>
+</jenkins.plugins.git.AbstractGitSCMSource_-SCMRevisionImpl>

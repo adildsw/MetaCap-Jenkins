@@ -1,0 +1,26 @@
+Started by an SCM change
+Building in workspace /home/adildsw/jenkins-plugins/demoplugin/work/jobs/gcc-test/workspace
+Cloning the remote Git repository
+Cloning repository https://github.com/adildsw/git-trials.git
+ > git init /home/adildsw/jenkins-plugins/demoplugin/work/jobs/gcc-test/workspace # timeout=10
+Fetching upstream changes from https://github.com/adildsw/git-trials.git
+ > git --version # timeout=10
+ > git fetch --tags --progress https://github.com/adildsw/git-trials.git +refs/heads/*:refs/remotes/origin/*
+ > git config remote.origin.url https://github.com/adildsw/git-trials.git # timeout=10
+ > git config --add remote.origin.fetch +refs/heads/*:refs/remotes/origin/* # timeout=10
+ > git config remote.origin.url https://github.com/adildsw/git-trials.git # timeout=10
+Fetching upstream changes from https://github.com/adildsw/git-trials.git
+ > git fetch --tags --progress https://github.com/adildsw/git-trials.git +refs/heads/*:refs/remotes/origin/*
+ > git rev-parse refs/remotes/origin/master^{commit} # timeout=10
+ > git rev-parse refs/remotes/origin/origin/master^{commit} # timeout=10
+Checking out Revision 7e0d004c728459aa988fcfee2d9447f4e5fb8fe6 (refs/remotes/origin/master)
+ > git config core.sparsecheckout # timeout=10
+ > git checkout -f 7e0d004c728459aa988fcfee2d9447f4e5fb8fe6
+Commit message: "Added divide feature"
+First time build. Skipping changelog.
+[workspace] $ /bin/sh -xe /tmp/jenkins1902844011500810177.sh
++ g++
+g++: fatal error: no input files
+compilation terminated.
+Build step 'Execute shell' marked build as failure
+Finished: FAILURE

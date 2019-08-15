@@ -1,0 +1,7 @@
+<?xml version='1.1' encoding='UTF-8'?>
+<jenkins.plugins.git.AbstractGitSCMSource_-SCMRevisionImpl plugin="git@3.9.1">
+  <head class="org.jenkinsci.plugins.github_branch_source.BranchSCMHead" plugin="github-branch-source@2.3.6">
+    <name>testing/lint-fail</name>
+  </head>
+  <hash>44af481985872e0f6b9e9cff5b45ea61c8b83810</hash>
+</jenkins.plugins.git.AbstractGitSCMSource_-SCMRevisionImpl>

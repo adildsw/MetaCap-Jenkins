@@ -1,0 +1,31 @@
+Cloning the remote Git repository
+Cloning with configured refspecs honoured and without tags
+Cloning repository https://github.com/adildsw/whimsy.git
+ > git init /home/adildsw/jenkins-plugins/demoplugin/work/jobs/whimsy/branches/updated-with-more-whimsy/workspace # timeout=10
+Fetching upstream changes from https://github.com/adildsw/whimsy.git
+ > git --version # timeout=10
+using GIT_ASKPASS to set credentials GitHub Access Token
+ > git fetch --no-tags --progress https://github.com/adildsw/whimsy.git +refs/heads/updated-with-more-whimsy:refs/remotes/origin/updated-with-more-whimsy
+ > git config remote.origin.url https://github.com/adildsw/whimsy.git # timeout=10
+ > git config --add remote.origin.fetch +refs/heads/updated-with-more-whimsy:refs/remotes/origin/updated-with-more-whimsy # timeout=10
+ > git config remote.origin.url https://github.com/adildsw/whimsy.git # timeout=10
+Cleaning workspace
+ > git rev-parse --verify HEAD # timeout=10
+No valid HEAD. Skipping the resetting
+ > git clean -fdx # timeout=10
+Fetching without tags
+Fetching upstream changes from https://github.com/adildsw/whimsy.git
+using GIT_ASKPASS to set credentials GitHub Access Token
+ > git fetch --no-tags --progress https://github.com/adildsw/whimsy.git +refs/heads/updated-with-more-whimsy:refs/remotes/origin/updated-with-more-whimsy
+Checking out Revision be2afe647ee8e32d105a8eef9e0e2d2d138d5ede (updated-with-more-whimsy)
+ > git config core.sparsecheckout # timeout=10
+ > git checkout -f be2afe647ee8e32d105a8eef9e0e2d2d138d5ede
+ > git branch -a -v --no-abbrev # timeout=10
+ > git checkout -b updated-with-more-whimsy be2afe647ee8e32d105a8eef9e0e2d2d138d5ede
+Commit message: "Updated Jenkinsfile"
+First time build. Skipping changelog.
+Cleaning workspace
+ > git rev-parse --verify HEAD # timeout=10
+Resetting working tree
+ > git reset --hard # timeout=10
+ > git clean -fdx # timeout=10

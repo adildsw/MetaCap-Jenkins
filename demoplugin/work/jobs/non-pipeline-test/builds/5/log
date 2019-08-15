@@ -1,0 +1,26 @@
+Started by user unknown or anonymous
+Building in workspace /home/adildsw/jenkins-plugins/demoplugin/work/jobs/non-pipeline-test/workspace
+[workspace] $ /bin/sh -xe /tmp/jenkins6525527272644505659.sh
++ echo this is the initiation
+this is the initiation
++ echo this is the build step
+this is the build step
+[workspace] $ /bin/sh -xe /tmp/jenkins8317521054299026701.sh
++ echo now displaying build initiation date
+now displaying build initiation date
++ date
+Mon Jul 23 12:02:27 EDT 2018
++ echo
+
+[workspace] $ /bin/sh -xe /tmp/jenkins158437415013996728.sh
++ echo initiating finalizing stage
+initiating finalizing stage
++ echo archiving artifacts
+archiving artifacts
++ echo finalizing
+finalizing
++ echo success
+success
+[workspace] $ dir -a
+Path: /home/adildsw/jenkins-plugins/demoplugin/work/jobs/non-pipeline-test/workspace
+Finished: SUCCESS

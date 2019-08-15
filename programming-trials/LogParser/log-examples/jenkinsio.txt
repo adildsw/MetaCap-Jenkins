@@ -1,0 +1,466 @@
+Push event to branch master
+02:55:23 Connecting to https://api.github.com using jenkinsadmin/****** (GitHub access token for jenkinsadmin)
+Obtained Jenkinsfile from 89f5c9992b1431425243b33ff5e1f54377d00795
+Running in Durability level: MAX_SURVIVABILITY
+Loading library pipeline-library@master
+Attempting to resolve master from remote references...
+Found match: refs/heads/master revision 993b5b883dd097cc9e1e332bc5268477e26175f7
+Fetching changes from the remote Git repository
+Fetching without tags
+Checking out Revision 993b5b883dd097cc9e1e332bc5268477e26175f7 (master)
+Commit message: "Merge pull request #72 from olblak/master"
+[Pipeline] properties
+[Pipeline] node
+Running on ubuntu-jenkinsinfrafe6ca0 in /home/jenkins/workspace/Infra_jenkins.io_master-JEZCQ5XOYYRQXMYTEV77IIULQMYAZQYN37KYGJ2A5DUOLYMUZBFA
+[Pipeline] {
+[Pipeline] stage
+[Pipeline] { (Clean workspace)
+[Pipeline] deleteDir
+[Pipeline] sh
+[Infra_jenkins.io_master-JEZCQ5XOYYRQXMYTEV77IIULQMYAZQYN37KYGJ2A5DUOLYMUZBFA] Running shell script
++ ls -lah
+total 8.0K
+drwxrwxr-x  2 jenkins jenkins 4.0K Jul 21 02:55 .
+drwxrwxr-x 12 jenkins jenkins 4.0K Jul 21 02:55 ..
+[Pipeline] }
+[Pipeline] // stage
+[Pipeline] stage
+[Pipeline] { (Checkout source)
+[Pipeline] checkout
+Cloning the remote Git repository
+Cloning with configured refspecs honoured and without tags
+remote: Counting objects
+remote: Compressing objects
+Receiving objects
+Resolving deltas
+Updating references
+Fetching without tags
+Checking out Revision 89f5c9992b1431425243b33ff5e1f54377d00795 (master)
+Commit message: "Merge pull request #1667 from daniel-beck/WEBSITE-491"
+[Pipeline] }
+[Pipeline] // stage
+[Pipeline] stage
+[Pipeline] { (Build site)
+[Pipeline] timeout
+Timeout set to expire in 1 hr 0 min
+[Pipeline] {
+[Pipeline] sh
+[Infra_jenkins.io_master-JEZCQ5XOYYRQXMYTEV77IIULQMYAZQYN37KYGJ2A5DUOLYMUZBFA] Running shell script
++ make all
+mkdir -p build/_site
+./scripts/ruby pull
+2.3: Pulling from library/ruby
+55cbf04beb70: Already exists
+1607093a898c: Already exists
+9a8ea045c926: Already exists
+d4eee24d4dac: Already exists
+b59856e9f0ab: Pulling fs layer
+c8e2cea26463: Pulling fs layer
+58140745118a: Pulling fs layer
+70c02781d58d: Pulling fs layer
+c8e2cea26463: Verifying Checksum
+c8e2cea26463: Download complete
+70c02781d58d: Verifying Checksum
+70c02781d58d: Download complete
+58140745118a: Verifying Checksum
+58140745118a: Download complete
+b59856e9f0ab: Verifying Checksum
+b59856e9f0ab: Download complete
+b59856e9f0ab: Pull complete
+c8e2cea26463: Pull complete
+58140745118a: Pull complete
+70c02781d58d: Pull complete
+Digest: sha256:3aecc252761680a66cedc8dca5fe98593a9060a4cd4b18bfea85c9756a55bcfb
+Status: Downloaded newer image for ruby:2.3
+./scripts/ruby bundle install --path=vendor/gems
+Fetching gem metadata from https://rubygems.org/.........
+Fetching Ascii85 1.0.3
+Installing Ascii85 1.0.3
+Fetching public_suffix 3.0.2
+Installing public_suffix 3.0.2
+Fetching addressable 2.5.2
+Installing addressable 2.5.2
+Fetching afm 0.2.2
+Installing afm 0.2.2
+Fetching ansi 1.5.0
+Installing ansi 1.5.0
+Fetching asciidoctor 1.5.7.1
+Installing asciidoctor 1.5.7.1
+Fetching coderay 1.1.2
+Installing coderay 1.1.2
+Fetching colorize 0.8.1
+Installing colorize 0.8.1
+Fetching asciidoctor-jenkins-extensions 0.4.0
+Installing asciidoctor-jenkins-extensions 0.4.0
+Fetching pdf-core 0.7.0
+Installing pdf-core 0.7.0
+Fetching ttfunk 1.5.1
+Installing ttfunk 1.5.1
+Fetching prawn 2.2.2
+Installing prawn 2.2.2
+Fetching prawn-icon 1.3.0
+Installing prawn-icon 1.3.0
+Fetching css_parser 1.6.0
+Installing css_parser 1.6.0
+Fetching prawn-svg 0.26.0
+Installing prawn-svg 0.26.0
+Fetching prawn-table 0.2.2
+Installing prawn-table 0.2.2
+Fetching hashery 2.1.2
+Installing hashery 2.1.2
+Fetching ruby-rc4 0.1.5
+Installing ruby-rc4 0.1.5
+Fetching pdf-reader 1.4.1
+Installing pdf-reader 1.4.1
+Fetching prawn-templates 0.0.5
+Installing prawn-templates 0.0.5
+Fetching safe_yaml 1.0.4
+Installing safe_yaml 1.0.4
+Fetching thread_safe 0.3.6
+Installing thread_safe 0.3.6
+Fetching polyglot 0.3.5
+Installing polyglot 0.3.5
+Fetching treetop 1.5.3
+Installing treetop 1.5.3
+Fetching asciidoctor-pdf 1.5.0.alpha.15
+Installing asciidoctor-pdf 1.5.0.alpha.15
+Fetching ast 2.4.0
+Installing ast 2.4.0
+Fetching git 1.4.0
+Installing git 1.4.0
+Fetching formatador 0.2.5
+Installing formatador 0.2.5
+Fetching rb-fsevent 0.10.3
+Installing rb-fsevent 0.10.3
+Fetching ffi 1.9.25
+Installing ffi 1.9.25 with native extensions
+Fetching rb-inotify 0.9.10
+Installing rb-inotify 0.9.10
+Fetching ruby_dep 1.5.0
+Installing ruby_dep 1.5.0
+Fetching listen 3.1.5
+Installing listen 3.1.5
+Fetching lumberjack 1.0.13
+Installing lumberjack 1.0.13
+Fetching nenv 0.3.0
+Installing nenv 0.3.0
+Fetching shellany 0.0.1
+Installing shellany 0.0.1
+Fetching notiffany 0.1.1
+Installing notiffany 0.1.1
+Fetching method_source 0.9.0
+Installing method_source 0.9.0
+Fetching pry 0.11.3
+Installing pry 0.11.3
+Fetching thor 0.20.0
+Installing thor 0.20.0
+Fetching guard 2.14.2
+Installing guard 2.14.2
+Fetching eventmachine 1.2.7
+Installing eventmachine 1.2.7 with native extensions
+Fetching http_parser.rb 0.6.0
+Installing http_parser.rb 0.6.0 with native extensions
+Fetching em-websocket 0.5.1
+Installing em-websocket 0.5.1
+Fetching guard-compat 1.2.1
+Installing guard-compat 1.2.1
+Fetching multi_json 1.13.1
+Installing multi_json 1.13.1
+Fetching guard-livereload 2.5.2
+Installing guard-livereload 2.5.2
+Fetching tilt 2.0.8
+Installing tilt 2.0.8
+Fetching haml 4.0.7
+Installing haml 4.0.7
+Fetching little-plugger 1.1.4
+Installing little-plugger 1.1.4
+Fetching logging 2.2.2
+Installing logging 2.2.2
+Fetching mime-types 2.99.3
+Installing mime-types 2.99.3
+Fetching ruby-ll 2.1.2
+Installing ruby-ll 2.1.2 with native extensions
+Fetching oga 1.3.1
+Installing oga 1.3.1 with native extensions
+Fetching parallel 1.12.1
+Installing parallel 1.12.1
+Fetching rack 1.6.10
+Installing rack 1.6.10
+Fetching unf_ext 0.0.7.5
+Installing unf_ext 0.0.7.5 with native extensions
+Fetching unf 0.1.4
+Installing unf 0.1.4
+Fetching domain_name 0.5.20180417
+Installing domain_name 0.5.20180417
+Fetching http-cookie 1.0.3
+Installing http-cookie 1.0.3
+Fetching netrc 0.11.0
+Installing netrc 0.11.0
+Fetching rest-client 1.8.0
+Installing rest-client 1.8.0
+Fetching awestruct 0.5.7
+Installing awestruct 0.5.7
+Fetching naturally 2.1.0
+Installing naturally 2.1.0
+Fetching awestruct-ibeams 0.4.1
+Installing awestruct-ibeams 0.4.1
+Using bundler 1.16.2
+Fetching multipart-post 2.0.0
+Installing multipart-post 2.0.0
+Fetching faraday 0.9.2
+Installing faraday 0.9.2
+Fetching faraday_middleware 0.9.2
+Installing faraday_middleware 0.9.2
+Fetching kramdown 1.9.0
+Installing kramdown 1.9.0
+Fetching liquid 3.0.6
+Installing liquid 3.0.6
+Fetching rubyzip 1.2.1
+Installing rubyzip 1.2.1
+Bundle complete! 12 Gemfile dependencies, 72 gems now installed.
+Bundled gems are installed into `./vendor/gems`
+Post-install message from pdf-reader:
+
+  ********************************************
+
+  v1.0.0 of PDF::Reader introduced a new page-based API. There are extensive
+  examples showing how to use it in the README and examples directory.
+
+  For detailed documentation, check the rdocs for the PDF::Reader,
+  PDF::Reader::Page and PDF::Reader::ObjectHash classes.
+
+  The old API is marked as deprecated but will continue to work with no
+  visible warnings for now.
+
+  ********************************************
+
+Post-install message from haml:
+
+HEADS UP! Haml 4.0 has many improvements, but also has changes that may break
+your application:
+
+* Support for Ruby 1.8.6 dropped
+* Support for Rails 2 dropped
+* Sass filter now always outputs <style> tags
+* Data attributes are now hyphenated, not underscored
+* html2haml utility moved to the html2haml gem
+* Textile and Maruku filters moved to the haml-contrib gem
+
+For more info see:
+
+http://rubydoc.info/github/haml/haml/file/CHANGELOG.md
+
+./scripts/groovy pull
+jre-alpine: Pulling from library/groovy
+8e3ba11ec2a2: Pulling fs layer
+311ad0da4533: Pulling fs layer
+391a6a6b3651: Pulling fs layer
+6d535f43f554: Pulling fs layer
+b3ab95434ce8: Pulling fs layer
+b3ab95434ce8: Waiting
+6d535f43f554: Waiting
+311ad0da4533: Verifying Checksum
+311ad0da4533: Download complete
+8e3ba11ec2a2: Verifying Checksum
+8e3ba11ec2a2: Download complete
+b3ab95434ce8: Download complete
+6d535f43f554: Verifying Checksum
+6d535f43f554: Download complete
+8e3ba11ec2a2: Pull complete
+391a6a6b3651: Verifying Checksum
+391a6a6b3651: Download complete
+311ad0da4533: Pull complete
+391a6a6b3651: Pull complete
+6d535f43f554: Pull complete
+b3ab95434ce8: Pull complete
+Digest: sha256:6148346626d7f56e17b03beb9914b935aea1fc7df517d6fd438e83a5ed3843e8
+Status: Downloaded newer image for groovy:jre-alpine
+./scripts/groovy scripts/release.rss.groovy 'https://updates.jenkins.io/release-history.json' > build/_site/releases.rss
+./scripts/fetch-examples
++ dirname ./scripts/fetch-examples
++ WORKDIR=./scripts/../content/_tmp/examples
++ REPODIR=./scripts/../content/_tmp/examples/pipeline-examples
++ REPO=https://github.com/jenkinsci/pipeline-examples.git
++ echo >> Working in ./scripts/../content/_tmp/examples
+>> Working in ./scripts/../content/_tmp/examples
++ [ ! -d ./scripts/../content/_tmp/examples ]
++ mkdir -p ./scripts/../content/_tmp/examples
++ [ ! -d ./scripts/../content/_tmp/examples/pipeline-examples ]
++ cd ./scripts/../content/_tmp/examples
++ git clone https://github.com/jenkinsci/pipeline-examples.git
+Cloning into 'pipeline-examples'...
+./scripts/ruby bundle exec ./scripts/fetch-external-resources
+Writing content/_tmp/latestCore.txt
+Writing content/_tmp/latestLTSCore.txt
+Writing content/_tmp/allAscii.zip
+Writing content/_data/_generated/lts_baselines.yml
+Converting JSON to YAML
+Writing content/_data/_generated/update_center.yml
+Converting JSON to YAML
+Writing content/_tmp/extension-indexer.zip
+./scripts/node pull
+alpine: Pulling from library/node
+8e3ba11ec2a2: Already exists
+cbc8573a40fa: Pulling fs layer
+75b9cdec41b6: Pulling fs layer
+75b9cdec41b6: Verifying Checksum
+75b9cdec41b6: Download complete
+cbc8573a40fa: Verifying Checksum
+cbc8573a40fa: Download complete
+cbc8573a40fa: Pull complete
+75b9cdec41b6: Pull complete
+Digest: sha256:b0a791f36b9612c2186534b012a2a65b13bc33d15c4bf71347895205464eb20f
+Status: Downloaded newer image for node:alpine
+./scripts/node npm install
+npm WARN jenkins.io-node-tooling@1.0.0 No repository field.
+npm WARN jenkins.io-node-tooling@1.0.0 No license field.
+
+added 5 packages from 4 contributors and audited 6 packages in 1.02s
+found 0 vulnerabilities
+
+Copying node_modules/ionicons/fonts/ionicons.ttf into build/_site/css/fonts
+Copying node_modules/ionicons/fonts/ionicons.eot into build/_site/css/fonts
+Copying node_modules/ionicons/fonts/ionicons.woff into build/_site/css/fonts
+Copying node_modules/bootstrap/dist/* into build/_site/assets/bower/bootstrap/
+Copying node_modules/jquery/dist/* into build/_site/assets/bower/jquery/
+Copying node_modules/tether/dist/* into build/_site/assets/bower/tether/
+mkdir -p build/_site/assets/bower/anchor-js/
+cp node_modules/anchor-js/*.js build/_site/assets/bower/anchor-js/
+mkdir -p build/_site/assets/bower/ionicons
+cp -R node_modules/ionicons/css build/_site/assets/bower/ionicons
+cp -R node_modules/ionicons/fonts build/_site/assets/bower/ionicons
+./scripts/awestruct --generate --verbose --source-dir=content --output-dir=build/_site
+Missing required dependency to activate optional built-in extension minify.rb
+  cannot load such file -- htmlcompressor
+Using profile: production
+Generating site: https://jenkins.io/
+adjust_load_path
+load_default_site_yaml
+load_user_site_yaml -- profile
+set_base_url
+load_yamls
+load_pipeline
+load_pages
+execute_pipeline
+Excecuting pipeline...
+Executing extension YearPosts
+Executing extension Awestruct::Extensions::Indexifier
+Executing extension Awestruct::Extensions::Sitemap
+Executing extension Awestruct::Extensions::Paginator
+Executing extension Awestruct::Extensions::Atomizer
+Executing extension Awestruct::Extensions::Atomizer
+Executing extension Awestruct::Extensions::Tagger
+Executing extension Awestruct::Extensions::Sitemap
+Executing extension Awestruct::IBeams::DataDir
+Executing extension SolutionPage
+Loading solution pages
+ = Imported solution /home/jenkins/workspace/Infra_jenkins.io_master-JEZCQ5XOYYRQXMYTEV77IIULQMYAZQYN37KYGJ2A5DUOLYMUZBFA/content/solutions/android.adoc as /s/android/index.html
+ = Imported solution /home/jenkins/workspace/Infra_jenkins.io_master-JEZCQ5XOYYRQXMYTEV77IIULQMYAZQYN37KYGJ2A5DUOLYMUZBFA/content/solutions/c.adoc as /s/c/index.html
+ = Imported solution /home/jenkins/workspace/Infra_jenkins.io_master-JEZCQ5XOYYRQXMYTEV77IIULQMYAZQYN37KYGJ2A5DUOLYMUZBFA/content/solutions/docker.adoc as /s/docker/index.html
+ = Imported solution /home/jenkins/workspace/Infra_jenkins.io_master-JEZCQ5XOYYRQXMYTEV77IIULQMYAZQYN37KYGJ2A5DUOLYMUZBFA/content/solutions/embedded.adoc as /s/embedded/index.html
+ = Imported solution /home/jenkins/workspace/Infra_jenkins.io_master-JEZCQ5XOYYRQXMYTEV77IIULQMYAZQYN37KYGJ2A5DUOLYMUZBFA/content/solutions/github.adoc as /s/github/index.html
+ = Imported solution /home/jenkins/workspace/Infra_jenkins.io_master-JEZCQ5XOYYRQXMYTEV77IIULQMYAZQYN37KYGJ2A5DUOLYMUZBFA/content/solutions/java.adoc as /s/java/index.html
+ = Imported solution /home/jenkins/workspace/Infra_jenkins.io_master-JEZCQ5XOYYRQXMYTEV77IIULQMYAZQYN37KYGJ2A5DUOLYMUZBFA/content/solutions/php.adoc as /s/php/index.html
+ = Imported solution /home/jenkins/workspace/Infra_jenkins.io_master-JEZCQ5XOYYRQXMYTEV77IIULQMYAZQYN37KYGJ2A5DUOLYMUZBFA/content/solutions/pipeline.adoc as /s/pipeline/index.html
+ = Imported solution /home/jenkins/workspace/Infra_jenkins.io_master-JEZCQ5XOYYRQXMYTEV77IIULQMYAZQYN37KYGJ2A5DUOLYMUZBFA/content/solutions/python.adoc as /s/python/index.html
+ = Imported solution /home/jenkins/workspace/Infra_jenkins.io_master-JEZCQ5XOYYRQXMYTEV77IIULQMYAZQYN37KYGJ2A5DUOLYMUZBFA/content/solutions/ruby.adoc as /s/ruby/index.html
+Executing extension Releases
+Executing extension Awestruct::IBeams::HandbookExtension
+Executing extension Awestruct::IBeams::HandbookExtension
+set_urls
+build_page_index
+Generating pages...
+./scripts/ruby scripts/generate-handbook-pdf build/user-handbook.adoc
+>> Processing getting-started
+>> Processing installing
+>> Processing using
+>> Processing pipeline
+>> Processing blueocean
+>> Processing managing
+>> Processing system-administration
+>> Processing scaling
+>> Processing appendix
+>> Processing glossary
+./scripts/asciidoctor-pdf -a allow-uri-read \
+	--base-dir content \
+	--out-file user-handbook.pdf \
+	build/user-handbook.adoc
+mkdir -p build/archives
+(cd build && \
+	rm -f archives/jenkins.io-2640-89f5c99.zip && \
+	ln -f -s _site jenkins.io-2640-89f5c99 && \
+	zip --quiet -r archives/jenkins.io-2640-89f5c99.zip jenkins.io-2640-89f5c99)
+++ find content -name .htaccess -type f -exec grep --extended-regexp --invert-match '^(#|ErrorDocument)' '{}' ';'
++ illegal_htaccess_content=
++ [[ -n '' ]]
+[Pipeline] }
+[Pipeline] // timeout
+[Pipeline] }
+[Pipeline] // stage
+[Pipeline] stage
+[Pipeline] { (Build docker image)
+[Pipeline] timestamps
+[Pipeline] {
+[Pipeline] dir
+22:58:52 Running in /home/jenkins/workspace/Infra_jenkins.io_master-JEZCQ5XOYYRQXMYTEV77IIULQMYAZQYN37KYGJ2A5DUOLYMUZBFA/docker
+[Pipeline] {
+[Pipeline] sh
+22:58:53 [docker] Running shell script
+22:58:53 + tar cf - docker
+22:58:53 + md5sum
+22:58:53 tar: docker: Cannot stat: No such file or directory
+22:58:53 tar: Exiting with failure status due to previous errors
+[Pipeline] echo
+22:58:53 Creating the container jenkinsciinfra/jenkinsio:127648
+[Pipeline] sh
+22:58:53 [docker] Running shell script
+22:58:53 + docker build -t jenkinsciinfra/jenkinsio:127648 .
+22:58:53 Sending build context to Docker daemon  9.216kB
+
+22:58:53 Step 1/4 : FROM nginx:1.13
+22:58:53 1.13: Pulling from library/nginx
+22:58:53 f2aa67a397c4: Pulling fs layer
+22:58:53 3c091c23e29d: Pulling fs layer
+22:58:53 4a99993b8636: Pulling fs layer
+22:58:54 4a99993b8636: Download complete
+22:58:54 3c091c23e29d: Download complete
+22:58:54 f2aa67a397c4: Download complete
+22:58:56 f2aa67a397c4: Pull complete
+22:58:57 3c091c23e29d: Pull complete
+22:58:58 4a99993b8636: Pull complete
+22:58:58 Digest: sha256:b1d09e9718890e6ebbbd2bc319ef1611559e30ce1b6f56b2e3b479d9da51dc35
+22:58:58 Status: Downloaded newer image for nginx:1.13
+22:58:58  ---> ae513a47849c
+22:58:58 Step 2/4 : LABEL maintainer="infra@lists.jenkins-ci.org"
+22:59:08  ---> Running in af8a4826fea0
+22:59:08 Removing intermediate container af8a4826fea0
+22:59:08  ---> 4b02588fb08e
+22:59:08 Step 3/4 : LABEL description="jenkins.io website"
+22:59:08  ---> Running in 586a1ef56d75
+22:59:09 Removing intermediate container 586a1ef56d75
+22:59:09  ---> 4f8d71caf29a
+22:59:09 Step 4/4 : COPY default.conf /etc/nginx/conf.d/default.conf
+22:59:10  ---> 8009fc2059c2
+22:59:10 Successfully built 8009fc2059c2
+22:59:10 Successfully tagged jenkinsciinfra/jenkinsio:127648
+[Pipeline] dockerFingerprintFrom
+[Pipeline] }
+[Pipeline] // dir
+[Pipeline] }
+[Pipeline] // timestamps
+[Pipeline] }
+[Pipeline] // stage
+[Pipeline] stage
+[Pipeline] { (Archive site)
+[Pipeline] archiveArtifacts
+Archiving artifacts
+Recording fingerprints
+[Pipeline] }
+[Pipeline] // stage
+[Pipeline] }
+[Pipeline] // node
+[Pipeline] End of Pipeline
+
+GitHub has been notified of this commit’s build result
+
+Finished: SUCCESS

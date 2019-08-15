@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<Metadata>
+<Build>
+<JOB_NAME>pipeline-test</JOB_NAME>
+<BUILD_NUMBER>55</BUILD_NUMBER>
+<BUILD_DISPLAY_NAME>#55</BUILD_DISPLAY_NAME>
+<BUILD_TAG>jenkins-pipeline-test-55</BUILD_TAG>
+<BUILD_DURATION>9.7 sec</BUILD_DURATION>
+<BUILD_DATE>Mon Jul 23 12:00:34 EDT 2018</BUILD_DATE>
+<isPipeline>true</isPipeline>
+</Build>
+<Build_Details>
+<Stage name="Init/Trigger">
+<log>Started by user unknown or anonymous
+Running in Durability level: MAX_SURVIVABILITY
+Running on Jenkins in /home/adildsw/jenkins-plugins/demoplugin/work/jobs/pipeline-test/workspace
+</log>
+</Stage>
+<Stage name="Build">
+<workspace dir="workspace">[workspace] Running shell script<command>+ echo Build Process Started<log>Build Process Started
+</log>
+</command>
+</workspace>
+<workspace dir="workspace">[workspace] Running shell script<command>+ date<log>Mon Jul 23 12:00:41 EDT 2018
+</log>
+</command>
+</workspace>
+</Stage>
+<Stage name="Test">
+<workspace dir="workspace">[workspace] Running shell script<command>+ echo Deployed<log>Deployed
+</log>
+</command>
+</workspace>
+</Stage>
+<Stage name="Finalize">
+<workspace dir="workspace">[workspace] Running shell script<command>+ echo Finalized!<log>Finalized!
+</log>
+</command>
+</workspace>
+<workspace dir="workspace">[workspace] Running shell script<command>+ echo success<log>success
+</log>
+</command>
+</workspace>
+</Stage>
+<Stage name="Declarative: Post Actions"/>
+</Build_Details>
+</Metadata>

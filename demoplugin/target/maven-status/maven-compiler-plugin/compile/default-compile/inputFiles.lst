@@ -1,0 +1,6 @@
+/home/adildsw/jenkins-plugins/demoplugin/src/main/java/io/jenkins/plugins/demoplugin/GitCommitCapturePublisher.java
+/home/adildsw/jenkins-plugins/demoplugin/target/generated-sources/localizer/io/jenkins/plugins/demoplugin/Messages.java
+/home/adildsw/jenkins-plugins/demoplugin/src/main/java/io/jenkins/plugins/demoplugin/NonPipelineXMLBuilder.java
+/home/adildsw/jenkins-plugins/demoplugin/src/main/java/io/jenkins/plugins/demoplugin/LogParser.java
+/home/adildsw/jenkins-plugins/demoplugin/src/main/java/io/jenkins/plugins/demoplugin/LogCapturePublisher.java
+/home/adildsw/jenkins-plugins/demoplugin/src/main/java/io/jenkins/plugins/demoplugin/PipelineXMLBuilder.java

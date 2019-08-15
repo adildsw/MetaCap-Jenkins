@@ -1,0 +1,1 @@
+hotfix%2FJENKINS-48392
